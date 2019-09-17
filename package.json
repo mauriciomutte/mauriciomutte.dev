@@ -1,0 +1,8 @@
+{
+  "name": "mauriciomutte.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:mauriciomutte/mauriciomutte.github.io.git",
+  "author": "Mauricio Mutte <litiobr@gmail.com>",
+  "license": "MIT"
+}
