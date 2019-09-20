@@ -3,7 +3,7 @@ module.exports = {
     title: `Maurício Mutte`,
     author: `Maurício Mutte`,
     description: `Maurício Mutte, 18 anos, desenvolvedor full-stack, Javascript stack, apaixonado por tecnologia e pragmático`,
-    siteUrl: ``,
+    siteUrl: `https://mauriciomutte.netlify.com`,
     social: {
       twitter: `mauriciomutte`,
     },
@@ -33,7 +33,6 @@ module.exports = {
               maxWidth: 590,
             },
           },
-          `gatsby-remark-prismjs`,
         ],
       },
     },
