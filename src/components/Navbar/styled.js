@@ -7,12 +7,13 @@ export const MenuNav = styled.nav`
   left: 0;
   bottom: 0;
   right: 0;
+  z-index: 10;
 
   @media (min-width: 1000px) {
     background-color: transparent;
     left: 0;
     bottom: 0;
-    right: 93%;
+    right: 92%;
     top: 0;
     display: flex;
     align-items: center;
