@@ -14,8 +14,7 @@ export const MenuLink = styled(Link)`
     padding: 7px 0;
 
     @media (min-width: 1000px) {
-      margin: 1em 0;
-      padding: 1em;
+      margin: 1.6em 5px;
     }
   }
 `;
