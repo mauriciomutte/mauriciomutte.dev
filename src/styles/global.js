@@ -32,6 +32,9 @@ const GlobalStyles = createGlobalStyle`
     display: block;
   }
   body {
+    background-color: #101723;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1;
   }
   ol, ul {
@@ -48,6 +51,10 @@ const GlobalStyles = createGlobalStyle`
   table {
     border-collapse: collapse;
     border-spacing: 0;
+  }
+  a {
+    color: #FFF;
+    text-decoration: none;
   }
 `;
 
