@@ -27,12 +27,12 @@ export const query = graphql`
   }
 `;
 
-export default ({ data }) => {
+export default ({ location, data }) => {
   const posts = data.allMarkdownRemark.edges;
   console.log(posts);
 
   return (
-    <Layout>
+    <Layout path={location.pathname}>
       <h1>Home</h1>
       <BlogSection>
         {posts.map(({ node }) => 

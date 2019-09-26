@@ -9,6 +9,8 @@ export const MenuItem = styled.li`
 
 export const MenuLink = styled(Link)`
   div {
+    color: ${props => props.isActive ? '#fd8783' : '#FFF'};
+    font-weight: ${props => props.isActive ? 'bold' : 'normal'};
     padding: 7px 0;
 
     @media (min-width: 1000px) {

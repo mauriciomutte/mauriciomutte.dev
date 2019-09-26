@@ -6,7 +6,7 @@ import Navbar from '../Navbar';
 import * as S from './styled';
 import GlobalStyle from '../../styles/global';
 
-export default ({ children }) => {
+export default ({ path, children }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -29,7 +29,7 @@ export default ({ children }) => {
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet"></link>
       </Helmet>
       <GlobalStyle />
-      <Navbar />
+      <Navbar path={path}/>
       <S.Main>{children}</S.Main>
     </S.Layout>
   );
