@@ -55,6 +55,23 @@ const PostContent = styled.section`
     margin: 0 0 15px;
   }
 
+  .gatsby-highlight {
+    background-color: #0007;
+    border-radius: 0.3em;
+    margin: 0.5em auto;
+    max-width: 900px;
+    padding: 1em;
+    overflow: auto;
+  }
+
+  .gatsby-highlight pre[class*="language-"] {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    overflow: initial;
+    min-width: 100%;
+  }
+
   @media (min-width: 700px) {
     font-size: 1.12rem;
   }
