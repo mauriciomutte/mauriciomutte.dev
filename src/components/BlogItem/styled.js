@@ -10,18 +10,21 @@ export const BlogSection = styled.section`
 
 export const BlogLink = styled(Link)`
   display: flex;
+  margin: 1em 0;
+
+  @media (min-width: 600px) {
+    margin: 1em;
+  }
 `;
 
 export const BlogItem = styled.div`
   border: 2px solid #fff;
   border-radius: 10px;
   box-sizing: border-box;
-  margin: 1em 0;
   padding: 1em;
   width: 320px;
 
   @media (min-width: 600px) {
-    margin: 1em;
     width: 375px;
     transition: all .2s ease-in;
 
