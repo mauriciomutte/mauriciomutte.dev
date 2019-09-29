@@ -73,7 +73,7 @@ export default ({ location }) => {
         <p>
           Comecei a programar por diversão aos 14 anos, aos 16 passei a me empenhar para ser um desenvolvedor.
           Hoje, com 18 anos, ja participei de pequenos projetos, contribuo com projetos open-source e estou em
-          busca do meu primeiro emprego formal em um ambiente que possa me forncer aprendizados e crescimento. 
+          busca do meu primeiro emprego formal em um ambiente que possa me fornecer aprendizados e crescimento. 
         </p>
         
         <h2>Habilidades</h2>
