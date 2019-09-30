@@ -11,6 +11,11 @@ export const ProjectItem = styled.a`
   @media (min-width: 600px) {
     margin: 1em;
     flex-basis: 475px;
+    transition: all .2s ease-in;
+
+    :hover {
+      background-color: rgba(250,250,250,.08);
+    }
   }
 `;
 
