@@ -3,6 +3,7 @@ import axios from 'axios';
 import styled from 'styled-components';
 
 import Layout from '../components/Layout';
+import ProjectItem from '../components/ProjectItem';
 
 const ProjectWrapper = styled.section`
   margin: 3em 5%;
@@ -58,7 +59,16 @@ export default ({ location }) => {
       <h1>Projetos...</h1>
 
       <ProjectWrapper>
-        
+        {data.map(repo =>
+          <ProjectItem 
+            key={repo.id}
+            href={repo.html_url}
+            name={repo.name}
+            description={repo.description}
+            language={repo.language}
+            stars={repo.stargazers_count}
+          />
+        )}
       </ProjectWrapper>
     </Layout>
   );
