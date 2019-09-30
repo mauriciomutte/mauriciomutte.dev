@@ -8,7 +8,7 @@ export const ProjectItem = styled.a`
   padding: 1em;
   width: 100%;
 
-  @media (min-width: 700px) {
+  @media (min-width: 600px) {
     margin: 1em;
     flex-basis: 475px;
   }
