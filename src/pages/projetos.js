@@ -56,7 +56,7 @@ export default ({ location }) => {
 
   return (
     <Layout path={location.pathname}>
-      <h1>Projetos...</h1>
+      <h1>Projetos</h1>
 
       <ProjectWrapper>
         {data.map(repo =>
