@@ -67,6 +67,18 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Maurício Mutte`,
+        short_name: `Maurício Mutte`,
+        start_url: `/`,
+        background_color: `#101723`,
+        theme_color: `#101723`,
+        display: `standalone`,
+        icon: `static/favicon.png`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
