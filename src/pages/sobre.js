@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 import me from '../../content/assets/me.jpeg';
 
 const AboutPage = styled.section`
@@ -61,6 +62,7 @@ const AboutPage = styled.section`
 export default ({ location }) => {
   return (
     <Layout path={location.pathname}>
+      <SEO title="Sobre" />
       <AboutPage>
         <img src={me} alt=""/>
 

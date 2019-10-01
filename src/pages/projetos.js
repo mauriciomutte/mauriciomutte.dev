@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import Layout from '../components/Layout';
 import ProjectItem from '../components/ProjectItem';
+import SEO from '../components/SEO';
 
 const ProjectWrapper = styled.section`
   margin: 3em 5%;
@@ -56,6 +57,7 @@ export default ({ location }) => {
 
   return (
     <Layout path={location.pathname}>
+      <SEO title="Projetos" />
       <h1>Projetos</h1>
 
       <ProjectWrapper>

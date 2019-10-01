@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 import PostHeader from '../components/PostHeader';
 import PostContent from '../components/PostContent';
 
@@ -17,14 +18,16 @@ export const query = graphql`
 `;
 
 export default ({ data }) => {
-  const post = data.markdownRemark;
+  const html = data.markdownRemark.html
+  const post = data.markdownRemark.frontmatter;
   console.log(post);
   return (
     <Layout>
+      <SEO title={post.title} />
       <PostHeader
-        title={post.frontmatter.title}
+        title={post.title}
       />
-      <PostContent dangerouslySetInnerHTML={{ __html: post.html }} />
+      <PostContent dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   );
 }

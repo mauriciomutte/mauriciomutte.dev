@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import BlogItem from '../components/BlogItem';
+import SEO from '../components/SEO';
 
 import { BlogSection } from '../components/BlogItem/styled';
 
@@ -33,6 +34,7 @@ export default ({ location, data }) => {
 
   return (
     <Layout path={location.pathname}>
+      <SEO title="Home" />
       <h1>Home</h1>
       <BlogSection>
         {posts.map(({ node }) => 
