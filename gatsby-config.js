@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const pluginConfig = [
   {
     resolve: `gatsby-source-filesystem`,
@@ -75,6 +77,18 @@ const pluginConfig = [
   `gatsby-plugin-sharp`,
   `gatsby-plugin-styled-components`,
 ];
+
+if (process.env.CONTEXT === 'production') {
+  const analytics = {
+    resolve: `gatsby-plugin-google-analytics`,
+    options: {
+      trackingId: process.env.GOOGLE_ANALYTICS_ID,
+      head: false
+    }
+  };
+
+  pluginConfig.push(analytics);
+}
 
 module.exports = {
   siteMetadata: {
