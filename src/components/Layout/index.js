@@ -1,4 +1,6 @@
 import React from 'react';
+import {Spring} from 'react-spring/renderprops'
+
 
 import Navbar from '../Navbar';
 import * as S from './styled';
@@ -10,7 +12,18 @@ export default ({ path, children }) => {
     <S.Layout>
       <GlobalStyle />
       <Navbar path={path}/>
-      <S.Main>{children}</S.Main>
+      
+      <Spring
+        from={{ 
+          opacity: 0,
+          transform: 'translate3d(0,50px,0)',
+         }}
+        to={{ 
+          opacity: 1,
+          transform:'translate3d(0px,0,0)',
+         }}>
+        {props => <S.Main style={props}>{children}</S.Main>}
+      </Spring>
     </S.Layout>
   );
 }
