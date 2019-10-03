@@ -16,6 +16,7 @@ const ProjectWrapper = styled.section`
 
 export default ({ location }) => {
   const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -50,9 +51,12 @@ export default ({ location }) => {
       };
 
       setData(getTopSix()); 
+      setIsLoading(false);
     }
 
-    fetchData();
+    if (data) {
+      fetchData();
+    }
   }, []);
 
   return (
@@ -61,16 +65,20 @@ export default ({ location }) => {
       <h1>Projetos</h1>
 
       <ProjectWrapper>
-        {data.map(repo =>
-          <ProjectItem 
-            key={repo.id}
-            href={repo.html_url}
-            name={repo.name}
-            description={repo.description}
-            language={repo.language}
-            stars={repo.stargazers_count}
-          />
-        )}
+        {
+          isLoading 
+          ? <div>Carregando...</div>
+          : data.map(repo =>
+            <ProjectItem 
+              key={repo.id}
+              href={repo.html_url}
+              name={repo.name}
+              description={repo.description}
+              language={repo.language}
+              stars={repo.stargazers_count}
+            />
+          ) 
+        }
       </ProjectWrapper>
     </Layout>
   );
