@@ -42,5 +42,14 @@ export const BlogItem = styled.div`
 export const BlogItemTitle = styled.h2`
   font-size: 22px;
   font-weight: bold;
-  margin: 0 0 15px;
+  margin: 10px 0 15px;
+`;
+
+export const BlogCategory = styled.span`
+  background-color: #1F232E;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 15px;
 `;

@@ -6,6 +6,7 @@ export default (props) => {
   return (
     <S.BlogLink to={props.link}>
       <S.BlogItem key={props.key}>
+        <S.BlogCategory>{props.category}</S.BlogCategory>
         <S.BlogItemTitle>{props.title}</S.BlogItemTitle>
         <div>
           <time>{props.date}</time>

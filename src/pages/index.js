@@ -21,6 +21,7 @@ export const query = graphql`
             date(formatString: "MMMM DD, YYYY", difference: "")
             title
             description
+            category
           }
         }
       }
@@ -44,6 +45,7 @@ export default ({ location, data }) => {
             title={node.frontmatter.title}
             date={node.frontmatter.date}
             readTime={node.timeToRead}
+            category={node.frontmatter.category}
           />
         )}
       </BlogSection>
