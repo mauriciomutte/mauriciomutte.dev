@@ -1,7 +1,6 @@
 ---
-layout: post
-title:  "A melhor forma de compartilhar trechos do seu código"
-date:   2018-10-05 16:50:00 -0200
+title: "A melhor forma de compartilhar trechos do seu código"
+date: 2018-10-05 16:50:00 -0200
 description: Polacode é uma ferramente que vai mudar a forma como você compartilha o seu código
 categories: [Dicas]
 ---
