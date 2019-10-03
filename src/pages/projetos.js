@@ -62,8 +62,6 @@ export default ({ location }) => {
   return (
     <Layout path={location.pathname}>
       <SEO title="Projetos" />
-      <h1>Projetos</h1>
-
       <ProjectWrapper>
         {
           isLoading 

@@ -36,7 +36,6 @@ export default ({ location, data }) => {
   return (
     <Layout path={location.pathname}>
       <SEO title="Home" />
-      <h1>Home</h1>
       <BlogSection>
         {posts.map(({ node }) => 
           <BlogItem 
