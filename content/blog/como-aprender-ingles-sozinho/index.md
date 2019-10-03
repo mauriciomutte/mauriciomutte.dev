@@ -2,7 +2,7 @@
 title: "Como aprender inglês sozinho?"
 date: 2017-12-15 19:50:10 -0200
 description: As melhores dicas para você aprender inglês sozinho de forma eficiente e efetiva
-categories: [Misc]
+category: Dicas
 ---
 
 Se você caiu de paraquedas neste post, prazer, me chamo Maurício, no momento tenho 16 anos e este é mais um post do meu blog =D. Todos dizem que é importante aprender inglês, na área de tecnologia, algumas pessoas chegam a dizer que é melhor aprender primeiro inglês todo que qualquer outra linguagem de programação. Nesse post, vos trago algumas dicas que utilizo para aprender inglês.

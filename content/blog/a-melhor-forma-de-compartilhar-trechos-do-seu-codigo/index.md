@@ -2,7 +2,7 @@
 title: "A melhor forma de compartilhar trechos do seu código"
 date: 2018-10-05 16:50:00 -0200
 description: Polacode é uma ferramente que vai mudar a forma como você compartilha o seu código
-categories: [Dicas]
+category: Dicas
 ---
 
 Se você caiu de paraquedas nesse post, prazer, me chamo Maurício e seja bem vindo ao meu blog! 
