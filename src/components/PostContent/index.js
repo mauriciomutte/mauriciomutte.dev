@@ -7,7 +7,7 @@ const PostContent = styled.section`
   font-size: 1.06rem;
 
   p {
-    line-height: 1.4;
+    line-height: 1.6;
     margin: 10px 0 20px;
   }
 
@@ -52,7 +52,7 @@ const PostContent = styled.section`
   }
 
   li {
-    margin: 0 0 15px;
+    margin: 0 0 10px;
   }
 
   .gatsby-highlight {
