@@ -21,6 +21,7 @@ const PropsHeader = styled.section`
     background-color: #1F232E;
     border-radius: 5px;
     display: inline-block;
+    font-size: .9rem;
     font-weight: bold;
     margin: 1em;  
     padding: 7px 15px;
