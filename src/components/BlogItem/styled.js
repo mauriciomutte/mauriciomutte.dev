@@ -5,7 +5,7 @@ export const BlogSection = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
+  margin: 2em 0;
 `;
 
 export const BlogLink = styled(Link)`
