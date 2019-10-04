@@ -3,7 +3,7 @@ import * as S from './styled';
 
 export default (props) => {
   return (
-    <S.ProjectItem href={props.href}>
+    <S.ProjectItem href={props.href} target="_blank" rel="noopener">
       <S.Name>{props.name}</S.Name>
       <S.Description role="img">{props.description}</S.Description>
       <p>
