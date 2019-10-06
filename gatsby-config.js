@@ -97,10 +97,11 @@ module.exports = {
     title: `Maurício Mutte`,
     author: `Maurício Mutte`,
     description: `Maurício Mutte, 18 anos, desenvolvedor full-stack, Javascript stack, apaixonado por tecnologia e pragmático`,
-    siteUrl: `https://mauriciomutte.netlify.com`,
+    siteUrl: `https://mauriciomutte.github.io`,
     social: {
       twitter: `mauriciomutte`,
     },
   },
+  pathPrefix: "/",
   plugins: pluginConfig,
 }
