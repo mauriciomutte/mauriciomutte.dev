@@ -28,7 +28,3 @@ Para ter o melhor proveito na hora de aprender inglês, você precisará buscar 
 ## Aprenda outra coisa em inglês
 
 Aprender alguma coisa em inglês é uma maneira que pode exponencial a sua aprendizagem na língua inglesa. No meu caso, eu busco aprender novas tecnologias em inglês, mas você pode aprender, em inglês, a tocar algum instrumento, ler livros, aprender a jogar algum jogo, entre outras coisas, isso vai de pessoa para pessoa.
-
-## Conclusão
-
-Aprender uma nova língua não é algo fácil, você precisa ter um objetivo claro, foco e muita disciplina. Se você já aprendeu inglês ou assim como eu, está aprendendo, por favor, deixe um comentário com sua opinião.
