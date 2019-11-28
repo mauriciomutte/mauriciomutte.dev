@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import PostHeader from '../components/PostHeader';
 import PostContent from '../components/PostContent';
-import Comments from '../components/PostComments';
+import PostComments from '../components/PostComments';
 
 export const query = graphql`
   query($slug: String!) {
@@ -35,7 +35,7 @@ export default ({ data }) => {
         timeToRead={post.timeToRead}
       />
       <PostContent dangerouslySetInnerHTML={{ __html: post.html }} />
-      <Comments url={post.fields.slug} title={post.frontmatter.title}/>
+      <PostComments url={post.fields.slug} title={post.frontmatter.title}/>
     </Layout>
   );
 }
