@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import PostHeader from '../components/PostHeader';
 import PostContent from '../components/PostContent';
-import Comments from '../components/Comments';
+import Comments from '../components/PostComments';
 
 export const query = graphql`
   query($slug: String!) {
