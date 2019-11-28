@@ -20,18 +20,17 @@ export const query = graphql`
 `;
 
 export default ({ data }) => {
-  const html = data.markdownRemark.html
-  const post = data.markdownRemark.frontmatter;
+  const post = data.markdownRemark;
   console.log(post);
   return (
     <Layout>
-      <SEO title={post.title} />
+      <SEO title={post.frontmatter.title} />
       <PostHeader
-        title={post.title}
-        category={post.category}
-        timeToRead={data.markdownRemark.timeToRead}
+        title={post.frontmatter.title}
+        category={post.frontmatter.category}
+        timeToRead={post.timeToRead}
       />
-      <PostContent dangerouslySetInnerHTML={{ __html: html }} />
+      <PostContent dangerouslySetInnerHTML={{ __html: post.html }} />
     </Layout>
   );
 }
