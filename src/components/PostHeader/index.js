@@ -12,8 +12,8 @@ const PropsHeader = styled.section`
     margin: auto;
 
     @media (min-width: 700px) {
-      width: 80%;
-      font-size: 3.3rem;
+      width: 70%;
+      font-size: 2.5rem;
     }
   }
 
