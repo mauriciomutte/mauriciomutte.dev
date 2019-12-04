@@ -6,6 +6,7 @@ import SEO from '../components/SEO';
 import PostHeader from '../components/PostHeader';
 import PostContent from '../components/PostContent';
 import PostComments from '../components/PostComments';
+import PostRecommended from '../components/PostRecommended';
 
 export const query = graphql`
   query($slug: String!) {
@@ -23,9 +24,11 @@ export const query = graphql`
   }
 `;
 
-export default ({ data }) => {
+export default ({ data, pageContext }) => {
   const post = data.markdownRemark;
-  
+  const next = pageContext.next;
+  const previous = pageContext.previous;
+
   return (
     <Layout>
       <SEO title={post.frontmatter.title} />
@@ -35,6 +38,7 @@ export default ({ data }) => {
         timeToRead={post.timeToRead}
       />
       <PostContent dangerouslySetInnerHTML={{ __html: post.html }} />
+      <PostRecommended next={next} previous={previous} />
       <PostComments url={post.fields.slug} title={post.frontmatter.title}/>
     </Layout>
   );
