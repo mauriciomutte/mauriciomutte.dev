@@ -88,6 +88,15 @@ const pluginConfig = [
       token: process.env.WEBMENTIONS_TOKEN
     }
   },
+  {
+    resolve: `gatsby-plugin-indieweb`,
+    options: {
+      auth: {
+        twitter: `mauriciomutte`,
+      },
+      webmention: `mauriciomutte.github.io`,
+    },
+  },
   `gatsby-plugin-offline`,
   `gatsby-plugin-react-helmet`,
   `gatsby-transformer-sharp`,

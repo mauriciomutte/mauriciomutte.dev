@@ -5370,6 +5370,13 @@ gatsby-plugin-google-analytics@^2.1.19:
   dependencies:
     "@babel/runtime" "^7.6.2"
 
+gatsby-plugin-indieweb@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-indieweb/-/gatsby-plugin-indieweb-1.0.3.tgz#79ded3a3fd20b7745b6a00a09cd97b2f8d66a04d"
+  integrity sha512-gXWAyuZpT4+KWSpeeaMMnWXz9KIJPnBlZGHTR81sLZpsWjtSAio9E+zwjHVeRMtk9Wpmvwhos7NpLao1N3UlAQ==
+  dependencies:
+    lodash.merge "^4.6.1"
+
 gatsby-plugin-manifest@^2.2.20:
   version "2.2.20"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.20.tgz#67fa1d6335846097364c2eceece5a4bdc326706e"
@@ -7733,6 +7740,11 @@ lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
   integrity sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=
+
+lodash.merge@^4.6.1:
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
+  integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
 
 lodash.mergewith@^4.6.1:
   version "4.6.2"
