@@ -6,7 +6,6 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import PostHeader from '../components/PostHeader';
 import PostContent from '../components/PostContent';
-import PostComments from '../components/PostComments';
 import PostRecommended from '../components/PostRecommended';
 
 const PostWrapper = styled.div`
@@ -49,7 +48,6 @@ export default ({ data, pageContext }) => {
         />
         <PostContent dangerouslySetInnerHTML={{ __html: post.html }} />
         <PostRecommended next={next} previous={previous} />
-        <PostComments url={post.fields.slug} title={post.frontmatter.title}/>
       </PostWrapper>
     </Layout>
   );
