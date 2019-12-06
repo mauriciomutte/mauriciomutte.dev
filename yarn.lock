@@ -2629,6 +2629,15 @@ camelcase-keys@^2.0.0:
     camelcase "^2.0.0"
     map-obj "^1.0.0"
 
+camelcase-keys@^5.0.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/camelcase-keys/-/camelcase-keys-5.2.0.tgz#6a66cff764f83766a6a609707aab105fd10415e3"
+  integrity sha512-mSM/OQKD1HS5Ll2AXxeaHSdqCGC/QQ8IrgTbKYA/rxnC36thBKysfIr9+OVBWuW17jyZF4swHkjtglawgBmVFg==
+  dependencies:
+    camelcase "^5.3.1"
+    map-obj "^3.0.0"
+    quick-lru "^1.0.0"
+
 camelcase@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-2.1.1.tgz#7c1d16d679a1bbe59ca02cacecfb011e201f5a1f"
@@ -5331,6 +5340,15 @@ gatsby-link@^2.2.14:
     "@types/reach__router" "^1.2.5"
     prop-types "^15.7.2"
 
+gatsby-node-helpers@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/gatsby-node-helpers/-/gatsby-node-helpers-0.3.0.tgz#3bdca3b7902a702a5834fef280ad66d51099d57c"
+  integrity sha1-O9yjt5AqcCpYNP7ygK1m1RCZ1Xw=
+  dependencies:
+    json-stringify-safe "^5.0.1"
+    lodash "^4.17.4"
+    p-is-promise "^1.1.0"
+
 gatsby-page-utils@^0.0.19:
   version "0.0.19"
   resolved "https://registry.yarnpkg.com/gatsby-page-utils/-/gatsby-page-utils-0.0.19.tgz#33b7b91feccfe061c24af4824b5648560cd30b18"
@@ -5351,6 +5369,13 @@ gatsby-plugin-google-analytics@^2.1.19:
   integrity sha512-B5LHoxb2mo5wQXfsKj9yKNkbIr5mBp7pIcwQbFPjRVCXZ5DaORaTPS6fF1Gskhip9W/o7s4kZvkNbonCAFjNGQ==
   dependencies:
     "@babel/runtime" "^7.6.2"
+
+gatsby-plugin-indieweb@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-indieweb/-/gatsby-plugin-indieweb-1.0.3.tgz#79ded3a3fd20b7745b6a00a09cd97b2f8d66a04d"
+  integrity sha512-gXWAyuZpT4+KWSpeeaMMnWXz9KIJPnBlZGHTR81sLZpsWjtSAio9E+zwjHVeRMtk9Wpmvwhos7NpLao1N3UlAQ==
+  dependencies:
+    lodash.merge "^4.6.1"
 
 gatsby-plugin-manifest@^2.2.20:
   version "2.2.20"
@@ -5426,6 +5451,17 @@ gatsby-plugin-styled-components@^3.1.5:
   integrity sha512-0DUyC9IV5pJTVzcoIoN8y0N0gmsJt0JxhgmxeQjCTBJV+QScDXThgLmRuvO7qgL94HKABFZbEysChEN6F25aDw==
   dependencies:
     "@babel/runtime" "^7.6.0"
+
+gatsby-plugin-webmention@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-webmention/-/gatsby-plugin-webmention-0.2.0.tgz#5fc9b00d94d440e31a7a63c7014034e61a9108b8"
+  integrity sha512-DRN2sinUBZ8CE6Ii3htEtV24P9unn3UOTPTIDvP/MgrBJiLnhu82rDf55Z7YCcMM4Ltwtd+mzApsGBxrHQxYww==
+  dependencies:
+    camelcase-keys "^5.0.0"
+    gatsby-node-helpers "^0.3.0"
+    node-fetch "^2.3.0"
+    query-string "^6.2.0"
+    react-helmet "*"
 
 gatsby-react-router-scroll@^2.1.8:
   version "2.1.8"
@@ -7705,6 +7741,11 @@ lodash.memoize@^4.1.2:
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
   integrity sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=
 
+lodash.merge@^4.6.1:
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
+  integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
+
 lodash.mergewith@^4.6.1:
   version "4.6.2"
   resolved "https://registry.yarnpkg.com/lodash.mergewith/-/lodash.mergewith-4.6.2.tgz#617121f89ac55f59047c7aec1ccd6654c6590f55"
@@ -7893,6 +7934,11 @@ map-obj@^1.0.0, map-obj@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/map-obj/-/map-obj-1.0.1.tgz#d933ceb9205d82bdcf4886f6742bdc2b4dea146d"
   integrity sha1-2TPOuSBdgr3PSIb2dCvcK03qFG0=
+
+map-obj@^3.0.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/map-obj/-/map-obj-3.1.0.tgz#3be9810d926db2f8612c728a2e95e03b7f109241"
+  integrity sha512-Xg1iyYz/+iIW6YoMldux47H/e5QZyDSB41Kb0ev+YYHh3FJnyyzY0vTk/WbVeWcCvdXd70cOriUBmhP8alUFBA==
 
 map-visit@^1.0.0:
   version "1.0.0"
@@ -8444,7 +8490,7 @@ node-fetch@2.1.2:
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.1.2.tgz#ab884e8e7e57e38a944753cec706f788d1768bb5"
   integrity sha1-q4hOjn5X44qUR1POxwb3iNF2i7U=
 
-node-fetch@2.6.0, node-fetch@^2.6.0:
+node-fetch@2.6.0, node-fetch@^2.3.0, node-fetch@^2.6.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
   integrity sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
@@ -10054,6 +10100,15 @@ query-string@^5.0.1:
     object-assign "^4.1.0"
     strict-uri-encode "^1.0.0"
 
+query-string@^6.2.0:
+  version "6.9.0"
+  resolved "https://registry.yarnpkg.com/query-string/-/query-string-6.9.0.tgz#1c3b727c370cf00f177c99f328fda2108f8fa3dd"
+  integrity sha512-KG4bhCFYapExLsUHrFt+kQVEegF2agm4cpF/VNc6pZVthIfCc/GK8t8VyNIE3nyXG9DK3Tf2EGkxjR6/uRdYsA==
+  dependencies:
+    decode-uri-component "^0.2.0"
+    split-on-first "^1.0.0"
+    strict-uri-encode "^2.0.0"
+
 query-string@^6.8.3:
   version "6.8.3"
   resolved "https://registry.yarnpkg.com/query-string/-/query-string-6.8.3.tgz#fd9fb7ffb068b79062b43383685611ee47777d4b"
@@ -10077,6 +10132,11 @@ querystringify@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.1.1.tgz#60e5a5fd64a7f8bfa4d2ab2ed6fdf4c85bad154e"
   integrity sha512-w7fLxIRCRT7U8Qu53jQnJyPkYZIaR4n5151KMfcJlO/A9397Wxb1amJvROTK6TOnp7PfoAmg/qXiNHI+08jRfA==
+
+quick-lru@^1.0.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-1.1.0.tgz#4360b17c61136ad38078397ff11416e186dcfbb8"
+  integrity sha1-Q2CxfGETatOAeDl/8RQW4Ybc+7g=
 
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5:
   version "2.1.0"
@@ -10182,7 +10242,7 @@ react-fast-compare@^2.0.2:
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-2.0.4.tgz#e84b4d455b0fec113e0402c329352715196f81f9"
   integrity sha512-suNP+J1VU1MWFKcyt7RtjiSWUjvidmQSlqu+eHslq+342xCbGTYmC0mEhPCOHxlW0CywylOC1u2DFAT+bv4dBw==
 
-react-helmet@^5.2.1:
+react-helmet@*, react-helmet@^5.2.1:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/react-helmet/-/react-helmet-5.2.1.tgz#16a7192fdd09951f8e0fe22ffccbf9bb3e591ffa"
   integrity sha512-CnwD822LU8NDBnjCpZ4ySh8L6HYyngViTZLfBBb3NjtrpN8m49clH8hidHouq20I51Y6TpCTISCBbqiY5GamwA==
