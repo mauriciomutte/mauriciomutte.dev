@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const PropsHeader = styled.section`
-  margin: 2em 0 3em;
+  padding: 1em 0;
   text-align: center;
 
   h1 {
