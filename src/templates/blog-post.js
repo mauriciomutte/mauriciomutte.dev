@@ -7,6 +7,7 @@ import SEO from '../components/SEO';
 import PostHeader from '../components/PostHeader';
 import PostContent from '../components/PostContent';
 import PostRecommended from '../components/PostRecommended';
+import PostContribute from '../components/PostContribute';
 
 const PostWrapper = styled.div`
   margin: 0 5%;
@@ -47,6 +48,7 @@ export default ({ data, pageContext }) => {
           timeToRead={post.timeToRead}
         />
         <PostContent dangerouslySetInnerHTML={{ __html: post.html }} />
+        <PostContribute title={post.frontmatter.title} link={post.fields.slug} />
         <PostRecommended next={next} previous={previous} />
       </PostWrapper>
     </Layout>
