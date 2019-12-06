@@ -100,7 +100,7 @@ export default ({ location }) => {
           </li>
           <li>
             Twitter: 
-            <a href="https://twitter.com/mauriciomutte">@mauriciomutte</a>
+            <a href="https://twitter.com/mauriciomutte" rel="me">@mauriciomutte</a>
           </li>
           <li>
             Linkedin: 
