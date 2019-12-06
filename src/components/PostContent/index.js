@@ -14,12 +14,11 @@ const PostContent = styled.section`
   h1, h2, h3, h4, h5, h6 {
     color: #fd8783;
     font-weight: 600;
-    margin: 10px 0 15px;
+    margin: 1em 0 .5em;
   }
 
   h2 {
     font-size: 1.7rem;
-    margin: 25px 0 10px;
   }
 
   h3 {
@@ -77,7 +76,7 @@ const PostContent = styled.section`
   }
 `;
 
-export default ( {...props}, {children}) => {
+export default ( {...props}, {children} ) => {
   return (
     <PostContent {...props}>
       {children}
