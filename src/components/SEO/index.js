@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import {useStaticQuery, graphql} from 'gatsby'
+import {useStaticQuery, graphql} from 'gatsby';
 
 function SEO({ description, lang, meta, title, image }) {
   const { site } = useStaticQuery(
@@ -26,6 +26,16 @@ function SEO({ description, lang, meta, title, image }) {
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
+      link={[
+        {
+          rel: `webmention`,
+          href: `https://webmention.io/username/webmention`
+        },
+        {
+          rel: `pingback`,
+          href: `https://webmention.io/username/xmlrpc`
+        },
+      ]}
       meta={[
         {
           name: `description`,
