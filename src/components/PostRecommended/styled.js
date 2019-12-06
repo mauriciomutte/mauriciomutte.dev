@@ -32,9 +32,15 @@ export const Title = styled.span`
 export const RecommendedLink = styled(Link)`
   align-items: center;
   background-color: #1F232E;
+  border: 2px solid #1F232E;
   border-radius: 5px;
   display: flex;
   font-size: 18px;
   height: 100%;
   padding: 1em;
+  transition: .2s;
+
+  :hover {
+    border: 2px solid #fd8783;
+  }
 `;
