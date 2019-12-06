@@ -29,11 +29,11 @@ function SEO({ description, lang, meta, title, image }) {
       link={[
         {
           rel: `webmention`,
-          href: `https://webmention.io/username/webmention`
+          href: `https://webmention.io/mauriciomutte/webmention`
         },
         {
           rel: `pingback`,
-          href: `https://webmention.io/username/xmlrpc`
+          href: `https://webmention.io/mauriciomutte/xmlrpc`
         },
       ]}
       meta={[
