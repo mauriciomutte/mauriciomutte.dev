@@ -7,7 +7,6 @@ export const RecommendedWrapper = styled.section`
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-column-gap: 1em;
-  margin: 5%;
   overflow: hidden;
 `;
 
