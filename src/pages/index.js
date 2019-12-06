@@ -48,6 +48,7 @@ export default ({ location, data }) => {
           />
         )}
       </BlogSection>
+      <a href="https://twitter.com/mauriciomutte" rel="me"></a>
     </Layout>
   );
 }
