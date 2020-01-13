@@ -13,9 +13,9 @@ export default ({ path }) => {
     <S.MenuNav>
       <S.MenuList>
         <MenuItem
-         name="Home"
-         to="/"
-         isActive={new RegExp('^/$').test(path)}
+          name="Home"
+          to="/"
+          isActive={new RegExp('^/$').test(path)}
         >
           <HomeIcon />
         </MenuItem>

@@ -1,13 +1,11 @@
 import React from 'react';
 import {Spring} from 'react-spring/renderprops'
 
-
 import Navbar from '../Navbar';
 import * as S from './styled';
 import GlobalStyle from '../../styles/global';
 
 export default ({ path, children }) => {
-
   return (
     <S.Layout>
       <GlobalStyle />
