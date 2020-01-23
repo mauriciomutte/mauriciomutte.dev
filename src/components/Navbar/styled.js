@@ -9,24 +9,19 @@ export const MenuNav = styled.nav`
   right: 0;
   z-index: 10;
 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
   @media (min-width: 1000px) {
     background-color: transparent;
     left: 0;
+    flex-direction: column;
     bottom: 0;
     right: 92%;
     top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-`;
-
-export const MenuList = styled.ul`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-
-  @media (min-width: 1000px) {
-    flex-direction: column;
   }
 `;
