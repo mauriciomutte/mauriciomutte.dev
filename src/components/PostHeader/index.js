@@ -28,12 +28,12 @@ const PropsHeader = styled.section`
   }
 `;
 
-export default (props) => {
+export default ({ category, timeToRead, title }) => {
   return (
     <PropsHeader>
-      <span>{props.category}</span>
-      <span>Leitura: {props.timeToRead}min</span>
-      <h1>{props.title}</h1>
+      <span>{category}</span>
+      <span>Leitura: {timeToRead}min</span>
+      <h1>{title}</h1>
     </PropsHeader>
   );
 }
