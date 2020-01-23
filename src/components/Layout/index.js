@@ -1,5 +1,5 @@
 import React from 'react';
-import {Spring} from 'react-spring/renderprops'
+import { Spring } from 'react-spring/renderprops'
 
 import Navbar from '../Navbar';
 import * as S from './styled';
