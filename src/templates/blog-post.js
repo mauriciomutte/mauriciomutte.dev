@@ -33,7 +33,7 @@ export const query = graphql`
   }
 `;
 
-export default ({ data, pageContext }) => {
+export default function blogPost({ data, pageContext }) {
   const post = data.markdownRemark;
   const next = pageContext.next;
   const previous = pageContext.previous;
