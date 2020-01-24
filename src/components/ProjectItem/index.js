@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from './styled';
 
-export default (props) => {
+export default function ProjectItem(props) {
   return (
     <S.ProjectItem href={props.href} target="_blank" rel="noopener">
       <S.Name>{props.name}</S.Name>
