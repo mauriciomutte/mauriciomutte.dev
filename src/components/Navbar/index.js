@@ -8,7 +8,7 @@ import AboutIcon from '../Icons/AboutIcon';
 
 import * as S from './styled';
 
-export default ({ path }) => {
+export default function Navbar({ path }) {
   return (
     <S.MenuNav>
       <MenuItem
