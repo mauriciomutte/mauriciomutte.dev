@@ -59,7 +59,7 @@ const AboutPage = styled.section`
   }
 `;
 
-export default function sobre({ location }) {
+function sobre({ location }) {
   return (
     <Layout path={location.pathname}>
       <SEO title="Sobre" />
@@ -115,3 +115,5 @@ export default function sobre({ location }) {
     </Layout>
   );
 }
+
+export default sobre;

@@ -29,7 +29,7 @@ export const query = graphql`
   }
 `;
 
-export default function index({ location, data }) {
+function index({ location, data }) {
   const posts = data.allMarkdownRemark.edges;
   console.log(posts);
 
@@ -51,3 +51,5 @@ export default function index({ location, data }) {
     </Layout>
   );
 }
+
+export default index;
