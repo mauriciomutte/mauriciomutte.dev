@@ -28,7 +28,7 @@ const PropsHeader = styled.section`
   }
 `;
 
-export default ({ category, timeToRead, title }) => {
+export default function PostHeader({ category, timeToRead, title }) {
   return (
     <PropsHeader>
       <span>{category}</span>
