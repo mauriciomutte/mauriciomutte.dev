@@ -14,7 +14,7 @@ const ProjectWrapper = styled.section`
   flex-wrap: wrap;
 `;
 
-export default ({ location }) => {
+export default function projetos({ location }) {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
