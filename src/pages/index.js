@@ -29,7 +29,7 @@ export const query = graphql`
   }
 `;
 
-export default ({ location, data }) => {
+export default function index({ location, data }) {
   const posts = data.allMarkdownRemark.edges;
   console.log(posts);
 
