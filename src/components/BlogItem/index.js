@@ -2,7 +2,7 @@ import React from 'react';
 
 import * as S from './styled';
 
-export default (props) => {
+export default function BlogItem(props) {
   return (
     <S.BlogLink to={props.link}>
       <S.BlogItem key={props.key}>
