@@ -76,7 +76,7 @@ const PostContent = styled.section`
   }
 `;
 
-export default ( {...props}, {children} ) => {
+export default function PostContent( {...props}, {children} ) {
   return (
     <PostContent {...props}>
       {children}
