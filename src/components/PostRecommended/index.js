@@ -2,7 +2,7 @@ import React from 'react';
 
 import * as S from './styled';
 
-export default ({ next, previous }) => {
+export default function PostRecommended({ next, previous }) {
   return (
     <S.RecommendedWrapper>
       {previous && (
