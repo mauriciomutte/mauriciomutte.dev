@@ -28,12 +28,12 @@ const PropsHeader = styled.section`
   }
 `;
 
-export default function PostHeader({ category, timeToRead, title }) {
-  return (
-    <PropsHeader>
-      <span>{category}</span>
-      <span>Leitura: {timeToRead}min</span>
-      <h1>{title}</h1>
-    </PropsHeader>
-  );
-}
+const PostHeader = ({ category, timeToRead, title }) => (
+  <PropsHeader>
+    <span>{category}</span>
+    <span>Leitura: {timeToRead}min</span>
+    <h1>{title}</h1>
+  </PropsHeader>
+);
+
+export default PostHeader;
