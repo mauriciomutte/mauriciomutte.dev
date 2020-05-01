@@ -14,7 +14,7 @@ const ProjectWrapper = styled.section`
   flex-wrap: wrap;
 `;
 
-function projetos({ location }) {
+const Projetos = ({ location }) => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -82,4 +82,4 @@ function projetos({ location }) {
   );
 }
 
-export default projetos;
+export default Projetos;

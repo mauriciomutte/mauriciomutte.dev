@@ -2,7 +2,7 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-const PostContent = styled.section`
+const PostContentStyle = styled.section`
   margin: 2em 0;
   font-size: 1.06rem;
 
@@ -77,9 +77,9 @@ const PostContent = styled.section`
 `;
 
 const PostContent = ({...props}, {children}) => (
-  <PostContent {...props}>
+  <PostContentStyle {...props}>
     {children}
-  </PostContent>
+  </PostContentStyle>
 );
 
 export default PostContent;
