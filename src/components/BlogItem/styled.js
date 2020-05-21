@@ -9,47 +9,44 @@ export const BlogSection = styled.section`
 `;
 
 export const BlogLink = styled(Link)`
-  display: flex;
-  margin: 1em 0;
-
-  @media (min-width: 600px) {
-    margin: 1em;
-  }
-`;
-
-export const BlogItem = styled.div`
-  border: 2px solid #fff;
-  border-radius: 10px;
-  box-sizing: border-box;
-  padding: 1em;
-  width: 320px;
-
-  @media (min-width: 600px) {
-    width: 375px;
-    transition: all .2s ease-in;
-
-    :hover {
-      background-color: rgba(250,250,250,.08);
-    }
-  }
-
-  div {
-    display: flex;
-    justify-content: space-between;
-  }
-`;
-
-export const BlogItemTitle = styled.h2`
-  font-size: 22px;
-  font-weight: bold;
-  margin: 10px 0 15px;
-`;
-
-export const BlogCategory = styled.span`
-  background-color: #1F232E;
+  background-image: url('https://frontendmasters.com/static-assets/learn/og-learning-path-react.jpg');
+  background-size: 100%;
   border-radius: 5px;
-  display: inline-block;
+  box-shadow: 2px 2px 15px #0007;
+  margin: 1em;
+`;
+
+export const BlogPost = styled.div`
+  background: linear-gradient(180deg, #0006 0%, #000 90%);
+  border-radius: 5px;
+  display: flex;
+  height: 180px;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+  width: 400px;
+
+  h2 {
+    margin-top: auto;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  :hover {
+    background: linear-gradient(180deg, #0000 0%, #000000 90%);
+  }
+`;
+
+export const BlogPostCategory = styled.span`
+  background: #fd8783;
   font-size: 14px;
-  font-weight: bold;
-  padding: 5px 15px;
+  border-radius: 5px 0 5px;
+  font-weight: 600;
+  padding: 7px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 120px;
 `;
