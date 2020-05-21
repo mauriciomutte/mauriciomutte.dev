@@ -9,26 +9,6 @@ const AboutPage = styled.section`
   margin: 4em 5%;
   text-align: center;
 
-  img {
-    border-radius: 100%;
-    width: 200px;
-  }
-
-  p {
-    font-size: 1.2rem;
-    margin: 0 0 2em;
-    line-height: 1.5;
-
-    @media (min-width: 600px) {
-      text-align: left;
-    }
-  }
-
-  h1 {
-    font-size: 3rem;
-    margin: 20px 0;
-  }
-
   h2 {
     color: #fd8783;
     font-size: 2rem;
@@ -59,24 +39,65 @@ const AboutPage = styled.section`
   }
 `;
 
+const AboutMeSection = styled.section`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 3em;
+  max-width: 1300px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  img {
+    box-shadow: 0 0 10px #000;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+  }
+
+  .resume {
+    margin: 0 5em;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin: 0 0 2em;
+    line-height: 1.5;
+
+    @media (min-width: 600px) {
+      text-align: left;
+    }
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+  }
+`;
+
 function sobre({ location }) {
   return (
     <Layout path={location.pathname}>
       <SEO title="Sobre" />
       <AboutPage>
-        <img src={me} alt=""/>
-
-        <h1>Olá!</h1>
-
-        <p>
-          Meu nome é Maurício Mutte, sou um Frontend Developer de Porto Alegre/RS em início de carreira. 
-          Assumo o título de Frontend mas estudo diariamente para me tornar um Fullstack Developer.
-        </p>
-        <p>
-          Comecei a programar por diversão aos 14 anos, aos 16 passei a me empenhar para ser um desenvolvedor.
-          Hoje, com 18 anos, ja participei de pequenos projetos, contribuo com projetos open-source e estou em
-          busca do meu primeiro emprego formal em um ambiente que possa me fornecer aprendizados e crescimento. 
-        </p>
+        <AboutMeSection className="aboutme">
+          <img src={me} alt=""/>
+        
+          <div className="resume">
+            <h1>Olá!</h1>
+            <p>
+              Meu nome é Maurício Mutte, sou um Frontend Developer de Porto Alegre/RS em início de carreira. 
+              Assumo o título de Frontend mas estudo diariamente para me tornar um Fullstack Developer.
+            </p>
+            <p>
+              Comecei a programar por diversão aos 14 anos, aos 16 passei a me empenhar para ser um desenvolvedor.
+              Hoje, com 18 anos, ja participei de pequenos projetos, contribuo com projetos open-source e estou em
+              busca do meu primeiro emprego formal em um ambiente que possa me fornecer aprendizados e crescimento. 
+            </p>
+          </div>
+        </AboutMeSection>
         
         <h2>Habilidades</h2>
         <ul>
