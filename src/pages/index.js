@@ -31,7 +31,6 @@ export const query = graphql`
 
 function index({ location, data }) {
   const posts = data.allMarkdownRemark.edges;
-  console.log(posts);
 
   return (
     <Layout path={location.pathname}>
