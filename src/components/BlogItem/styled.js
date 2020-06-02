@@ -9,7 +9,6 @@ export const BlogSection = styled.section`
 `;
 
 export const BlogLink = styled(Link)`
-  background-image: url('https://frontendmasters.com/static-assets/learn/og-learning-path-react.jpg');
   background-size: 100%;
   border-radius: 5px;
   box-shadow: 2px 2px 15px #0007;
