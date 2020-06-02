@@ -21,7 +21,7 @@ const Projetos = ({ location }) => {
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(
-        'https://api.github.com/users/mauriciomutte/repos?sort=updated&type=owner',
+        'https://api.github.com/users/mauriciomutte/repos?sort=updated&type=owner'
       );
 
       const removeForkRepos = () => {
@@ -33,8 +33,8 @@ const Projetos = ({ location }) => {
       };
 
       const sortReposByStar = () => {
-        return removeForkRepos().sort(
-          (a, b) => (a.stargazers_count > b.stargazers_count) ? -1 : 1
+        return removeForkRepos().sort((a, b) =>
+          a.stargazers_count > b.stargazers_count ? -1 : 1
         );
       };
 
@@ -46,13 +46,13 @@ const Projetos = ({ location }) => {
             topSix.push(element);
           }
         });
-        
+
         return topSix;
       };
 
-      setData(getTopSix()); 
+      setData(getTopSix());
       setIsLoading(false);
-    }
+    };
 
     if (data) {
       fetchData();
@@ -63,11 +63,11 @@ const Projetos = ({ location }) => {
     <Layout path={location.pathname}>
       <SEO title="Projetos" />
       <ProjectWrapper>
-        {
-          isLoading 
-          ? <div>Carregando...</div>
-          : data.map(repo =>
-            <ProjectItem 
+        {isLoading ? (
+          <div>Carregando...</div>
+        ) : (
+          data.map((repo) => (
+            <ProjectItem
               key={repo.id}
               href={repo.html_url}
               name={repo.name}
@@ -75,11 +75,11 @@ const Projetos = ({ location }) => {
               language={repo.language}
               stars={repo.stargazers_count}
             />
-          ) 
-        }
+          ))
+        )}
       </ProjectWrapper>
     </Layout>
   );
-}
+};
 
 export default Projetos;

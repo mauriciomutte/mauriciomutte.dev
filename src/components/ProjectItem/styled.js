@@ -11,10 +11,10 @@ export const ProjectItem = styled.a`
   @media (min-width: 600px) {
     margin: 1em;
     flex-basis: 475px;
-    transition: all .2s ease-in;
+    transition: all 0.2s ease-in;
 
     :hover {
-      background-color: rgba(250,250,250,.08);
+      background-color: rgba(250, 250, 250, 0.08);
     }
   }
 `;
@@ -41,6 +41,4 @@ export const Language = styled.span`
   }
 `;
 
-export const Stars = styled.span`
-`;
-
+export const Stars = styled.span``;

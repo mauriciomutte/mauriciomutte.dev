@@ -25,11 +25,15 @@ const PostContribute = ({ title, link }) => {
 
   return (
     <PostContributeStyle>
-      <a href={twitter} target="_blank" rel="noopener noreferrer">Comentar no Twitter</a>
+      <a href={twitter} target="_blank" rel="noopener noreferrer">
+        Comentar no Twitter
+      </a>
       <span> • </span>
-      <a href={github} target="_blank" rel="noopener noreferrer" >Editar o post no Github</a>
+      <a href={github} target="_blank" rel="noopener noreferrer">
+        Editar o post no Github
+      </a>
     </PostContributeStyle>
   );
-}
+};
 
 export default PostContribute;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const MenuNav = styled.nav`
-  background-color: #1F232E;
+  background-color: #1f232e;
 
   position: fixed;
   left: 0;

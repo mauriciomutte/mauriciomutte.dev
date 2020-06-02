@@ -9,7 +9,7 @@ import { BlogSection } from '../components/BlogItem/styled';
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           excerpt
@@ -36,8 +36,8 @@ function index({ location, data }) {
     <Layout path={location.pathname}>
       <SEO title="Home" />
       <BlogSection>
-        {posts.map(({ node }) => 
-          <BlogItem 
+        {posts.map(({ node }) => (
+          <BlogItem
             key={node.fields.slug}
             link={node.fields.slug}
             title={node.frontmatter.title}
@@ -45,7 +45,7 @@ function index({ location, data }) {
             readTime={node.timeToRead}
             category={node.frontmatter.category}
           />
-        )}
+        ))}
       </BlogSection>
     </Layout>
   );

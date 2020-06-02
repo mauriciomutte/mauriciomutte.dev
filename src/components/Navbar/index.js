@@ -10,11 +10,7 @@ import * as S from './styled';
 
 const Navbar = ({ path }) => (
   <S.MenuNav>
-    <MenuItem
-      name="Home"
-      to="/"
-      isActive={new RegExp('^/$').test(path)}
-    >
+    <MenuItem name="Home" to="/" isActive={new RegExp('^/$').test(path)}>
       <HomeIcon />
     </MenuItem>
 

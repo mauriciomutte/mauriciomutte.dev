@@ -18,12 +18,12 @@ const PropsHeader = styled.section`
   }
 
   span {
-    background-color: #1F232E;
+    background-color: #1f232e;
     border-radius: 5px;
     display: inline-block;
-    font-size: .9rem;
+    font-size: 0.9rem;
     font-weight: bold;
-    margin: 1em;  
+    margin: 1em;
     padding: 7px 15px;
   }
 `;

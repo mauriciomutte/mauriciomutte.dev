@@ -31,7 +31,7 @@ export const BlogPost = styled.div`
     font-size: 20px;
     font-weight: 600;
   }
-  
+
   :hover {
     background: linear-gradient(180deg, #0000 0%, #000000 90%);
   }

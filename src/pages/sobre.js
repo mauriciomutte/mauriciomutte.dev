@@ -83,22 +83,25 @@ function sobre({ location }) {
       <SEO title="Sobre" />
       <AboutPage>
         <AboutMeSection className="aboutme">
-          <img src={me} alt=""/>
-        
+          <img src={me} alt="" />
+
           <div className="resume">
             <h1>Olá!</h1>
             <p>
-              Meu nome é Maurício Mutte, sou um Frontend Developer de Porto Alegre/RS em início de carreira. 
-              Assumo o título de Frontend mas estudo diariamente para me tornar um Fullstack Developer.
+              Meu nome é Maurício Mutte, sou um Frontend Developer de Porto
+              Alegre/RS em início de carreira. Assumo o título de Frontend mas
+              estudo diariamente para me tornar um Fullstack Developer.
             </p>
             <p>
-              Comecei a programar por diversão aos 14 anos, aos 16 passei a me empenhar para ser um desenvolvedor.
-              Hoje, com 18 anos, ja participei de pequenos projetos, contribuo com projetos open-source e estou em
-              busca do meu primeiro emprego formal em um ambiente que possa me fornecer aprendizados e crescimento. 
+              Comecei a programar por diversão aos 14 anos, aos 16 passei a me
+              empenhar para ser um desenvolvedor. Hoje, com 18 anos, ja
+              participei de pequenos projetos, contribuo com projetos
+              open-source e estou em busca do meu primeiro emprego formal em um
+              ambiente que possa me fornecer aprendizados e crescimento.
             </p>
           </div>
         </AboutMeSection>
-        
+
         <h2>Habilidades</h2>
         <ul>
           <li>HTML</li>
@@ -120,15 +123,19 @@ function sobre({ location }) {
             <a href="https://github.com/mauriciomutte">@mauriciomutte</a>
           </li>
           <li>
-            Twitter: 
-            <a href="https://twitter.com/mauriciomutte" rel="me">@mauriciomutte</a>
+            Twitter:
+            <a href="https://twitter.com/mauriciomutte" rel="me">
+              @mauriciomutte
+            </a>
           </li>
           <li>
-            Linkedin: 
-            <a href="https://www.linkedin.com/in/mauriciomutte/">Maurício Mutte</a>
+            Linkedin:
+            <a href="https://www.linkedin.com/in/mauriciomutte/">
+              Maurício Mutte
+            </a>
           </li>
           <li>
-            Email: 
+            Email:
             <a href="mailto:mauriciomutte.mm@gmail.com">Enviar um email</a>
           </li>
         </ul>

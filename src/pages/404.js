@@ -9,7 +9,7 @@ function page404() {
     <Layout>
       <SEO title="404" />
       <h1>404... aaaaa</h1>
-      <Link to={'/'}>Voltar para home</Link> 
+      <Link to={'/'}>Voltar para home</Link>
     </Layout>
   );
 }

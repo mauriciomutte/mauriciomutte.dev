@@ -10,7 +10,10 @@ const ProjectItem = (props) => (
         <span></span> {props.language}
       </S.Language>
       <S.Stars>
-        <span role="img" aria-label="emoji">⭐</span> {props.stars}
+        <span role="img" aria-label="emoji">
+          ⭐
+        </span>{' '}
+        {props.stars}
       </S.Stars>
     </p>
   </S.ProjectItem>

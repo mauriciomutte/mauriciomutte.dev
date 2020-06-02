@@ -33,7 +33,7 @@ O objetivo, até o fim do ano, é conseguir entender sem muitas dificuldades e m
 
 ### 📚 Um livro todo mês
 
-Em 2020, eu quero aprender mais sobre tudo, a melhor forma que eu vejo para isso é ler bastante. Bons autores dedicam muitas horas das suas vidas escrevendo e compilando seus conhecimentos em algumas centenas de páginas, consumi-las é uma maneira ótima para adquirir novos conhecimentos. Além disso, a leitura é um hábito que eu gosto e estou criando há tempos. 
+Em 2020, eu quero aprender mais sobre tudo, a melhor forma que eu vejo para isso é ler bastante. Bons autores dedicam muitas horas das suas vidas escrevendo e compilando seus conhecimentos em algumas centenas de páginas, consumi-las é uma maneira ótima para adquirir novos conhecimentos. Além disso, a leitura é um hábito que eu gosto e estou criando há tempos.
 
 O título já explica, o objetivo é ler no mínimo 12 livros no ano, 1 livro por mês.
 

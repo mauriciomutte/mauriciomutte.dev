@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 export const RecommendedWrapper = styled.section`
-  border-bottom: 1px solid #fff1; 
+  border-bottom: 1px solid #fff1;
   border-top: 1px solid #fff1;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -13,7 +13,7 @@ export const RecommendedWrapper = styled.section`
   overflow: hidden;
 
   @media (min-width: 700px) {
-    padding: 3em 4em
+    padding: 3em 4em;
   }
 `;
 
@@ -24,21 +24,21 @@ export const Item = styled.div`
 
 export const Title = styled.span`
   color: #fd8783;
-  font-size: 20px; 
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 5px;
 `;
 
 export const RecommendedLink = styled(Link)`
   align-items: center;
-  background-color: #1F232E;
-  border: 2px solid #1F232E;
+  background-color: #1f232e;
+  border: 2px solid #1f232e;
   border-radius: 5px;
   display: flex;
   font-size: 18px;
   height: 100%;
   padding: 1em;
-  transition: .2s;
+  transition: 0.2s;
 
   :hover {
     border: 2px solid #fd8783;

@@ -11,10 +11,15 @@ const PostContentStyle = styled.section`
     margin: 10px 0 20px;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: #fd8783;
     font-weight: 600;
-    margin: 1em 0 .5em;
+    margin: 1em 0 0.5em;
   }
 
   h2 {
@@ -37,7 +42,8 @@ const PostContentStyle = styled.section`
     font-size: 1.2;
   }
 
-  ul, ol {
+  ul,
+  ol {
     padding: 0 0 1px 25px;
     line-height: 1.3;
   }
@@ -63,7 +69,7 @@ const PostContentStyle = styled.section`
     overflow: auto;
   }
 
-  .gatsby-highlight pre[class*="language-"] {
+  .gatsby-highlight pre[class*='language-'] {
     background-color: transparent;
     margin: 0;
     padding: 0;
@@ -76,10 +82,8 @@ const PostContentStyle = styled.section`
   }
 `;
 
-const PostContent = ({...props}, {children}) => (
-  <PostContentStyle {...props}>
-    {children}
-  </PostContentStyle>
+const PostContent = ({ ...props }, { children }) => (
+  <PostContentStyle {...props}>{children}</PostContentStyle>
 );
 
 export default PostContent;

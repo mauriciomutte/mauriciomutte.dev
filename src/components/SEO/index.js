@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import {useStaticQuery, graphql} from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 
 const SEO = ({ description, lang, meta, title, image }) => {
   const { site } = useStaticQuery(
@@ -17,10 +17,11 @@ const SEO = ({ description, lang, meta, title, image }) => {
   );
 
   const metaDescription = description || site.siteMetadata.description;
-  const ogImage = image || 'https://mauriciomutte.github.io/assets/og-image.jpg';
+  const ogImage =
+    image || 'https://mauriciomutte.github.io/assets/og-image.jpg';
 
-  return(
-    <Helmet 
+  return (
+    <Helmet
       htmlAttributes={{
         lang,
       }}
@@ -29,63 +30,63 @@ const SEO = ({ description, lang, meta, title, image }) => {
       link={[
         {
           rel: `webmention`,
-          href: `https://webmention.io/mauriciomutte.github.io/webmention`
+          href: `https://webmention.io/mauriciomutte.github.io/webmention`,
         },
         {
           rel: `pingback`,
-          href: `https://webmention.io/mauriciomutte.github.io/xmlrpc`
+          href: `https://webmention.io/mauriciomutte.github.io/xmlrpc`,
         },
       ]}
       meta={[
         {
           name: `description`,
-          content: metaDescription
+          content: metaDescription,
         },
         {
           property: `og:image`,
-          content: ogImage
+          content: ogImage,
         },
         {
           property: `og:title`,
-          content: `${title} | ${site.siteMetadata.title}`
+          content: `${title} | ${site.siteMetadata.title}`,
         },
         {
           property: `og:description`,
-          content: metaDescription
+          content: metaDescription,
         },
         {
           property: `og:type`,
-          content: `website`
+          content: `website`,
         },
         {
           name: `twitter:card`,
-          content: `summary_large_image`
+          content: `summary_large_image`,
         },
         {
           name: `twitter:image`,
-          content: ogImage
+          content: ogImage,
         },
         {
           name: `twitter:title`,
-          content: `${title} | ${site.siteMetadata.title}`
+          content: `${title} | ${site.siteMetadata.title}`,
         },
         {
           name: `twitter:description`,
-          content: metaDescription
+          content: metaDescription,
         },
         {
           name: `google-site-verification`,
-          content: `vaUk1-E8adHHgmh9uGiDc92Utjrzky60EpytFgxvMAA`
+          content: `vaUk1-E8adHHgmh9uGiDc92Utjrzky60EpytFgxvMAA`,
         },
       ].concat(meta)}
     />
   );
-}
+};
 
 SEO.defaultProps = {
   lang: `pt-br`,
   meta: [],
   description: ``,
-}
+};
 
 export default SEO;
