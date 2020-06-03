@@ -22,6 +22,13 @@ export const query = graphql`
             title
             description
             category
+            banner {
+              childImageSharp {
+                fixed {
+                  src
+                }
+              }
+            }
           }
         }
       }
@@ -44,6 +51,7 @@ function index({ location, data }) {
             date={node.frontmatter.date}
             readTime={node.timeToRead}
             category={node.frontmatter.category}
+            banner={node.frontmatter.banner.childImageSharp.fixed.src}
           />
         ))}
       </BlogSection>

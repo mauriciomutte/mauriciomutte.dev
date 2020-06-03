@@ -3,6 +3,7 @@ title: Hello World 2.0.20
 date: 2020-01-20 17:00:00 -0200
 description: Este é um breve post para explicar o rumo que blog terá e expor as minhas metas para o ano de 2020.
 category: Misc
+banner: ./banner.png
 ---
 
 Meu blog está abandonado há mais de dois anos. Eu sempre encontrava uma desculpa para não escrever nada aqui, às vezes era por não gostar do layout do blog e querer recriar, outras vezes por achar que não tenho conhecimento suficiente para compartilhar, entre outras coisas.
@@ -42,9 +43,3 @@ O título já explica, o objetivo é ler no mínimo 12 livros no ano, 1 livro po
 Em 2020... Bem, aqui eu não tenho muito o que explicar. O interessante de se analisar é que cumprindo essa meta eu também cumpro a primeira da lista, tentei manter as metas interligadas para não perder o sentido.
 
 O objetivo é ter publicações semanais, no mínimo uma (óbvio). Não tem regras, alguns meses serão mais movimentados do que outros.
-
-### 🎓 Vestibular
-
-Em 2020, eu quero ingressar na Federal de onde eu moro. Ano passado foi o meu último ano escolar, fiz o meu primeiro Enem e Vestibular mas não dei a devida importância durante o ano.
-
-Vou dividir os meus estudos de programação com a revisão dos conteúdos do vestibular e a resolução de exercícios de vestibular anteriores.

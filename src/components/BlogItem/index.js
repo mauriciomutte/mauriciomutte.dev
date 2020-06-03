@@ -2,15 +2,11 @@ import React from 'react';
 
 import * as S from './styled';
 
-import defaultPostBanner from '../../../content/assets/og-image.jpg';
-
 const BlogItem = (props) => (
   <S.BlogLink
-    style={{
-      backgroundImage: `url(${defaultPostBanner})`,
-    }}
     to={props.link}
     key={props.keys}
+    style={{ backgroundImage: `url(${props.banner})` }}
   >
     <S.BlogPost>
       <S.BlogPostCategory>{props.category}</S.BlogPostCategory>

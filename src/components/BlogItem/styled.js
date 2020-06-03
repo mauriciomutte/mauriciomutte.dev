@@ -10,13 +10,20 @@ export const BlogSection = styled.section`
 
 export const BlogLink = styled(Link)`
   background-size: 100%;
+  background-position: center;
   border-radius: 5px;
   box-shadow: 2px 2px 15px #0007;
   margin: 1em;
+  transition: 0.4s;
+
+  :hover {
+    background-size: 105%;
+    box-shadow: 0 0 10px #000;
+  }
 `;
 
 export const BlogPost = styled.div`
-  background: linear-gradient(180deg, #0006 0%, #000 90%);
+  background: linear-gradient(180deg, #0002 0%, #000 90%);
   border-radius: 5px;
   display: flex;
   height: 180px;
@@ -32,7 +39,7 @@ export const BlogPost = styled.div`
   }
 
   :hover {
-    background: linear-gradient(180deg, #0000 0%, #000000 90%);
+    background: linear-gradient(180deg, #0000 0%, #000 90%);
   }
 `;
 
