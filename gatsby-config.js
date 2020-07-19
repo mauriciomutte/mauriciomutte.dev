@@ -1,4 +1,4 @@
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
@@ -27,20 +27,13 @@ const pluginConfig = [
             maxWidth: 590,
           },
         },
-      ],
-    },
-  },
-  {
-    resolve: `gatsby-transformer-remark`,
-    options: {
-      plugins: [
         {
           resolve: `gatsby-remark-prismjs`,
           options: {
             languageExtensions: [
               {
-                language: "superscript",
-                extend: "javascript",
+                language: 'superscript',
+                extend: 'javascript',
                 definition: {
                   superscript_types: /(SuperType)/,
                 },
@@ -52,8 +45,8 @@ const pluginConfig = [
               },
             ],
             prompt: {
-              user: "root",
-              host: "localhost",
+              user: 'root',
+              host: 'localhost',
               global: false,
             },
           },
@@ -73,30 +66,6 @@ const pluginConfig = [
       icon: `static/favicon.png`,
     },
   },
-  {
-    resolve: `gatsby-plugin-webmention`,
-    options: {
-      username: "mauriciomutte.github.io",
-      identity: {
-        twitter: "mauriciomutte", // no @
-      },
-      mentions: true,
-      pingbacks: false,
-      forwardPingbacksAsWebmentions: "https://webmention.io/mauriciomutte.github.io/xmlrpc",
-      domain: "mauriciomutte.github.io",
-      fetchLimit: 1000,
-      token: process.env.WEBMENTIONS_TOKEN
-    }
-  },
-  {
-    resolve: `gatsby-plugin-indieweb`,
-    options: {
-      auth: {
-        twitter: `mauriciomutte`,
-      },
-      webmention: `mauriciomutte.github.io`,
-    },
-  },
   `gatsby-plugin-offline`,
   `gatsby-plugin-react-helmet`,
   `gatsby-transformer-sharp`,
@@ -109,8 +78,8 @@ if (process.env.CONTEXT === 'production') {
     resolve: `gatsby-plugin-google-analytics`,
     options: {
       trackingId: process.env.GOOGLE_ANALYTICS_ID,
-      head: false
-    }
+      head: false,
+    },
   };
 
   pluginConfig.push(analytics);
@@ -126,6 +95,6 @@ module.exports = {
       twitter: `mauriciomutte`,
     },
   },
-  pathPrefix: "/",
+  pathPrefix: '/',
   plugins: pluginConfig,
-}
+};
