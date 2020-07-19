@@ -1,11 +1,8 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 
 import Layout from '../components/Layout';
-import BlogItem from '../components/BlogItem';
 import SEO from '../components/SEO';
-
-import { BlogSection } from '../components/BlogItem/styled';
 
 export const query = graphql`
   query {
@@ -42,19 +39,13 @@ function index({ location, data }) {
   return (
     <Layout path={location.pathname}>
       <SEO title="Home" />
-      <BlogSection>
+      <ul>
         {posts.map(({ node }) => (
-          <BlogItem
-            key={node.fields.slug}
-            link={node.fields.slug}
-            title={node.frontmatter.title}
-            date={node.frontmatter.date}
-            readTime={node.timeToRead}
-            category={node.frontmatter.category}
-            banner={node.frontmatter.banner.childImageSharp.fixed.src}
-          />
+          <li>
+            <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+          </li>
         ))}
-      </BlogSection>
+      </ul>
     </Layout>
   );
 }

@@ -9,7 +9,6 @@ const Layout = ({ path, children }) => (
   <S.Layout>
     <GlobalStyle />
     <Navbar path={path} />
-
     <Spring
       from={{
         opacity: 0,
