@@ -16,17 +16,13 @@ const Navbar = ({ path }) => (
 
     <MenuItem
       name="Projetos"
-      to="/projetos"
+      to="/"
       isActive={new RegExp('^/projetos').test(path)}
     >
       <ProjectsIcon />
     </MenuItem>
 
-    <MenuItem
-      name="Sobre"
-      to="/sobre"
-      isActive={new RegExp('^/sobre').test(path)}
-    >
+    <MenuItem name="Sobre" to="/" isActive={new RegExp('^/sobre').test(path)}>
       <AboutIcon />
     </MenuItem>
   </S.MenuNav>

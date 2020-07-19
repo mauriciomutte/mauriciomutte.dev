@@ -1,10 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
-  /* http://meyerweb.com/eric/tools/css/reset/ 
-    v2.0 | 20110126
-    License: none (public domain)
-  */
+
+  /* Reset
+  /* ---------------------------------------------------------- */
 
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -15,8 +14,8 @@ const GlobalStyles = createGlobalStyle`
   dl, dt, dd, ol, ul, li,
   fieldset, form, label, legend,
   table, caption, tbody, tfoot, thead, tr, th, td,
-  article, aside, canvas, details, embed, 
-  figure, figcaption, footer, header, hgroup, 
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
   menu, nav, output, ruby, section, summary,
   time, mark, audio, video {
     margin: 0;
@@ -27,15 +26,9 @@ const GlobalStyles = createGlobalStyle`
     vertical-align: baseline;
   }
   /* HTML5 display-role reset for older browsers */
-  article, aside, details, figcaption, figure, 
+  article, aside, details, figcaption, figure,
   footer, header, hgroup, menu, nav, section {
     display: block;
-  }
-  body {
-    background-color: #101723;
-    color: #FFF;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1;
   }
   ol, ul {
     list-style: none;
@@ -52,8 +45,33 @@ const GlobalStyles = createGlobalStyle`
     border-collapse: collapse;
     border-spacing: 0;
   }
+
+  /* Variables
+  /* ---------------------------------------------------------- */
+
+  body {
+    --borders: #38444d;
+    --texts: #8899a6;
+    --postColor: #fff;
+    --highlight: #1fa1f2;
+    --cardBackground: #1E2745;
+    --menuBackground: #161D34;
+    --background: #182039;
+    --white: #fff;
+    --black: #222;
+  }
+
+  /* Default
+  /* ---------------------------------------------------------- */
+
+  body {
+    background-color: var(--background);
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1;
+  }
   a {
-    color: #FFF;
+    color: var(--white);
     text-decoration: none;
   }
 `;
