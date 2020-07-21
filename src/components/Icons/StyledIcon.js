@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const NavbarIcon = styled.svg`
+export const Icon = styled.svg`
   display: block;
   width: 1.5rem;
   height: 1.5rem;

@@ -1,12 +1,13 @@
 import React from 'react';
 import { Spring } from 'react-spring/renderprops';
 
-import Navbar from '../Navbar';
-import * as S from './styled';
+import Navbar from '../Navbar/Navbar';
 import GlobalStyle from '../../styles/global';
 
+import * as S from './StyledLayout';
+
 const Layout = ({ path, children }) => (
-  <S.Layout>
+  <S.Wrapper>
     <GlobalStyle />
     <Navbar path={path} />
     <Spring
@@ -21,7 +22,7 @@ const Layout = ({ path, children }) => (
     >
       {(props) => <S.Main style={props}>{children}</S.Main>}
     </Spring>
-  </S.Layout>
+  </S.Wrapper>
 );
 
 export default Layout;

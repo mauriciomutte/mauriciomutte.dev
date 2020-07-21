@@ -2,12 +2,12 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
 
-import Layout from '../components/Layout';
-import SEO from '../components/SEO';
-import PostHeader from '../components/PostHeader';
-import PostContent from '../components/PostContent';
-import PostRecommended from '../components/PostRecommended';
-import PostContribute from '../components/PostContribute';
+import Layout from '../components/Layout/Layout';
+import SEO from '../components/SEO/SEO';
+import PostHeader from '../components/PostHeader/PostHeader';
+import PostContent from '../components/PostContent/PostContent';
+import PostRecommended from '../components/PostRecommended/PostRecommended';
+import PostContribute from '../components/PostContribute/PostContribute';
 
 const PostWrapper = styled.div`
   margin: 0 5%;
@@ -19,7 +19,7 @@ const PostWrapper = styled.div`
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug} }) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       fields {
         slug
@@ -48,7 +48,10 @@ export default function blogPost({ data, pageContext }) {
           timeToRead={post.timeToRead}
         />
         <PostContent dangerouslySetInnerHTML={{ __html: post.html }} />
-        <PostContribute title={post.frontmatter.title} link={post.fields.slug} />
+        <PostContribute
+          title={post.frontmatter.title}
+          link={post.fields.slug}
+        />
         <PostRecommended next={next} previous={previous} />
       </PostWrapper>
     </Layout>
