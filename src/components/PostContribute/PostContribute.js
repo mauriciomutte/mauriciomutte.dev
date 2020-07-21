@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const PostContributeStyle = styled.div`
+const PostContributeWrapper = styled.div`
   padding: 3em 0 2em;
   text-align: right;
 
@@ -24,7 +24,7 @@ const PostContribute = ({ title, link }) => {
   const github = `https://github.com/mauriciomutte/mauriciomutte.github.io/blob/main/content/blog${link}index.md`;
 
   return (
-    <PostContributeStyle>
+    <PostContributeWrapper>
       <a href={twitter} target="_blank" rel="noopener noreferrer">
         Comentar no Twitter
       </a>
@@ -32,7 +32,7 @@ const PostContribute = ({ title, link }) => {
       <a href={github} target="_blank" rel="noopener noreferrer">
         Editar o post no Github
       </a>
-    </PostContributeStyle>
+    </PostContributeWrapper>
   );
 };
 

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Layout = styled.div`
+export const Wrapper = styled.div`
   h1 {
     color: #fd8783;
     font-size: 32px;
