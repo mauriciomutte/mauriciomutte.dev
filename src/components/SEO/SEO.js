@@ -27,16 +27,6 @@ const SEO = ({ description, lang, meta, title, image }) => {
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
-      link={[
-        {
-          rel: `webmention`,
-          href: `https://webmention.io/mauriciomutte.github.io/webmention`,
-        },
-        {
-          rel: `pingback`,
-          href: `https://webmention.io/mauriciomutte.github.io/xmlrpc`,
-        },
-      ]}
       meta={[
         {
           name: `description`,
