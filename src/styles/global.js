@@ -67,7 +67,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     background-color: var(--background);
     color: var(--white);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     line-height: 1;
   }
   a {
