@@ -1,8 +1,9 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout/Layout';
 import SEO from '../components/SEO/SEO';
+import HomePost from '../components/HomePost';
 
 export const query = graphql`
   query {
@@ -15,7 +16,7 @@ export const query = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY", difference: "")
+            date(formatString: "DD MMM YYYY", locale: "pt-BR")
             title
             description
             category
@@ -39,13 +40,16 @@ function index({ location, data }) {
   return (
     <Layout path={location.pathname}>
       <SEO title="Home" />
-      <ul>
-        {posts.map(({ node }) => (
-          <li>
-            <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-          </li>
-        ))}
-      </ul>
+      {posts.map(({ node }) => (
+        <HomePost
+          to={node.fields.slug}
+          category={node.frontmatter.category}
+          title={node.frontmatter.title}
+          date={node.frontmatter.date}
+          timeToRead={node.timeToRead}
+          thumb={node.frontmatter.banner.childImageSharp.fixed.src}
+        />
+      ))}
     </Layout>
   );
 }
