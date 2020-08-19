@@ -13,7 +13,7 @@ export const MenuLink = styled(Link)`
 `;
 
 export const MenuNav = styled.nav`
-  background-color: #1f232e;
+  background-color: var(--menuBackground);
 
   position: fixed;
   left: 0;
@@ -26,7 +26,7 @@ export const MenuNav = styled.nav`
   justify-content: space-around;
 
   @media (min-width: 1000px) {
-    background-color: transparent;
+    background-color: var(--menuBackground);
     left: 0;
     flex-direction: column;
     bottom: 0;
