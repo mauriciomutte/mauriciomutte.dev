@@ -1,7 +1,7 @@
 import React from 'react';
 
 import HomeIcon from '../Icons/HomeIcon';
-import ProjectsIcon from '../Icons/ProjectsIcon';
+// import ProjectsIcon from '../Icons/ProjectsIcon';
 import AboutIcon from '../Icons/AboutIcon';
 
 import * as S from './StyledNavbar';
@@ -13,10 +13,10 @@ const Navbar = ({ path }) => (
       Home
     </S.MenuLink>
 
-    <S.MenuLink to="/" isActive={new RegExp('^/projetos').test(path)}>
+    {/* <S.MenuLink to="/" isActive={new RegExp('^/projetos').test(path)}>
       <ProjectsIcon />
       Projetos
-    </S.MenuLink>
+    </S.MenuLink> */}
 
     <S.MenuLink to="/" isActive={new RegExp('^/Sobre').test(path)}>
       <AboutIcon />
