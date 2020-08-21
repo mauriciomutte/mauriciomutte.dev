@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const PostContentStyle = styled.section`
-  margin: 2em 0;
+  margin: 2em 5%;
   font-size: 1.06rem;
 
   p {
