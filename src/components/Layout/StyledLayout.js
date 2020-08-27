@@ -10,6 +10,8 @@ export const Wrapper = styled.div`
 `;
 
 export const Main = styled.main`
+  display: flex;
+  flex-direction: column;
   padding-bottom: 60px;
 
   @media (min-width: 1000px) {
