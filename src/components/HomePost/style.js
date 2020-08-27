@@ -19,7 +19,7 @@ export const PostItem = styled(Link)`
   }
 
   &:hover {
-    background: #222c4d;
+    background: var(--cardBackgroundHover);
     box-shadow: 2px 2px 5px #000;
   }
 

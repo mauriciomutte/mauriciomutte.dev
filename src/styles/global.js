@@ -55,6 +55,7 @@ const GlobalStyles = createGlobalStyle`
     --postColor: #fff;
     --highlight: #1fa1f2;
     --cardBackground: #1E2745;
+    --cardBackgroundHover: #222c4d;
     --menuBackground: #161D34;
     --background: #182039;
     --white: #fff;
