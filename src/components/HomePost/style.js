@@ -2,16 +2,15 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 export const PostItem = styled(Link)`
-  display: flex;
   background: var(--cardBackground);
   border-radius: 12px;
-  max-width: 1000px;
-
-  margin: 2rem 1em;
-  padding: 1rem 10px;
-
   box-shadow: 6px 6px 10px #0005;
+  display: flex;
+  margin: 2rem 1em;
+  max-width: 1000px;
+  padding: 1rem 10px;
   transition: 0.3s;
+  width: 100%;
 
   div {
     display: flex;
