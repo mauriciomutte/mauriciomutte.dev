@@ -10,10 +10,11 @@ import PostRecommended from '../components/PostRecommended/PostRecommended';
 import PostContribute from '../components/PostContribute/PostContribute';
 
 const PostWrapper = styled.div`
-  width: min(100%, 1200px);
+  margin: 0 5%;
+  max-width: 1100px;
 
-  @media (min-width: 700px) {
-    margin: 0 auto;
+  @media (min-width: 1000px) {
+    align-self: center;
   }
 `;
 

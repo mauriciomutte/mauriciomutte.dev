@@ -6,57 +6,39 @@ const HeaderWrapper = styled.header`
   position: relative;
   display: flex;
   justify-content: center;
-  margin-bottom: 15%;
-
-  @media (min-width: 768px) {
-    margin-bottom: 10%;
-  }
-
-  @media (min-width: 1400px) {
-    margin-bottom: 6%;
-  }
+  margin-bottom: 6rem;
 `;
 
 const BannerImg = styled.img`
-  height: 25vh;
+  height: 15rem;
   max-width: 100%;
   filter: blur(8px);
 
   @media (min-width: 768px) {
-    height: 35vh;
+    height: 20rem;
     width: 100%;
   }
 `;
 
 const PropsHeader = styled.section`
+  align-items: center;
   background-color: var(--cardBackground);
   border-radius: 30px;
+  bottom: -5vh;
   box-shadow: 0 0 50px #0006;
-
   display: flex;
   flex-direction: column;
-  align-items: center;
-
+  max-width: 600px;
   padding: 1em 2em;
-
   position: absolute;
-  bottom: -5vh;
   width: 70%;
-
-  @media (min-width: 768px) {
-    width: 50%;
-  }
-
-  @media (min-width: 1400px) {
-    width: 40%;
-  }
 `;
 
 export const Title = styled.span`
   font-size: 1.7rem;
   font-weight: bold;
-  text-align: center;
   margin: 1rem 0;
+  text-align: center;
 
   @media (min-width: 768px) {
     font-size: 1.9rem;
