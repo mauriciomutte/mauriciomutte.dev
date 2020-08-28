@@ -2,12 +2,12 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
 
-import Layout from '../components/Layout/Layout';
+import Layout from '../components/Layout';
 import SEO from '../components/SEO/SEO';
-import PostHeader from '../components/PostHeader/PostHeader';
-import PostContent from '../components/PostContent/PostContent';
-import PostRecommended from '../components/PostRecommended/PostRecommended';
-import PostContribute from '../components/PostContribute/PostContribute';
+import PostHeader from '../components/PostHeader';
+import PostContent from '../components/PostContent';
+import PostRecommended from '../components/PostRecommended';
+import PostContribute from '../components/PostContribute';
 
 const PostWrapper = styled.div`
   margin: 0 5%;

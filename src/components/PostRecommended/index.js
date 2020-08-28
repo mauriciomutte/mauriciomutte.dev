@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as S from './StyledPostRecommended';
+import * as S from './styles';
 
 const PostRecommended = ({ next, previous }) => (
   <S.RecommendedWrapper>

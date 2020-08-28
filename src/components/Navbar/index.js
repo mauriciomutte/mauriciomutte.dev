@@ -4,7 +4,7 @@ import HomeIcon from '../Icons/HomeIcon';
 // import ProjectsIcon from '../Icons/ProjectsIcon';
 import AboutIcon from '../Icons/AboutIcon';
 
-import * as S from './StyledNavbar';
+import * as S from './styles';
 
 const Navbar = ({ path }) => (
   <S.MenuNav>

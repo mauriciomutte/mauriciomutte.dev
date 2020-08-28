@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as S from './style';
+import * as S from './styles';
 
 const HomePost = ({ to, category, title, thumb, date, timeToRead }) => {
   return (

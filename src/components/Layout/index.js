@@ -1,10 +1,10 @@
 import React from 'react';
 import { Spring } from 'react-spring/renderprops';
 
-import Navbar from '../Navbar/Navbar';
+import Navbar from '../Navbar';
 import GlobalStyle from '../../styles/global';
 
-import * as S from './StyledLayout';
+import * as S from './styles';
 
 const Layout = ({ path, children }) => (
   <S.Wrapper>
