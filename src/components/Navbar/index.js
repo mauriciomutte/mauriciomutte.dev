@@ -1,28 +1,23 @@
 import React from 'react';
 
-import HomeIcon from '../Icons/HomeIcon';
-// import ProjectsIcon from '../Icons/ProjectsIcon';
-import AboutIcon from '../Icons/AboutIcon';
-
 import * as S from './styles';
 
 const Navbar = ({ path }) => (
-  <S.MenuNav>
-    <S.MenuLink to="/" isActive={new RegExp('^/$').test(path)}>
-      <HomeIcon />
-      Home
-    </S.MenuLink>
-
-    {/* <S.MenuLink to="/" isActive={new RegExp('^/projetos').test(path)}>
-      <ProjectsIcon />
-      Projetos
-    </S.MenuLink> */}
-
-    <S.MenuLink to="/" isActive={new RegExp('^/Sobre').test(path)}>
-      <AboutIcon />
-      Sobre
-    </S.MenuLink>
-  </S.MenuNav>
+  <S.Header>
+    <S.Wrapper>
+      <S.Logo to="/">Maurício Mutte</S.Logo>
+      <S.MenuNav>
+        <ul>
+          <li>
+            <S.MenuItem to="/">Home</S.MenuItem>
+          </li>
+          <li>
+            <S.MenuItem to="/">About</S.MenuItem>
+          </li>
+        </ul>
+      </S.MenuNav>
+    </S.Wrapper>
+  </S.Header>
 );
 
 export default Navbar;

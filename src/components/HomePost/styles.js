@@ -6,11 +6,10 @@ export const PostItem = styled(Link)`
   border-radius: 12px;
   box-shadow: 6px 6px 10px #0005;
   display: flex;
-  margin: 2rem 1em;
+  margin: 1em 0;
   max-width: 1000px;
   padding: 1rem 10px;
   transition: 0.3s;
-  width: 100%;
 
   div {
     display: flex;
@@ -21,10 +20,6 @@ export const PostItem = styled(Link)`
   &:hover {
     background: var(--cardBackgroundHover);
     box-shadow: 2px 2px 5px #000;
-  }
-
-  @media (min-width: 500px) {
-    margin: 2rem auto;
   }
 `;
 

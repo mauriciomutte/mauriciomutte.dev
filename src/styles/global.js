@@ -54,12 +54,19 @@ const GlobalStyles = createGlobalStyle`
     --texts: #8899a6;
     --postColor: #fff;
     --highlight: #1fa1f2;
-    --cardBackground: #1E2745;
+
+    --primary: #FF0A78;
+    --cardBackground: #1E262F;
     --cardBackgroundHover: #222c4d;
-    --menuBackground: #161D34;
-    --background: #182039;
+    --menuBackground: #1E262F;
+    --background: #0E141B;
     --white: #fff;
     --black: #222;
+
+    --font-weight-extrabold: 800;
+    --font-weight-bold: 700;
+    --font-weight-medium: 600;
+    --font-weight-regular: 400;
   }
 
   /* Default

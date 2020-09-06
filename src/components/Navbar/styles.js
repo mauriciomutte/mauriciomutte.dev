@@ -2,38 +2,39 @@ import styled from 'styled-components';
 
 import { Link } from 'gatsby';
 
-export const MenuLink = styled(Link)`
-  color: ${(props) => (props.isActive ? '#fd8783' : '#FFF')};
-  font-weight: ${(props) => (props.isActive ? 'bold' : 'normal')};
-  padding: 7px 0;
+export const Wrapper = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  max-width: 1000px;
+`;
 
-  @media (min-width: 1000px) {
-    margin: 1.5em 0;
-  }
+export const Header = styled.header`
+  background-color: var(--menuBackground);
+
+  margin: 0;
+  padding: 20px 0;
+`;
+
+export const Logo = styled(Link)`
+  color: var(--primary);
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin: 0;
 `;
 
 export const MenuNav = styled.nav`
-  background-color: var(--menuBackground);
-
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 10;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-
-  @media (min-width: 1000px) {
-    background-color: var(--menuBackground);
-    left: 0;
-    flex-direction: column;
-    bottom: 0;
-    right: 92%;
-    top: 0;
+  margin: 0 40px;
+  ul {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
   }
+`;
+
+export const MenuItem = styled(Link)`
+  font-size: 16px;
+  font-weight: var(--font-weight-bold);
+  padding: 10px;
 `;
