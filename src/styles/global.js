@@ -60,6 +60,7 @@ const GlobalStyles = createGlobalStyle`
     --cardBackgroundHover: #222c4d;
     --menuBackground: #1E262F;
     --background: #0E141B;
+    --gray: #8D8D8D;
     --white: #fff;
     --black: #222;
 

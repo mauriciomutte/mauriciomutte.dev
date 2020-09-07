@@ -1,9 +1,15 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import styled from 'styled-components';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO/SEO';
 import HomePost from '../components/HomePost';
+
+const Wrapper = styled.div`
+  max-width: 700px;
+  margin: auto;
+`;
 
 export const query = graphql`
   query {
@@ -20,13 +26,6 @@ export const query = graphql`
             title
             description
             category
-            banner {
-              childImageSharp {
-                fixed {
-                  src
-                }
-              }
-            }
           }
         }
       }
@@ -40,16 +39,17 @@ function index({ location, data }) {
   return (
     <Layout path={location.pathname}>
       <SEO title="Home" />
-      {posts.map(({ node }) => (
-        <HomePost
-          to={node.fields.slug}
-          category={node.frontmatter.category}
-          title={node.frontmatter.title}
-          date={node.frontmatter.date}
-          timeToRead={node.timeToRead}
-          thumb={node.frontmatter.banner.childImageSharp.fixed.src}
-        />
-      ))}
+      <Wrapper>
+        {posts.map(({ node }) => (
+          <HomePost
+            to={node.fields.slug}
+            title={node.frontmatter.title}
+            description={node.frontmatter.description}
+            date={node.frontmatter.date}
+            timeToRead={node.timeToRead}
+          />
+        ))}
+      </Wrapper>
     </Layout>
   );
 }
