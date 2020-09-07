@@ -23,7 +23,7 @@ const pluginConfig = [
       fonts: [
         {
           family: `Nunito Sans`,
-          variants: [`400`, `800`, `900`],
+          variants: [`400`, `600`, `700`, `800`],
         },
       ],
     },
