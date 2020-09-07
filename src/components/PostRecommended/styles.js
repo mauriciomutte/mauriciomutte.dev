@@ -23,7 +23,7 @@ export const Item = styled.div`
 `;
 
 export const Title = styled.span`
-  color: #fd8783;
+  color: var(--primary);
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 5px;
@@ -41,6 +41,6 @@ export const RecommendedLink = styled(Link)`
   transition: 0.2s;
 
   :hover {
-    border: 2px solid #fd8783;
+    border: 2px solid var(--primary);
   }
 `;
