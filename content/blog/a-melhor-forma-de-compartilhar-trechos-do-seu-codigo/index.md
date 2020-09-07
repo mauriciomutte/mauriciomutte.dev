@@ -1,7 +1,7 @@
 ---
-title: 'A melhor forma de compartilhar trechos do seu código'
+title: Compartilhando trechos de código
 date: 2018-10-05 16:50:00 -0200
-description: Polacode é uma ferramente que vai mudar a forma como você compartilha o seu código
+description: Customize, gere uma image e compartilhe seu código da melhor maneira
 category: Dicas
 banner: ./banner.jpg
 ---

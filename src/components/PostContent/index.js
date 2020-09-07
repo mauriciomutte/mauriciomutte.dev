@@ -15,9 +15,9 @@ const PostContentStyle = styled.section`
   h4,
   h5,
   h6 {
-    color: #fd8783;
-    font-weight: 600;
-    margin: 1em 0 0.5em;
+    color: var(--primary);
+    font-weight: var(--font-weight-bold);
+    margin: 2em 0 0.5em;
   }
 
   h2 {
