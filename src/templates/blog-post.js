@@ -10,12 +10,8 @@ import PostRecommended from '../components/PostRecommended';
 import PostContribute from '../components/PostContribute';
 
 const PostWrapper = styled.div`
-  margin: 0 5%;
-  max-width: 1100px;
-
-  @media (min-width: 1000px) {
-    align-self: center;
-  }
+  margin: auto;
+  max-width: 1000px;
 `;
 
 export const query = graphql`
@@ -29,14 +25,8 @@ export const query = graphql`
       frontmatter {
         date(formatString: "DD MMM YYYY", locale: "pt-BR")
         title
+        description
         category
-        banner {
-          childImageSharp {
-            fixed(width: 1400, height: 400) {
-              src
-            }
-          }
-        }
       }
     }
   }
@@ -52,10 +42,10 @@ export default function blogPost({ data, pageContext }) {
       <SEO title={post.frontmatter.title} />
       <PostHeader
         title={post.frontmatter.title}
+        description={post.frontmatter.description}
         category={post.frontmatter.category}
         timeToRead={post.timeToRead}
         date={post.frontmatter.date}
-        banner={post.frontmatter.banner.childImageSharp.fixed.src}
       />
       <PostWrapper>
         <PostContent dangerouslySetInnerHTML={{ __html: post.html }} />
