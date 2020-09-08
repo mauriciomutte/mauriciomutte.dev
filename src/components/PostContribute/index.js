@@ -10,7 +10,7 @@ const PostContributeWrapper = styled.div`
   }
 
   a {
-    color: var(--primary);
+    color: var(--tertiary);
     font-size: 1.15rem;
 
     :hover {
