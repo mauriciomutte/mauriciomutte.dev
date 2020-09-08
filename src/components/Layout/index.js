@@ -1,7 +1,7 @@
 import React from 'react';
 import { Spring } from 'react-spring/renderprops';
 
-import Navbar from '../Navbar';
+import Header from '../Header';
 import GlobalStyle from '../../styles/global';
 
 import * as S from './styles';
@@ -9,7 +9,7 @@ import * as S from './styles';
 const Layout = ({ path, children }) => (
   <S.Wrapper>
     <GlobalStyle />
-    <Navbar path={path} />
+    <Header path={path} />
     <Spring
       from={{
         opacity: 0,
