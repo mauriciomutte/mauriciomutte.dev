@@ -11,6 +11,7 @@ import PostContribute from '../components/PostContribute';
 
 const PostWrapper = styled.div`
   margin: auto;
+  padding: 0 1em;
   max-width: 1000px;
 `;
 
