@@ -1,14 +1,18 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 
 import { Link } from 'gatsby';
 
 export const Wrapper = styled.div`
   align-items: center;
   display: flex;
-  flex-direction: row;
   margin: auto;
   max-width: 1000px;
   padding: 0 1em;
+
+  ${media.lessThan('small')`
+    flex-direction: column;
+  `}
 `;
 
 export const Header = styled.header`
@@ -19,10 +23,14 @@ export const Header = styled.header`
 
 export const Logo = styled(Link)`
   color: var(--primary);
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 800;
   letter-spacing: -1px;
   margin: 0;
+
+  ${media.greaterThan('small')`
+    font-size: 24px;
+  `}
 `;
 
 export const ThemeToggle = styled.button`
@@ -31,6 +39,9 @@ export const ThemeToggle = styled.button`
   border-radius: 100%;
   height: 30px;
   background: var(--primary);
-  margin-left: auto;
   width: 30px;
+
+  ${media.greaterThan('small')`
+    margin-left: auto;
+  `}
 `;

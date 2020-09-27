@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import media from 'styled-media-query';
 
 const PostContentStyle = styled.section`
   color: var(--post-text);
@@ -81,9 +82,9 @@ const PostContentStyle = styled.section`
     min-width: 100%;
   }
 
-  @media (min-width: 700px) {
+  ${media.greaterThan('small')`
     font-size: 1.12rem;
-  }
+  `}
 `;
 
 const PostContent = ({ ...props }, { children }) => (

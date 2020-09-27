@@ -20,6 +20,7 @@ const Header = ({ path }) => {
         <S.Wrapper>
           <S.Logo to="/">Maurício Mutte</S.Logo>
           <Navbar path={path} />
+
           <S.ThemeToggle
             title="Mudar o tema"
             onClick={() =>
