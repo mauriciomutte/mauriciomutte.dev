@@ -21,6 +21,7 @@ const Header = () => {
           <S.Logo to="/">Maurício Mutte</S.Logo>
           <Navbar />
           <button
+            style={{ marginLeft: 'auto ' }}
             onClick={() =>
               window.__setPreferredTheme(isDarkMode ? 'light' : 'dark')
             }
