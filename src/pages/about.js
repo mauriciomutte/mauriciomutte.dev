@@ -7,6 +7,12 @@ import Layout from '../components/Layout';
 import { AboutMeWrapper, AboutMeSection } from '../styles/base';
 
 function AboutPage({ location }) {
+  const myBirthday = new Date('2001/05/30'); // 🙈🙈🙈
+  const currentDate = new Date();
+  const diffDate = Math.round(currentDate - myBirthday);
+  const oneYearInMs = 31556952000;
+  const myAge = Math.floor(diffDate / oneYearInMs);
+
   return (
     <Layout path={location.pathname}>
       <SEO title="Sobre" />
@@ -18,9 +24,9 @@ function AboutPage({ location }) {
           <div>
             <h3>Olá, que honra ter você aqui!</h3>
             <p>
-              Meu nome é Maurício Mutte, tenho 19 anos, nasci em Porto Alegre/RS
-              (aka Gaúcho), sou desenvolvedor Full Stack e apaixonado por
-              projetos open source.
+              Meu nome é Maurício Mutte, tenho {myAge} anos, nasci em Porto
+              Alegre/RS (aka Gaúcho), sou desenvolvedor Full Stack e apaixonado
+              por projetos open source.
             </p>
             <p>
               Sou fascinado por construir coisas novas e uso a programação como
