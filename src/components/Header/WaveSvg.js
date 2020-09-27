@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function WaveSvg() {
   return (
-    <div style={{ maxHeight: 75 }}>
+    <div style={{ maxHeight: '75rem' }}>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120">
         <path
           fill="var(--background-menu)"
