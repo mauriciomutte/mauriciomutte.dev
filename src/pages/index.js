@@ -42,6 +42,7 @@ function index({ location, data }) {
       <Wrapper>
         {posts.map(({ node }) => (
           <HomePost
+            key={node.fields.slug}
             to={node.fields.slug}
             title={node.frontmatter.title}
             description={node.frontmatter.description}
