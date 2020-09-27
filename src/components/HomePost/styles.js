@@ -48,6 +48,7 @@ export const Infos = styled.span`
 export const ReadMore = styled.span`
   font-size: 15px;
   font-weight: var(--font-xbold);
+  text-align: end;
   span {
     color: var(--primary);
   }
