@@ -5,7 +5,7 @@ export const HeaderWrapper = styled.header`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 4em 2em;
+  padding: 4em 2em;
   text-align: center;
 `;
 

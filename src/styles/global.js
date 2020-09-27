@@ -70,6 +70,7 @@ const GlobalStyles = createGlobalStyle`
     --gray: #FFF8;
     --post-text: #fff;
     --post-heading: #FF946C;
+    --post-bg: #1E262f
   }
 
   body.light {
@@ -79,6 +80,7 @@ const GlobalStyles = createGlobalStyle`
     --gray: #0006;
     --post-text: #333;
     --post-heading: #333;
+    --post-bg: #fff;
   }
 
   /* Default
