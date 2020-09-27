@@ -33,13 +33,8 @@ export const Logo = styled(Link)`
   `}
 `;
 
-export const ThemeToggle = styled.button`
+export const ThemeToggle = styled.span`
   cursor: pointer;
-  border: none;
-  border-radius: 100%;
-  height: 30px;
-  background: var(--primary);
-  width: 30px;
 
   ${media.greaterThan('small')`
     margin-left: auto;

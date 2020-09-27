@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Navbar from '../Navbar';
 
 import WaveSvg from './WaveSvg';
+import { MoonIcon, SunIcon } from './Icons';
 import * as S from './styles';
 
 const Header = ({ path }) => {
@@ -23,10 +24,13 @@ const Header = ({ path }) => {
 
           <S.ThemeToggle
             title="Mudar o tema"
+            role="button"
             onClick={() =>
               window.__setPreferredTheme(isDarkMode ? 'light' : 'dark')
             }
-          />
+          >
+            {isDarkMode ? <SunIcon /> : <MoonIcon />}
+          </S.ThemeToggle>
         </S.Wrapper>
       </S.Header>
       <WaveSvg />
