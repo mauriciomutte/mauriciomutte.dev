@@ -12,6 +12,6 @@ export const MenuNav = styled.nav`
 
 export const MenuItem = styled(Link)`
   font-size: 16px;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-bold);
   padding: 10px;
 `;

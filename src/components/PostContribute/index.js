@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const PostContributeWrapper = styled.div`
+  color: var(--post-text);
   padding: 3em 0 2em;
   text-align: right;
 
@@ -10,7 +11,7 @@ const PostContributeWrapper = styled.div`
   }
 
   a {
-    color: var(--tertiary);
+    color: var(--primary);
     font-size: 1.15rem;
 
     :hover {

@@ -12,25 +12,26 @@ export const HeaderWrapper = styled.header`
 export const Category = styled.span`
   color: var(--primary);
   font-size: 16px;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-bold);
 `;
 
 export const Title = styled.h2`
+  color: var(--post-text);
   font-size: 38px;
-  font-weight: var(--font-weight-extrabold);
+  font-weight: var(--font-xbold);
   margin: 2rem 0 0;
 `;
 
 export const Description = styled.h3`
   color: var(--gray);
   font-size: 20px;
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-medium);
   max-width: 600px;
   margin: 1em 0 2em;
 `;
 
 export const PostInfo = styled.span`
-  color: #fff5;
+  color: var(--gray);
   font-size: 14px;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-bold);
 `;

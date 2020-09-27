@@ -2,11 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 
 const PostContentStyle = styled.section`
+  color: var(--post-text);
   font-size: 1.06rem;
 
   p {
     line-height: 1.6;
     margin: 10px 0 20px;
+  }
+
+  a {
+    color: var(--primary);
+    text-decoration: underline;
   }
 
   h1,
@@ -15,8 +21,8 @@ const PostContentStyle = styled.section`
   h4,
   h5,
   h6 {
-    color: var(--secondary);
-    font-weight: var(--font-weight-bold);
+    color: var(--post-heading);
+    font-weight: var(--font-bold);
     margin: 2em 0 0.5em;
   }
 
