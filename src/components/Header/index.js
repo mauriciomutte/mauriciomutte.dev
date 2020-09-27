@@ -20,14 +20,12 @@ const Header = () => {
         <S.Wrapper>
           <S.Logo to="/">Maurício Mutte</S.Logo>
           <Navbar />
-          <button
-            style={{ marginLeft: 'auto ' }}
+          <S.ThemeToggle
+            title="Mudar o tema"
             onClick={() =>
               window.__setPreferredTheme(isDarkMode ? 'light' : 'dark')
             }
-          >
-            Switch theme
-          </button>
+          />
         </S.Wrapper>
       </S.Header>
       <WaveSvg />

@@ -24,3 +24,13 @@ export const Logo = styled(Link)`
   letter-spacing: -1px;
   margin: 0;
 `;
+
+export const ThemeToggle = styled.button`
+  cursor: pointer;
+  border: none;
+  border-radius: 100%;
+  height: 30px;
+  background: var(--primary);
+  margin-left: auto;
+  width: 30px;
+`;
