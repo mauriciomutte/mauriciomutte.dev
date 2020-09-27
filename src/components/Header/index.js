@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import Navbar from '../Navbar';
 
+import WaveSvg from './WaveSvg';
 import * as S from './styles';
 
 const Header = () => {
@@ -14,19 +15,22 @@ const Header = () => {
   }, []);
 
   return (
-    <S.Header>
-      <S.Wrapper>
-        <S.Logo to="/">Maurício Mutte</S.Logo>
-        <Navbar />
-        <button
-          onClick={() =>
-            window.__setPreferredTheme(isDarkMode ? 'light' : 'dark')
-          }
-        >
-          Switch theme
-        </button>
-      </S.Wrapper>
-    </S.Header>
+    <>
+      <S.Header>
+        <S.Wrapper>
+          <S.Logo to="/">Maurício Mutte</S.Logo>
+          <Navbar />
+          <button
+            onClick={() =>
+              window.__setPreferredTheme(isDarkMode ? 'light' : 'dark')
+            }
+          >
+            Switch theme
+          </button>
+        </S.Wrapper>
+      </S.Header>
+      <WaveSvg />
+    </>
   );
 };
 

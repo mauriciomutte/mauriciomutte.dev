@@ -13,7 +13,6 @@ export const Wrapper = styled.div`
 
 export const Header = styled.header`
   background-color: var(--background-menu);
-
   margin: 0;
   padding: 20px 0;
 `;
