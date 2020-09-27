@@ -12,7 +12,8 @@ export const PostItem = styled(Link)`
   padding: 1.5rem;
   transition: 0.3s;
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 3px 3px 1px #0005;
     color: var(--primary);
   }
