@@ -5,7 +5,7 @@ import Navbar from '../Navbar';
 import WaveSvg from './WaveSvg';
 import * as S from './styles';
 
-const Header = () => {
+const Header = ({ path }) => {
   const [theme, setTheme] = useState(null);
   const isDarkMode = theme === 'dark';
 
@@ -19,7 +19,7 @@ const Header = () => {
       <S.Header>
         <S.Wrapper>
           <S.Logo to="/">Maurício Mutte</S.Logo>
-          <Navbar />
+          <Navbar path={path} />
           <S.ThemeToggle
             title="Mudar o tema"
             onClick={() =>
