@@ -47,11 +47,12 @@ export const AboutMeSection = styled.div`
   }
 
   img {
+    background: var(--primary);
     border: 5px solid var(--primary);
     border-radius: 50%;
     height: 250px;
     transition: 3s;
-    width: auto;
+    width: 250px;
 
     ${media.greaterThan('medium')`
       margin-right: 2rem;

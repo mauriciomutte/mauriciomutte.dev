@@ -20,7 +20,7 @@ function AboutPage({ location }) {
         <h1>Sobre mim</h1>
 
         <AboutMeSection>
-          <img src={MeImg} alt="" />
+          <img src={MeImg} alt="Foto do meu rosto bonito" />
           <div>
             <h3>Olá, que honra ter você aqui!</h3>
             <p>
