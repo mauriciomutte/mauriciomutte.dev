@@ -77,6 +77,7 @@ const pluginConfig = [
       icon: `static/favicon.png`,
     },
   },
+  `gatsby-plugin-netlify-cms`,
   `gatsby-plugin-offline`,
   `gatsby-plugin-react-helmet`,
   `gatsby-transformer-sharp`,
