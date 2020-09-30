@@ -84,15 +84,17 @@ const pluginConfig = [
   `gatsby-plugin-styled-components`,
 ];
 
-const analytics = {
-  resolve: `gatsby-plugin-google-analytics`,
-  options: {
-    trackingId: process.env.GOOGLE_ANALYTICS_ID,
-    head: false,
-  },
-};
+if (process.env.CONTEXT === 'production') {
+  const analytics = {
+    resolve: `gatsby-plugin-google-analytics`,
+    options: {
+      trackingId: process.env.GOOGLE_ANALYTICS_ID,
+      head: false,
+    },
+  };
 
-pluginConfig.push(analytics);
+  pluginConfig.push(analytics);
+}
 
 module.exports = {
   siteMetadata: {
