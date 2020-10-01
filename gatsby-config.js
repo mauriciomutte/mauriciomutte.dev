@@ -6,8 +6,8 @@ const pluginConfig = [
   {
     resolve: `gatsby-source-filesystem`,
     options: {
-      path: `${__dirname}/content/blog`,
-      name: `blog`,
+      path: `${__dirname}/posts`,
+      name: `posts`,
     },
   },
   {
@@ -101,7 +101,7 @@ module.exports = {
   siteMetadata: {
     title: `Maurício Mutte`,
     author: `Maurício Mutte`,
-    description: `Meu nome é Maurício Mutte, sou um Frontend Developer de Porto Alegre/RS em início de carreira.`,
+    description: `Prazer, sou o Maurício Mutte, desenvolvedor Full Stack focado principalmente em React, NodeJS e GraphQl.`,
     siteUrl: `https://mauriciomutte.github.io`,
     social: {
       twitter: `mauriciomutte`,
