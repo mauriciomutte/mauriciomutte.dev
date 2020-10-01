@@ -65,6 +65,16 @@ const PostContentStyle = styled.section`
     margin: 0 0 10px;
   }
 
+  img {
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+    height: auto;
+    width: 100%;
+    max-width: 800px;
+}
+  }
+
   .gatsby-highlight {
     background-color: #0007;
     border-radius: 0.3em;
