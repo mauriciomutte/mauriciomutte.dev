@@ -28,10 +28,5 @@ collections:
       - { label: 'Post Image', name: 'image', widget: 'image' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
-      - {
-          label: 'Category',
-          name: 'categories',
-          widget: 'list',
-          required: false,
-        }
+      - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }

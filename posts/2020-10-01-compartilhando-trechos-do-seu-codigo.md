@@ -4,9 +4,9 @@ date: 2020-09-29 07:00:00
 image: /assets/img/banner.jpg
 title: Compartilhando trechos do seu código
 description: Customize, gere uma image e compartilhe seu código da melhor maneira
-categories:
-  - Dicas
+category: Dicas
 ---
+
 Se você caiu de paraquedas nesse post, prazer, me chamo Maurício e seja bem vindo ao meu blog!
 
 Há momentos em que queremos compartilhar trechos do nosso código, seja para tirar alguma dúvida rápida ou até mesmo para mostrar ao mundo aquela solução maneira. Publicar nosso código em redes sociais ou grupos de programação pode não ser tão fácil por não ter uma opção adequada. Para resolver esse problema e te dar a possibilidade de compartilhar códigos de forma "elegante", surgiu o **[Carbon](https://carbon.now.sh/)**.
@@ -32,7 +32,8 @@ Para utilizar, basta acessar: [carbon.now.sh/](https://carbon.now.sh/)
 ### Importando seu código
 
 Há algumas maneiras de importar código no Carbon:
-- Copiando e colando o código diretamente 
+
+- Copiando e colando o código diretamente
 - Arrastando e soltando um arquivo na página
 - Conectando com o seu Github
 
