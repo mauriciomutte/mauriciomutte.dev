@@ -2,7 +2,7 @@ backend:
   name: github
   repo: mauriciomutte/mauriciomutte.com
   branch: master
-  # site_domain: mauriciomutte.com
+  site_domain: mauriciomutte.com
 
 media_folder: static/assets/img
 public_folder: /assets/img
