@@ -34,7 +34,7 @@ Algumas empresas costumam surfar no "hype" do evento e oferecem brindes próprio
 
 Existem pessoas que não respeitam os limites e não sabem se divertir. Essas pessoas enchem os projetos com contribuições sem sentido (o famoso e chato, **spam**). Acompanhe os casos no Twitter [@shitoberfest](https://twitter.com/shitoberfest). Por favor, não seja essas pessoas.
 
-![Image](https://pbs.twimg.com/media/EjQqHlAWAAE7h8i?format=png&name=900x900)
+![Print de um PR adicionando apenas um espaço em um arquivo .md](https://pbs.twimg.com/media/EjQqHlAWAAE7h8i?format=png&name=900x900)
 
 ## Conclusão
 
