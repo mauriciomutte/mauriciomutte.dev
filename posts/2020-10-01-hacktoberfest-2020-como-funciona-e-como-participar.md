@@ -34,8 +34,6 @@ Algumas empresas costumam surfar no "hype" do evento e oferecem brindes próprio
 
 Existem pessoas que não respeitam os limites e não sabem se divertir. Essas pessoas enchem os projetos com contribuições sem sentido (o famoso e chato, **spam**). Acompanhe os casos no Twitter [@shitoberfest](https://twitter.com/shitoberfest). Por favor, não seja essas pessoas.
 
-![Print de um PR adicionando apenas um espaço em um arquivo .md](https://pbs.twimg.com/media/EjQqHlAWAAE7h8i?format=png&name=900x900)
-
 ## Conclusão
 
 O Hacktoberfest é um evento com um objetivo muito bacana e muitas vezes é a porta de entrada de muitas pessoas no mundo Open Source. Essa é uma ótima oportunidade para começar a contribuir, aprender, se divertir e ainda ganhar brindes...
