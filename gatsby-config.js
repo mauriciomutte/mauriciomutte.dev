@@ -18,14 +18,10 @@ const pluginConfig = [
     },
   },
   {
-    resolve: `gatsby-plugin-prefetch-google-fonts`,
+    resolve: `gatsby-plugin-google-fonts`,
     options: {
-      fonts: [
-        {
-          family: `Nunito Sans`,
-          variants: [`400`, `600`, `700`, `800`],
-        },
-      ],
+      fonts: [`Nunito Sans\:400,600,700,800`],
+      display: 'swap',
     },
   },
   {
