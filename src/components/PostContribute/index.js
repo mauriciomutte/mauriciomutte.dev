@@ -22,8 +22,8 @@ const PostContributeWrapper = styled.div`
 
 const PostContribute = ({ title, link }) => {
   const twitter = `https://twitter.com/intent/tweet?text=${title}&url=https://mauriciomutte.com${link}&via=mauriciomutte`;
-  const github = `https://github.com/mauriciomutte/mauriciomutte.com/blob/master/posts/${link.replaceAll(
-    '/',
+  const github = `https://github.com/mauriciomutte/mauriciomutte.com/blob/master/posts/${link.replace(
+    /\//g,
     ''
   )}.md`;
 
