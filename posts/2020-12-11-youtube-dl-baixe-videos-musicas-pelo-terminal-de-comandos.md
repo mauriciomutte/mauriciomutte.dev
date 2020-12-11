@@ -2,10 +2,11 @@
 layout: post
 date: 2020-12-10 10:47:39
 image: /assets/img/youtube-dl-baixe-videos-do-youtube.jpg
-title: "Youtube-DL: baixe vídeos/músicas pelo terminal de comandos"
+title: 'Youtube-DL: baixe vídeos/músicas pelo terminal de comandos'
 description: Uma ferramenta open-source para baixar vídeos/músicas
 category: Dicas
 ---
+
 # Introdução
 
 O youtube-dl é um programa de linha de comando capaz de realizar download de qualquer vídeo no Youtube. Seu código está hospedado no [Github](https://github.com/ytdl-org/youtube-dl) e com domínio público, isso significa que você pode modifica-lo e usa-lo livremente.
@@ -47,8 +48,8 @@ youtube-dl -f mp4 https://www.youtube.com/watch\?v\=XqZsoesa55w
 
 Para realizar o download do arquivo em mp3, vamos precisar de duas opções:
 
-* `-x`: Converte o vídeo em áudio.
-* `--audio-format`: Seleciona o formato do arquivo: Os formatos suportados são: “best”, “aac”, “vorbis”, “mp3”, “m4a”, “opus”, or “wav”; O formato “best” é o padrão.
+- `-x`: Converte o vídeo em áudio.
+- `--audio-format`: Seleciona o formato do arquivo: Os formatos suportados são: “best”, “aac”, “vorbis”, “mp3”, “m4a”, “opus”, ou “wav”; O formato “best” é o padrão.
 
 Então, podemos fazer o download com o seguinte comando:
 
