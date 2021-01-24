@@ -42,8 +42,8 @@ function AboutPage({ location }) {
             </p>
             <p>
               Além de programar, gosto muito de contribuir em projetos open
-              source, ouvir músicas, ler livros, jogar vídeo game ( CS:GO
-              principalmente ) e assistir séries.
+              source, ouvir músicas, ler livros, jogar vídeo game (CS:GO
+              principalmente) e assistir séries.
             </p>
           </div>
         </AboutMeSection>
