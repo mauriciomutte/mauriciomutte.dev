@@ -6,6 +6,10 @@ export const AboutMeWrapper = styled.div`
   text-align: center;
   padding: 1rem;
 
+  & + & {
+    margin-top: 2rem;
+  }
+
   h1,
   h2 {
     font-weight: var(--font-xbold);
@@ -51,7 +55,7 @@ export const AboutMeSection = styled.div`
     border: 5px solid var(--primary);
     border-radius: 50%;
     height: 250px;
-    transition: 3s;
+    transition: 3s ease-in;
     width: 250px;
 
     ${media.greaterThan('medium')`

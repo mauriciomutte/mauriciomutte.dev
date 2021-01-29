@@ -4,6 +4,7 @@ import MeImg from '../../content/assets/me.jpeg';
 
 import SEO from '../components/SEO/SEO';
 import Layout from '../components/Layout';
+import SocialLinks from '../components/SocialLink';
 import { AboutMeWrapper, AboutMeSection } from '../styles/base';
 
 function AboutPage({ location }) {
@@ -46,6 +47,14 @@ function AboutPage({ location }) {
               principalmente) e assistir séries.
             </p>
           </div>
+        </AboutMeSection>
+      </AboutMeWrapper>
+
+      <AboutMeWrapper>
+        <h1>Contato</h1>
+
+        <AboutMeSection>
+          <SocialLinks />
         </AboutMeSection>
       </AboutMeWrapper>
     </Layout>
