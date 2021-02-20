@@ -1,7 +1,5 @@
 import React from 'react';
 
-import MeImg from '../../content/assets/me.jpeg';
-
 import SEO from '../components/SEO/SEO';
 import Layout from '../components/Layout';
 import SocialLinks from '../components/SocialLink';
@@ -21,7 +19,10 @@ function AboutPage({ location }) {
         <h1>Sobre mim</h1>
 
         <AboutMeSection>
-          <img src={MeImg} alt="Foto do meu rosto bonito" />
+          <img
+            src="https://github.com/mauriciomutte.png"
+            alt="Foto do meu rosto bonito"
+          />
           <div>
             <h3>Olá, que honra ter você aqui!</h3>
             <p>
