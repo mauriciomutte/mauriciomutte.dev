@@ -60,7 +60,7 @@ youtube-dl -x --audio-format mp3 https://www.youtube.com/watch?v=XqZsoesa55w
 Se você quiser incluir uma imagem de capa, adicione a opção `--embed-thumbnail`:
 
 ```bash
-youtube-dl -x -embed-thumbnail --audio-format mp3 https://www.youtube.com/watch?v=XqZsoesa55w
+youtube-dl -x --embed-thumbnail --audio-format mp3 https://www.youtube.com/watch?v=XqZsoesa55w
 ```
 
 **Obs:** você também pode baixar uma playlist inteira com o youtube-dl, não apenas um vídeo.
