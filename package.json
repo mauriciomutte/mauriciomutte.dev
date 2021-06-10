@@ -35,7 +35,6 @@
     "netlify-cms-app": "^2.12.25",
     "prismjs": "^1.17.1",
     "react": "^16.9.0",
-    "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^6.0.0",
     "react-spring": "^8.0.27",
