@@ -31,6 +31,7 @@ function AboutPage({ location }) {
               <a href="https://github.com/juntossomosmais" target="_blank">
                 Junto Somos Mais
               </a>
+              .
             </p>
             <p>
               Sou fascinado por construir coisas novas e uso a programação como
