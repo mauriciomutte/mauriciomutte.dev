@@ -27,8 +27,10 @@ function AboutPage({ location }) {
             <h3>Olá, que honra ter você aqui!</h3>
             <p>
               Meu nome é Maurício Mutte, tenho {myAge} anos, nasci em Porto
-              Alegre/RS (aka Gaúcho), sou desenvolvedor Full Stack e apaixonado
-              por projetos open source.
+              Alegre/RS (aka Gaúcho). Sou desenvolvedor Front End na{' '}
+              <a href="https://github.com/juntossomosmais" target="_blank">
+                Junto Somos Mais
+              </a>
             </p>
             <p>
               Sou fascinado por construir coisas novas e uso a programação como
