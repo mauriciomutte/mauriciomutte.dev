@@ -1,5 +1,5 @@
 import React from 'react';
-import { Spring } from 'react-spring/renderprops';
+import { Spring } from 'react-spring';
 
 import Header from '../Header';
 import GlobalStyle from '../../styles/global';
