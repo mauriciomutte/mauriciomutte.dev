@@ -6471,10 +6471,10 @@ gatsby-plugin-manifest@^3.8.0:
     semver "^7.3.5"
     sharp "^0.28.1"
 
-gatsby-plugin-netlify-cms@^5.7.1:
-  version "5.9.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-5.9.0.tgz#9f11609e7f8c9e77300a001a658119ea6b225db4"
-  integrity sha512-U7gZnTgEaJTd+nTEELR5a5RCZJV72Y1QqouQseoh0YyMjV4jloX0zABs5SFAjN8wxyn+O24k2dm0m4Q276G/wA==
+gatsby-plugin-netlify-cms@^5.11.0:
+  version "5.11.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-5.11.0.tgz#bdc3bc183baf6baeed55d3aabe85d14257996b36"
+  integrity sha512-XGYulxuijtka+aCjsU8UZ88H+l7Mq2HJT02U4/gOVF/x4RBOK0H4GGs1HhvBGZH7ibdo3UamrXw2bU3o2tdAvw==
   dependencies:
     "@soda/friendly-errors-webpack-plugin" "1.8.0"
     copy-webpack-plugin "^7.0.0"
