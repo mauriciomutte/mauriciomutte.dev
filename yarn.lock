@@ -6471,19 +6471,19 @@ gatsby-plugin-manifest@^3.8.0:
     semver "^7.3.5"
     sharp "^0.28.1"
 
-gatsby-plugin-netlify-cms@^5.7.1:
-  version "5.9.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-5.9.0.tgz#9f11609e7f8c9e77300a001a658119ea6b225db4"
-  integrity sha512-U7gZnTgEaJTd+nTEELR5a5RCZJV72Y1QqouQseoh0YyMjV4jloX0zABs5SFAjN8wxyn+O24k2dm0m4Q276G/wA==
+gatsby-plugin-netlify-cms@^5.12.0:
+  version "5.12.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-5.12.0.tgz#2a91e365e9b8959cb794510f7c9db1687d6f5a82"
+  integrity sha512-a7X30wKic4zfP7VNvJeqtu3A8fXdLXfJ+lC3tDsDmfpuqS3UOdtINCcOhxn0oNYAtOgHig2Iv/gDYcH/mcN0ZQ==
   dependencies:
     "@soda/friendly-errors-webpack-plugin" "1.8.0"
     copy-webpack-plugin "^7.0.0"
-    html-webpack-plugin "^5.3.1"
+    html-webpack-plugin "^5.3.2"
     html-webpack-skip-assets-plugin "^1.0.2"
     html-webpack-tags-plugin "^3.0.1"
     lodash "^4.17.21"
-    mini-css-extract-plugin "1.6.0"
-    netlify-identity-widget "^1.9.1"
+    mini-css-extract-plugin "1.6.2"
+    netlify-identity-widget "^1.9.2"
     webpack "^5.35.0"
 
 gatsby-plugin-offline@^4.7.1:
@@ -7733,7 +7733,7 @@ html-void-elements@^1.0.0:
   resolved "https://registry.yarnpkg.com/html-void-elements/-/html-void-elements-1.0.5.tgz#ce9159494e86d95e45795b166c2021c2cfca4483"
   integrity sha512-uE/TxKuyNIcx44cIWnjr/rfIATDH7ZaOMmstu0CwhFG1Dunhlp4OC6/NMbhiwoq5BpW0ubi303qnEk/PZj614w==
 
-html-webpack-plugin@^5.3.1:
+html-webpack-plugin@^5.3.2:
   version "5.3.2"
   resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-5.3.2.tgz#7b04bf80b1f6fe84a6d3f66c8b79d64739321b08"
   integrity sha512-HvB33boVNCz2lTyBsSiMffsJ+m0YLIQ+pskblXgN9fnjS1BgEcuAfdInfXfGrkdXV406k9FiDi86eVCDBgJOyQ==
@@ -9893,6 +9893,15 @@ mini-css-extract-plugin@1.6.0:
     schema-utils "^3.0.0"
     webpack-sources "^1.1.0"
 
+mini-css-extract-plugin@1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-1.6.2.tgz#83172b4fd812f8fc4a09d6f6d16f924f53990ca8"
+  integrity sha512-WhDvO3SjGm40oV5y26GjMJYjd2UMqrLAGKy5YS2/3QKJy2F7jgynuHTir/tgUUOiNQu5saXHdc8reo7YuhhT4Q==
+  dependencies:
+    loader-utils "^2.0.0"
+    schema-utils "^3.0.0"
+    webpack-sources "^1.1.0"
+
 mini-svg-data-uri@^1.2.3:
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/mini-svg-data-uri/-/mini-svg-data-uri-1.3.3.tgz#91d2c09f45e056e5e1043340b8b37ba7b50f4fac"
@@ -10398,10 +10407,10 @@ netlify-cms-widget-text@^2.4.1:
   dependencies:
     react-textarea-autosize "^8.0.0"
 
-netlify-identity-widget@^1.9.1:
-  version "1.9.1"
-  resolved "https://registry.yarnpkg.com/netlify-identity-widget/-/netlify-identity-widget-1.9.1.tgz#9e716c4b92b9f0cc041074eb86fc962f35295b46"
-  integrity sha512-9oIWjwUSdRk3SkREcZNjZaVuDDx9T/wSIXZNQsQeY4qoXic/FiXVEGgu2RU3IuA4OI3L2652xY1o+PpS03Ugaw==
+netlify-identity-widget@^1.9.2:
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/netlify-identity-widget/-/netlify-identity-widget-1.9.2.tgz#4339c9155fc4c2570ae3ddd61825d952b574b02e"
+  integrity sha512-IbS1JHhs7BflCCvp3C9f6tmNSZqbyBhZ4Gs5+Qxt4IlPybTOVv0PqJ4TAsA7uxh1R+oXOAmk0OOMAkEaPYeCtA==
 
 next-tick@1, next-tick@^1.1.0:
   version "1.1.0"
