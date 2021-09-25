@@ -25,7 +25,7 @@
     "gatsby-plugin-offline": "^4.7.1",
     "gatsby-plugin-react-helmet": "^4.8.0",
     "gatsby-plugin-sharp": "^3.7.1",
-    "gatsby-plugin-styled-components": "^4.8.0",
+    "gatsby-plugin-styled-components": "^4.14.0",
     "gatsby-plugin-webmention": "^0.2.0",
     "gatsby-remark-images": "^5.5.0",
     "gatsby-remark-prismjs": "^5.4.1",
