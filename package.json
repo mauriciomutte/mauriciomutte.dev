@@ -13,7 +13,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
-    "@styled-icons/boxicons-logos": "^10.34.0",
+    "@styled-icons/boxicons-logos": "^10.38.0",
     "axios": "^0.21.1",
     "dotenv": "^10.0.0",
     "gatsby": "^3.7.2",
