@@ -16,7 +16,7 @@
     "@styled-icons/boxicons-logos": "^10.38.0",
     "axios": "^0.21.1",
     "dotenv": "^10.0.0",
-    "gatsby": "^3.7.2",
+    "gatsby": "^3.14.0",
     "gatsby-plugin-google-analytics": "^3.10.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-indieweb": "^1.0.3",
