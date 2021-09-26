@@ -4,13 +4,10 @@ import SEO from '../components/SEO/SEO';
 import Layout from '../components/Layout';
 import SocialLinks from '../components/SocialLink';
 import { AboutMeWrapper, AboutMeSection } from '../styles/base';
+import { birthday } from '../helpers/birthday';
 
 function AboutPage({ location }) {
-  const myBirthday = new Date('2001/05/30'); // 🙈🙈🙈
-  const currentDate = new Date();
-  const diffDate = Math.round(currentDate - myBirthday);
-  const oneYearInMs = 31556952000;
-  const myAge = Math.floor(diffDate / oneYearInMs);
+  const { age } = birthday();
 
   return (
     <Layout path={location.pathname}>
@@ -26,9 +23,13 @@ function AboutPage({ location }) {
           <div>
             <h3>Olá, que honra ter você aqui!</h3>
             <p>
-              Meu nome é Maurício Mutte, tenho {myAge} anos, nasci em Porto
+              Meu nome é Maurício Mutte, tenho {age} anos, nasci em Porto
               Alegre/RS (aka Gaúcho). Sou desenvolvedor Front End na{' '}
-              <a href="https://github.com/juntossomosmais" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/juntossomosmais"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Junto Somos Mais
               </a>
               .
