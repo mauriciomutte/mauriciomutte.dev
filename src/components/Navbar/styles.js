@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import media from 'styled-media-query';
 
 import { Link } from 'gatsby';
@@ -17,7 +17,13 @@ export const MenuNav = styled.nav`
 `;
 
 export const MenuItem = styled(Link)`
-  font-size: 16px;
-  font-weight: var(--font-bold);
-  padding: 10px;
+  ${({ isActive }) => css`
+    color: var(--white);
+    font-size: 16px;
+    font-weight: var(--font-bold);
+    margin: 10px;
+    padding: 5px 0;
+
+    ${isActive && { borderBottom: '2px solid var(--primary)' }}
+  `}
 `;
