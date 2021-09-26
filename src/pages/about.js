@@ -28,7 +28,7 @@ function AboutPage({ location }) {
             <p>
               Meu nome é Maurício Mutte, tenho {myAge} anos, nasci em Porto
               Alegre/RS (aka Gaúcho). Sou desenvolvedor Front End na{' '}
-              <a href="https://github.com/juntossomosmais" target="_blank">
+              <a href="https://github.com/juntossomosmais" target="_blank" rel="noopener noreferrer">
                 Junto Somos Mais
               </a>
               .
