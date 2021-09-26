@@ -93,7 +93,7 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1;
   }
   a {
-    color: var(--white);
+    color: var(--primary);
     text-decoration: none;
   }
 `;
