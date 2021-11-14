@@ -1,1 +1,0 @@
-# Mauricio Mutte personal blog
