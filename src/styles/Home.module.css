@@ -1,0 +1,15 @@
+.home__wrapper {
+  min-height: 100%;
+  align-self: center;
+  padding: 0 16px;
+}
+
+.home__title {
+  margin: 0 0 16px;
+}
+
+.home__description {
+  color: var(--secondaryColor);
+  margin: 0;
+  font-size: 18px;
+}
