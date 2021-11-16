@@ -1,0 +1,33 @@
+.header {
+  align-items: center;
+  color: var(--white);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1024px;
+  margin: 8px auto;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.header__logo {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.header__logoBold {
+  font-weight: 700;
+}
+
+.nav__ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav__link {
+  font-size: 14px;
+  padding: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
