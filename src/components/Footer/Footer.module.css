@@ -1,0 +1,11 @@
+.footer {
+  padding: 20px 0;
+  margin-top: auto;
+  text-align: center;
+}
+
+.footer__link {
+  font-size: 14px;
+  margin: 0 24px;
+  text-decoration: none;
+}
