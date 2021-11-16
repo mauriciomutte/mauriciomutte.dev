@@ -1,0 +1,57 @@
+:root {
+  --secondaryColor: #888888;
+  --backgroundColor: #111111;
+  --white: #f4f4f4;
+  --yellow: #f9cb28;
+  --orange: #ff4d4d;
+
+  --bodyFont: 'Inter', sans-serif;
+
+  --borderRadius: 4px;
+}
+
+* {
+  box-sizing: border-box;
+  color: var(--white);
+  font-family: var(--bodyFont);
+}
+
+html,
+body {
+  background: var(--backgroundColor);
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+}
+
+div#__next {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  padding: 64px 0;
+  display: flex;
+  flex: 1;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/static/font/Inter-Regular.woff2') format('woff2'),
+    url('/static/font/Inter-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/static/font/Inter-Bold.woff2') format('woff2'),
+    url('/static/font/Inter-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
