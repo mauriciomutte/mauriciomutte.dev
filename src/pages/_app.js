@@ -1,11 +1,13 @@
-const Noop = ({ children }) => children;
+import '../styles/global.css'
+
+const Noop = ({ children }) => children
 
 export default function MyApp({ Component, pageProps }) {
-  const Layout = Component.Layout || Noop;
+  const Layout = Component.Layout || Noop
 
   return (
     <Layout>
       <Component {...pageProps} />
     </Layout>
-  );
+  )
 }
