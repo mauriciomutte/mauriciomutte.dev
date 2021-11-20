@@ -1,0 +1,14 @@
+.career__section {
+  margin: 0 0 32px;
+}
+
+.career__occupation {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 0 4px;
+}
+
+.career__details {
+  color: var(--secondaryColor);
+  font-size: 14px;
+}
