@@ -15,7 +15,7 @@ function Blog(props) {
         <meta property="og:url" content="https://mauriciomutte.dev/sobre/" />
       </Head>
 
-      <h1>Blog</h1>
+      <h1>Soon</h1>
     </div>
   )
 }
