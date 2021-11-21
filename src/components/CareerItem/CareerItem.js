@@ -8,7 +8,7 @@ const CareerItem = ({ occupation, company, startDate, endDate }) => {
     format(parseISO(date), 'MMM yyyy', { locale: ptBR })
 
   const getPeriodDate = () => {
-    if (!endDate) return `${formatDate(startDate)} - Present`
+    if (!endDate) return `${formatDate(startDate)} - presente`
 
     return `${formatDate(startDate)} - ${formatDate(endDate)}`
   }
