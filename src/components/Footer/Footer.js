@@ -18,7 +18,7 @@ const links = [
 const Footer = () => (
   <footer className={styles.footer}>
     {links.map(({ title, url }) => (
-      <a href={url} target="_blank" className={styles.footer__link}>
+      <a key={title} href={url} target="_blank" className={styles.footer__link}>
         {title}
       </a>
     ))}
