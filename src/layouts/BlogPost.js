@@ -11,7 +11,7 @@ const BlogPost = ({ children }) => {
       <main className="main">
         <article>
           <header className={styles.post__header}>
-            <h1 className={styles.post__title}>{title}</h1>
+            <h1 className={`${styles.post__title} gradient`}>{title}</h1>
             <time className={styles.post__date}>{formattedDate}</time>
           </header>
           <section className={styles.post__content}>{children}</section>

@@ -17,7 +17,7 @@ function Blog(props) {
         <meta property="og:url" content="https://mauriciomutte.dev/sobre/" />
       </Head>
 
-      <h1>Todas as publicações</h1>
+      <h1 className="gradient">Todas as publicações</h1>
       <div style={{ margin: '0 -24px' }}>
         {posts.map((post) => (
           <BlogItem

@@ -29,7 +29,7 @@ function Sobre(props) {
           />
         </div>
         <div>
-          <h1 className={styles.section__about__title}>
+          <h1 className={`${styles.section__about__title} gradient`}>
             Que honra ter você por aqui,
           </h1>
           <p>
