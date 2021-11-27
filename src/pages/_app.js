@@ -1,3 +1,4 @@
+import '../styles/prism.css'
 import '../styles/global.css'
 
 const Noop = ({ children }) => children
