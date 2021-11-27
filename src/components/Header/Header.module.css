@@ -30,4 +30,10 @@
   padding: 16px;
   text-decoration: none;
   text-transform: uppercase;
+  opacity: 0.5;
+  transition: opacity var(--duration) ease-in-out;
+}
+
+.nav__link:hover {
+  opacity: 1;
 }

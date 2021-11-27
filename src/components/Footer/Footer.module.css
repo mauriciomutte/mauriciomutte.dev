@@ -7,5 +7,11 @@
 .footer__link {
   font-size: 14px;
   margin: 0 24px;
+  opacity: 0.5;
   text-decoration: none;
+  transition: opacity var(--duration) ease-in-out;
+}
+
+.footer__link:hover {
+  opacity: 1;
 }
