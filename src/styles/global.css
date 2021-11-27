@@ -7,8 +7,8 @@
   --orange: #ff4d4d;
 
   --bodyFont: 'Inter', sans-serif;
-
   --borderRadius: 4px;
+  --gradientDegree: 95deg;
 }
 
 * {
@@ -39,6 +39,22 @@ div#__next {
   margin: 0 auto;
   max-width: 800px;
   width: 100%;
+}
+
+.gradient {
+  background-size: 100%;
+  background-clip: text;
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--yellow) 0%,
+    var(--orange) 100%
+  );
+
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
 }
 
 @font-face {
