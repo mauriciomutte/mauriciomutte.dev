@@ -21,7 +21,7 @@
 }
 
 .blogItem__description {
-  color: var(--secondaryColor);
+  color: var(--textColor);
   font-size: 16px;
   font-weight: 400;
 }
@@ -32,7 +32,7 @@
 }
 
 .blogItem__date {
-  color: var(--secondaryColor);
+  color: var(--textColor);
   font-size: 14px;
   font-weight: 700;
 }
@@ -40,7 +40,7 @@
 .blogItem__tag {
   background-color: #fff1;
   border-radius: var(--borderRadius);
-  color: var(--secondaryColor);
+  color: var(--textColor);
   font-size: 12px;
   font-weight: 400;
   margin-right: 8px;
