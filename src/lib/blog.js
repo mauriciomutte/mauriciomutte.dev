@@ -22,10 +22,11 @@ export function getPostBySlug(slug) {
   })
 
   return {
+    ...data,
     slug: realSlug,
     date: data.date.toString(),
+    formattedDate: date,
     content,
-    frontmatter: { ...data, date },
   }
 }
 
