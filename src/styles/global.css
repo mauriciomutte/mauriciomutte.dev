@@ -10,6 +10,7 @@
   --borderRadius: 4px;
   --gradientDegree: 95deg;
   --duration: 0.2s;
+  --duration-2x: 0.4s;
 }
 
 * {
@@ -61,7 +62,7 @@ div#__next {
 @font-face {
   font-family: 'Inter';
   src: url('/static/font/Inter-Regular.woff2') format('woff2'),
-    url('/static/font/Inter-Regular.woff') format('woff');
+  url('/static/font/Inter-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
@@ -69,7 +70,7 @@ div#__next {
 @font-face {
   font-family: 'Inter';
   src: url('/static/font/Inter-Bold.woff2') format('woff2'),
-    url('/static/font/Inter-Bold.woff') format('woff');
+  url('/static/font/Inter-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
