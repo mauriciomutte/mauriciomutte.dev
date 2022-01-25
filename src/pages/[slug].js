@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import BlogPost from '../layouts/BlogPost'
+import BlogPost from '../layout/BlogPost'
 import { getAllPosts, getPostBySlug, convertMarkdownToHtml } from '../lib/blog'
 
 const Post = ({ title, description, slug, content }) => {

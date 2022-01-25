@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import CareerItem from '../components/CareerItem/CareerItem'
-import Main from '../layouts/Main'
+import Main from '../layout/Main'
 import items from '../data/about'
 import styles from '../styles/About.module.css'
 

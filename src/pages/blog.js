@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 import { getAllPosts } from '../lib/blog'
 import BlogItem from '../components/BlogItem/BlogItem'
-import Main from '../layouts/Main'
+import Main from '../layout/Main'
 
 function Blog(props) {
   const { title, description, posts } = props

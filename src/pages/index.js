@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import Main from '../layouts/Main'
+import Main from '../layout/Main'
 import styles from '../styles/Home.module.css'
 
 function HomePage(props) {
