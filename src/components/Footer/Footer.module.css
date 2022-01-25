@@ -1,11 +1,15 @@
 .footer {
+  display: flex;
   padding: 20px 0;
   margin-top: auto;
   text-align: center;
 }
 
 .footer__link {
+  align-items: center;
   font-size: 14px;
+  display: flex;
+  gap: 4px;
   margin: 0 24px;
   opacity: 0.5;
   text-decoration: none;
@@ -13,5 +17,15 @@
 }
 
 .footer__link:hover {
+  opacity: 1;
+}
+
+.footer__link img {
+  opacity: 0;
+  transition: opacity var(--duration-2x) ease-in-out;
+
+}
+
+.footer__link:hover img {
   opacity: 1;
 }
