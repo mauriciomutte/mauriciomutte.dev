@@ -2,6 +2,7 @@
   border-radius: var(--borderRadius);
   border-bottom: 2px solid #fff1;
   padding: 32px 24px;
+  transition: background-color .3s;
   width: 100%;
 }
 
