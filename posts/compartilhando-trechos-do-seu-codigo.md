@@ -13,8 +13,6 @@ Há momentos em que queremos compartilhar trechos do nosso código, seja para ti
 
 O Carbon é uma ferramenta onde você pode estilizar seu código da maneira que desejar e exportar uma imagem, como se fosse um print do seu editor.
 
-![Print da tela principal do Carbon](/assets/img/screenshot-from-2020-09-30-22-34-45.png)
-
 ## Por que não fazer apenas um screenshot normal?
 
 Eu sei que você provavelmente está se perguntando por que não fazer um screenshot normal do código e compartilhar isso? Pois bem, o Carbon tem seus diferenciais:
