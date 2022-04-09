@@ -59,7 +59,7 @@ function Sobre(props) {
       <section className={styles.section__career}>
         <h1>Um pouco da minha carreira</h1>
         {items.map((item) => (
-          <CareerItem {...item} />
+          <CareerItem key={item.occupation} {...item} />
         ))}
       </section>
     </div>
