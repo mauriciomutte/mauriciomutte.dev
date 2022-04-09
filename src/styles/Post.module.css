@@ -1,6 +1,6 @@
 .post__header {
   text-align: center;
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 
 .post__title {
@@ -12,6 +12,10 @@
   color: var(--textColor);
   font-size: 14px;
   font-weight: 700;
+}
+
+.post__article {
+  max-width: 100%;
 }
 
 .post__content {

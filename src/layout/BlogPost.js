@@ -9,7 +9,7 @@ const BlogPost = ({ children }) => {
     <>
       <Header />
       <main className="main">
-        <article>
+        <article className={styles.post__article}>
           <header className={styles.post__header}>
             <h1 className={`${styles.post__title} gradient`}>{title}</h1>
             <time className={styles.post__date}>{formattedDate}</time>
