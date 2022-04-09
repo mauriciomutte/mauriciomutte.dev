@@ -35,7 +35,7 @@ div#__next {
 }
 
 .main {
-  padding: 64px 0;
+  padding: 64px 16px;
   display: flex;
   flex: 1;
   margin: 0 auto;
@@ -62,7 +62,7 @@ div#__next {
 @font-face {
   font-family: 'Inter';
   src: url('/static/font/Inter-Regular.woff2') format('woff2'),
-  url('/static/font/Inter-Regular.woff') format('woff');
+    url('/static/font/Inter-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
@@ -70,7 +70,7 @@ div#__next {
 @font-face {
   font-family: 'Inter';
   src: url('/static/font/Inter-Bold.woff2') format('woff2'),
-  url('/static/font/Inter-Bold.woff') format('woff');
+    url('/static/font/Inter-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
