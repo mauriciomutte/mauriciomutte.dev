@@ -10,7 +10,8 @@
   font-size: 14px;
   display: flex;
   gap: 4px;
-  margin: 0 24px;
+  margin: 0 40px;
+  margin-right: -16px;
   opacity: 0.5;
   text-decoration: none;
   transition: opacity var(--duration) ease-in-out;
@@ -23,7 +24,6 @@
 .footer__link img {
   opacity: 0;
   transition: opacity var(--duration-2x) ease-in-out;
-
 }
 
 .footer__link:hover img {
