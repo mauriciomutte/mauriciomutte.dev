@@ -20,18 +20,20 @@
 }
 
 html,
-body {
-  background: var(--backgroundColor);
+body,
+div#__next {
   margin: 0;
   min-height: 100vh;
   padding: 0;
 }
 
+html {
+  background: var(--backgroundColor);
+}
+
 div#__next {
-  align-items: center;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 .main {
