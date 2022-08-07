@@ -2,7 +2,7 @@
   display: flex;
   padding: 20px 0;
   margin-top: auto;
-  text-align: center;
+  justify-content: center;
 }
 
 .footer__link {

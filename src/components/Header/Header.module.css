@@ -1,17 +1,21 @@
 .header {
-  align-items: center;
   color: var(--white);
   background-color: rgba(17, 17, 17, 0.65);
   backdrop-filter: blur(12px);
-  display: flex;
   flex-direction: row;
-  justify-content: space-between;
   height: 52px;
-  max-width: 1024px;
   padding: 0 16px;
   position: fixed;
   width: 100%;
   z-index: 100;
+}
+
+.header__container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1024px;
 }
 
 .header__logo {
