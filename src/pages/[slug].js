@@ -19,12 +19,22 @@ const Post = ({ title, description, slug, content }) => {
         <meta property="og:title" content={`${title} | Maurício Mutte`} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={`https://mauriciomutte.dev/${slug}`} />
+        <meta property="og:locale" content="pt_BR" />
+        <meta name="author" content="Maurício Mutte" />
+        <meta name="twitter:creator" content="@mauriciomutte" />
+
         <meta name="image" content={ogImageUrl} />
         <meta property="og:image" content={ogImageUrl} />
         <meta property="og:image:secure_url" content={ogImageUrl} />
+        <meta name="twitter:image" content={ogImageUrl} />
+        <meta name="twitter:image:src" content={ogImageUrl} />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image:alt" content={title} />
+        <meta name="twitter:image:width" content="1200" />
+        <meta name="twitter:image:height" content="630" />
       </Head>
 
       <div dangerouslySetInnerHTML={{ __html: content }} />
