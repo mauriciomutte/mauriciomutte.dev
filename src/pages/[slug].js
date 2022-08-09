@@ -4,8 +4,10 @@ import Head from 'next/head'
 import BlogPost from '../layout/BlogPost'
 import { getAllPosts, getPostBySlug, convertMarkdownToHtml } from '../lib/blog'
 
+const BASE_URL = process.env.NEXT_PUBLIC_APP_URL
+
 const Post = ({ title, description, slug, content }) => {
-  const ogImageUrl = `${process.env.NEXT_PUBLIC_APP_URL}/og-image.png?title=${title}`
+  const ogImageUrl = `${BASE_URL}/og-image.png?title=${title}`
 
   useEffect(() => {
     fetch(ogImageUrl)
@@ -18,7 +20,7 @@ const Post = ({ title, description, slug, content }) => {
         <meta name="description" content={description} />
         <meta property="og:title" content={`${title} | Maurício Mutte`} />
         <meta property="og:description" content={description} />
-        <meta property="og:url" content={`https://mauriciomutte.dev/${slug}`} />
+        <meta property="og:url" content={`${BASE_URL}/${slug}`} />
         <meta property="og:locale" content="pt_BR" />
         <meta name="author" content="Maurício Mutte" />
         <meta name="twitter:creator" content="@mauriciomutte" />
