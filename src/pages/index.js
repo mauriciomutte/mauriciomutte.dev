@@ -15,7 +15,7 @@ function HomePage(props) {
         <meta content={description} property="og:description" />
         <meta content="https://mauriciomutte.dev/" property="og:url" />
         <meta
-          content={`https://mauriciomutte.dev/og-image?title=${title}`}
+          content={`https://mauriciomutte.dev/og-image.png?title=${title}`}
           property="og:image"
         />
       </Head>
