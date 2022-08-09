@@ -13,9 +13,11 @@ class MyDocument extends Document {
       <Html lang="pt-BR">
         <Head>
           <meta charSet="utf-8" />
-          <meta name="author" content="Maurício Mutte" />
-          <meta property="og:type" content="website" />
           <meta name="theme-color" content="#111111" />
+          <meta property="og:type" content="website" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@mauriciomutte" />
+          <meta name="author" content="Maurício Mutte" />
 
           <script
             async

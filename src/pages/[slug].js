@@ -33,7 +33,6 @@ const Post = ({ title, description, slug, content }) => {
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image:alt" content={title} />
         <meta name="twitter:image:width" content="1200" />
         <meta name="twitter:image:height" content="630" />
