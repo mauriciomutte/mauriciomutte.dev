@@ -17,6 +17,10 @@ function Sobre(props) {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content="https://mauriciomutte.dev/sobre/" />
+        <meta
+          content={`https://mauriciomutte.dev/og-image?title=${title}`}
+          property="og:image"
+        />
       </Head>
 
       <section className={styles.section__about}>

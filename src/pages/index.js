@@ -10,10 +10,14 @@ function HomePage(props) {
     <div className={styles.home__wrapper}>
       <Head>
         <title>{title}</title>
-        <meta name="description" content={description} />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <meta property="og:url" content="https://mauriciomutte.dev/" />
+        <meta content={title} property="og:title" />
+        <meta content={description} name="description" />
+        <meta content={description} property="og:description" />
+        <meta content="https://mauriciomutte.dev/" property="og:url" />
+        <meta
+          content={`https://mauriciomutte.dev/og-image?title=${title}`}
+          property="og:image"
+        />
       </Head>
 
       <h1 className={styles.home__title}>Maurício Mutte</h1>

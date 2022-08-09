@@ -15,6 +15,10 @@ function Blog(props) {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content="https://mauriciomutte.dev/sobre/" />
+        <meta
+          content={`https://mauriciomutte.dev/og-image?title=${title}`}
+          property="og:image"
+        />
       </Head>
 
       <h1 className="gradient">Todas as publicações</h1>
