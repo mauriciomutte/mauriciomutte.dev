@@ -33,7 +33,7 @@ Após, siga os passos para fazer o login e autorizar. O processo é simples e vo
 
 # Minha utilização
 
-### **Criar pull request**
+## **Criar pull request**
 
 ```bash
 gh pr create --web
@@ -43,7 +43,7 @@ Sem dúvidas é a funcionalidade que mais utilizo. Permite abrir uma pull reques
 
 Eu gosto de utilizar a flag `--web` para escrever a descrição da PR e marcar reviewers direto do navegador.
 
-### Pesquisar issues e PRs
+## Pesquisar issues e PRs
 
 ```bash
 gh browse [PR | Issue | File]
@@ -53,7 +53,7 @@ Encontre qualquer coisa dentro do seu repositório. Se você passar o ID ele vai
 
 Dica: com a ferramenta de autocomplete [Fig.io ⚡️](http://Fig.io) a utilização desse comando fica ainda melhor.
 
-### Acompanhamento
+## Acompanhamento
 
 ```bash
 gh status
@@ -61,7 +61,7 @@ gh status
 
 Estou testando esse comando há pouco tempo. Ele mostra um resumo das atividades (menções, review request, etc) que sua conta está envolvida.
 
-### Criar gist a partir de um arquivo
+## Criar gist a partir de um arquivo
 
 ```bash
 gh gist create file.js --web
@@ -69,7 +69,7 @@ gh gist create file.js --web
 
 Outro comando que estou testando há pouco tempo. Ele não é utilizado tanto quanto os outros, mas facilita a criação do gist de um arquivo para compartilhar ou apenas salvar separadamente.
 
-### Criar e visualizar issues
+## Criar e visualizar issues
 
 Essa é uma funcionalidade que mesmo sendo muito útil acabo não utilizando muito pelo motivo de não trabalhar tanto com issues. Se você costuma navegar por issues nos repositórios, vai ser de grande ajuda.
 
@@ -99,13 +99,13 @@ Esse é um alias simples que criei para abrir o repositório que estou trabalhan
 
 Esse é um alias um pouco mais complexo mas que me ajuda muito. O objetivo dele é atualizar as branches dos ambientes de teste e desenvolvimento com a branch atual que estou trabalhando.
 
-Comando 1: Utiliza a API do GitHub para retornar, no padrão esperado do próximo comando, o número e o título da PR.
+**Comando 1:** Utiliza a API do GitHub para retornar, no padrão esperado do próximo comando, o número e o título da PR.
 
 ```bash
 gh prinfo
 ```
 
-Comando 2: cria PRs para as branches de teste e desenvolvimento
+**Comando 2:** cria PRs para as branches de teste e desenvolvimento
 
 ```bash
 gh prdevqa "#xxx" "feat: pull request title"
