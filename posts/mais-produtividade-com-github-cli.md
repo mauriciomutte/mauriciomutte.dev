@@ -33,7 +33,7 @@ Após, siga os passos para fazer o login e autorizar. O processo é simples e vo
 
 # Minha utilização
 
-## **Criar pull request**
+## Criar pull request
 
 ```bash
 gh pr create --web
