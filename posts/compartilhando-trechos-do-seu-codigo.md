@@ -1,5 +1,5 @@
 ---
-date: 2020-09-29 07:00:00
+date: '2020-09-29'
 title: Compartilhando trechos do seu código
 description: Customize, gere uma image e compartilhe seu código da melhor maneira
 tags: ['dicas']

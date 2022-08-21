@@ -1,5 +1,5 @@
 ---
-date: 2020-10-01 05:30:00
+date: '2020-10-01'
 title: 'Hacktoberfest 2020: como funciona? E como participar?'
 description: Contribua com open source e ganhe brindes
 tags: ['eventos']

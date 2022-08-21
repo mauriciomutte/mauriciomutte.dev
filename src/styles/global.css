@@ -3,8 +3,7 @@
   --backgroundColor: #111111;
   --white: #f4f4f4;
   --white-2: #c6c6c6;
-  --yellow: #f9cb28;
-  --orange: #ff4d4d;
+  --orange-darker: #ff9f1b;
 
   --bodyFont: 'Inter', sans-serif;
   --borderRadius: 4px;
@@ -51,7 +50,7 @@ div#__next {
   background-image: linear-gradient(
     var(--gradientDegree),
     var(--yellow) 0%,
-    var(--orange) 100%
+    var(--orange-darker) 75%
   );
 
   -webkit-background-clip: text;
@@ -74,5 +73,13 @@ div#__next {
   src: url('/static/font/Inter-Bold.woff2') format('woff2'),
     url('/static/font/Inter-Bold.woff') format('woff');
   font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('/static/font/FiraCode-Regular.woff2') format('woff2'),
+    url('/static/font/FiraCode-Regular.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
 }
