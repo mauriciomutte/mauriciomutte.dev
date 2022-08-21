@@ -7,11 +7,11 @@ tags: ['dicas', 'produtividade']
 
 O GitHub CLI é uma ferramenta que traz o GitHub para dentro do seu terminal. Com ele é possível utilizar recursos e executar ações no GitHub diretamente do terminal, de forma rápida e fácil. Você consegue pular de repositório em repositório sem sofrer com trocas de contextos.
 
-Além das ações básicas (issues, pull requests, repos, etc) ainda é possível criar alias e utilizar a API do GitHub direto pela CLI. Utilizando estes dois recursos você consegue criar automações específicas para a forma como você utiliza o GitHub.
+Além das ações básicas (issues, pull requests, repos, etc) ainda é possível criar alias e utilizar a API do GitHub direto na CLI. Utilizando estes dois recursos você consegue criar automações específicas para a forma como você utiliza o GitHub.
 
 ## Instalação
 
-Na documentação oficial da CLI estão listadas as opções de instalação por ambiente. Tem suporte para Mac, Linux e Windows.
+Na [documentação oficial da CLI](https://cli.github.com/manual/) estão listadas as opções de instalação por ambiente. Tem suporte para Mac, Linux e Windows.
 
 Se você utiliza o Homebrew como gerenciador de pacote, é possível instalar a CLI do Github rodando o comando:
 
@@ -37,9 +37,9 @@ Após, siga os passos para fazer o login e autorizar. O processo é simples e vo
 gh pr create --web
 ```
 
-Sem dúvidas é a funcionalidade que mais utilizo. Permite abrir uma pull request direto sem a necessidade de abrir o navegador, entrar no Github, procurar o repositório…
+Sem dúvidas é a funcionalidade que mais utilizo. Permite abrir uma pull request rapidamente sem a necessidade de abrir o navegador, acessar o Github, procurar o repositório…
 
-Eu gosto de utilizar a flag `--web` para escrever a descrição da PR e marcar reviewers direto do navegador.
+Eu gosto de utilizar a flag `--web` para escrever a descrição da PR e marcar os reviewers/labels direto do navegador.
 
 ### Pesquisar issues e PRs
 
@@ -47,7 +47,7 @@ Eu gosto de utilizar a flag `--web` para escrever a descrição da PR e marcar r
 gh browse [PR | Issue | File]
 ```
 
-Encontre qualquer coisa dentro do seu repositório. Se você passar o ID ele vai identificar se é uma PR ou Issue e abrir no navegador. Se você escrever o path de um arquivo ele abre direto no navegador.
+Encontre qualquer coisa dentro do seu repositório. Se você passar o ID ele vai identificar se é uma PR ou Issue e abrir no navegador. Se você escrever o path de um arquivo, ele é aberto no navegador.
 
 Dica: com a ferramenta de autocomplete [Fig.io ⚡️](http://Fig.io) a utilização desse comando fica ainda melhor.
 
@@ -69,11 +69,17 @@ Outro comando que estou testando há pouco tempo. Ele não é utilizado tanto qu
 
 ### Criar e visualizar issues
 
-Essa é uma funcionalidade que mesmo sendo muito útil acabo não utilizando muito pelo motivo de não trabalhar tanto com issues. Se você costuma navegar por issues nos repositórios, vai ser de grande ajuda.
+```bash
+gh issue create --title "I found a bug" --web
+
+gh issue view 55
+```
+
+Essa é uma funcionalidade que mesmo sendo bem útil, acabo não utilizando sempre por não trabalhar tanto com issues. Se você costuma navegar por issues nos repositórios, vai ser de grande ajuda.
 
 ## Criando alias
 
-Como comentei, a CLI permite a criação de alias que serve de atalho para a execução de um ou mais comandos. Exemplo:
+Como comentei, a CLI permite a criação de alias que serve de atalho para a execução de um ou mais comandos. Veja o exemplo:
 
 ```bash
 gh alias set web 'repo view --web'
@@ -83,7 +89,9 @@ gh web
 
 [Veja mais na documentação sobre alias](https://cli.github.com/manual/gh_alias)
 
-## Alguns alias que eu utilizo
+## Alguns dos meus alias
+
+Para facilitar a criação, separei um [Gist com alias](https://gist.github.com/mauriciomutte/f1f8a29fcf44adf0f1405a8cc092c3f3) que uso frequentemente. Vou explicar aqui como utilizo cada um deles.
 
 ### Abrir repositório no navegador
 
@@ -91,19 +99,19 @@ gh web
 gh web
 ```
 
-Esse é um alias simples que criei para abrir o repositório que estou trabalhando rapidamente no navegador.
+Esse é um alias simples que criei apenas para abrir o repositório que estou trabalhando no navegador de forma rápida.
 
 ### Atualizar ambientes
 
 Esse é um alias um pouco mais complexo mas que me ajuda muito. O objetivo dele é atualizar as branches dos ambientes de teste e desenvolvimento com a branch atual que estou trabalhando.
 
-**Comando 1:** utiliza a API do GitHub para retornar, no padrão esperado do próximo comando, o número e o título da PR.
+**Comando 1:** busca as informaões da pull request da branch atual para retornar, no padrão esperado do próximo comando, o **número** e o **título** da PR.
 
 ```bash
 gh prinfo
 ```
 
-**Comando 2:** cria PRs para as branches de teste e desenvolvimento
+**Comando 2:** cria novas PRs para as branches de teste e desenvolvimento
 
 ```bash
 gh prdevqa "#xxx" "feat: pull request title"
