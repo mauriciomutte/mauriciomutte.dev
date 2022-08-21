@@ -76,3 +76,11 @@ div#__next {
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('/static/font/FiraCode-Regular.woff2') format('woff2'),
+    url('/static/font/FiraCode-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
