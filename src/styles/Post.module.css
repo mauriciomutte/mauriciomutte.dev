@@ -4,7 +4,8 @@
 }
 
 .post__title {
-  font-size: 32px;
+  font-size: 36px;
+  line-height: 50px;
   margin: 0 0 16px;
 }
 
@@ -61,22 +62,22 @@
 }
 
 .post__content h1 {
-  font-size: 32px;
-  line-height: 48px;
+  font-size: 36px;
+  line-height: 50px;
   margin: 0 0 20px;
   color: var(--white);
 }
 
 .post__content h2 {
   color: var(--white);
+  font-size: 26px;
   margin: 60px 0 0;
-  font-size: 24px;
 }
 
 .post__content h3 {
   color: var(--white);
   font-size: 18px;
-  margin: 20px 0 0;
+  margin: 30px 0 0;
 }
 
 .post__content ul {
