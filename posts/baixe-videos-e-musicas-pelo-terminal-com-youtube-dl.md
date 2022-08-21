@@ -1,5 +1,5 @@
 ---
-date: 2020-12-10 10:47:39
+date: '2020-12-10'
 title: 'Baixe vídeos e músicas pelo terminal com o YoutubeDL'
 description: Uma ferramenta open-source para baixar vídeos/músicas
 tags: ['dicas']
