@@ -1,5 +1,5 @@
 ---
-date: 2022-08-18 11:00:02
+date: '2022-08-22'
 title: 'Mais produtividade com GitHub CLI'
 description: 'Utilize o GitHub dentro do seu terminal para automatizar tarefas'
 tags: ['dicas', 'produtividade']
