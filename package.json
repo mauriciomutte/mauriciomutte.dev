@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "chrome-aws-lambda": "^10.1.0",
-    "date-fns": "^2.26.0",
+    "date-fns": "^2.29.2",
     "gray-matter": "^4.0.3",
     "next": "^12.2.5",
     "puppeteer-core": "10.1.0",
