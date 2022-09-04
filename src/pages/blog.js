@@ -16,7 +16,7 @@ function Blog(props) {
         <meta property="og:description" content={description} />
         <meta property="og:url" content="https://mauriciomutte.dev/sobre/" />
         <meta
-          content={`https://mauriciomutte.dev/og-image.png?title=${title}`}
+          content={`https://og-image.mauriciomutte.dev/image.png?title=${title}`}
           property="og:image"
         />
       </Head>

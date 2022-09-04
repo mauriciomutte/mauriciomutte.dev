@@ -4,10 +4,10 @@ import Head from 'next/head'
 import BlogPost from '../layout/BlogPost'
 import { getAllPosts, getPostBySlug, convertMarkdownToHtml } from '../lib/blog'
 
-const BASE_URL = process.env.NEXT_PUBLIC_APP_URL
+const BASE_URL = 'og-image.mauriciomutte.dev'
 
 const Post = ({ title, description, slug, content }) => {
-  const ogImageUrl = `${BASE_URL}/og-image.png?title=${title}`
+  const ogImageUrl = `${BASE_URL}/image.png?title=${title}`
 
   useEffect(() => {
     fetch(ogImageUrl)
