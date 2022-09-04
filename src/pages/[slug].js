@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import Head from 'next/head'
 
 import BlogPost from '../layout/BlogPost'
@@ -8,10 +7,6 @@ const BASE_URL = 'https://og-image.mauriciomutte.dev'
 
 const Post = ({ title, description, slug, content }) => {
   const ogImageUrl = `${BASE_URL}/image.png?title=${title}`
-
-  useEffect(() => {
-    fetch(ogImageUrl)
-  }, [title])
 
   return (
     <>
