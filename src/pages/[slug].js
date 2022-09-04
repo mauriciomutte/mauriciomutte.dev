@@ -4,7 +4,7 @@ import Head from 'next/head'
 import BlogPost from '../layout/BlogPost'
 import { getAllPosts, getPostBySlug, convertMarkdownToHtml } from '../lib/blog'
 
-const BASE_URL = 'og-image.mauriciomutte.dev'
+const BASE_URL = 'https://og-image.mauriciomutte.dev'
 
 const Post = ({ title, description, slug, content }) => {
   const ogImageUrl = `${BASE_URL}/image.png?title=${title}`
