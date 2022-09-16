@@ -37,7 +37,7 @@ function Sobre(props) {
             Que honra ter você por aqui,
           </h1>
           <p>
-            Prazer, eu sou o Maurício Mutte, tenho 20 anos, nasci em Porto
+            Prazer, eu sou o Maurício Mutte, tenho 21 anos, nasci em Porto
             Alegre/RS (aka Gaúcho). Hoje, atuo como desenvolvedor Front End na
             Junto Somos Mais.
           </p>
