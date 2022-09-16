@@ -12,7 +12,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "date-fns": "^2.26.0",
+    "date-fns": "^2.29.3",
     "gray-matter": "^4.0.3",
     "next": "^12.2.5",
     "react": "^17.0.2",
