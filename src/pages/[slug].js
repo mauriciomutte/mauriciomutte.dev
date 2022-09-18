@@ -3,10 +3,10 @@ import Head from 'next/head'
 import BlogPost from '../layout/BlogPost'
 import { getAllPosts, getPostBySlug, convertMarkdownToHtml } from '../lib/blog'
 
-const BASE_URL = 'https://og-image.mauriciomutte.dev'
+const OG_BASE_URL = 'https://og-image.mauriciomutte.dev'
 
 const Post = ({ title, description, slug, content }) => {
-  const ogImageUrl = `${BASE_URL}/image.png?title=${title}`
+  const ogImageUrl = `${OG_BASE_URL}/image.png?title=${title}`
 
   return (
     <>
@@ -15,7 +15,7 @@ const Post = ({ title, description, slug, content }) => {
         <meta name="description" content={description} />
         <meta property="og:title" content={`${title} | Maurício Mutte`} />
         <meta property="og:description" content={description} />
-        <meta property="og:url" content={`${BASE_URL}/${slug}`} />
+        <meta property="og:url" content={`https://mauriciomutte.dev/${slug}`} />
         <meta property="og:locale" content="pt_BR" />
         <meta name="author" content="Maurício Mutte" />
         <meta name="twitter:creator" content="@mauriciomutte" />
