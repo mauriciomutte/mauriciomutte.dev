@@ -1,0 +1,157 @@
+---
+date: '2022-12-29'
+title: 'Automatizando deploy de login na Auth0 com Azure Pipelines'
+description: 'Utilizando pipelines para automatizar o deploy do login customizado na Auth0'
+tags: ['Auth0', 'CI/CD', 'Azure DevOps']
+---
+
+## Introdução
+
+No painel da Auth0 é possível adicionar um código HTML para sobrescrever o Universal Login (solução de login pronta da Auth0) mas nada além disso. Outros arquivos estáticos como JS, CSS e imagens precisam ser hospedados em algum serviço de armazenamento como Blob Storage da Azure ou o S3 da AWS.
+
+## Next.js e configurações
+
+Para essa solução vou utilizar o framework Next.js para construir a página usando React e lidar com a geração dos arquivos estáticos. O foco aqui é o processo de deploy então vou manter o padrão do `create-next-app`.
+
+No Next.js tem a opção para gerar apenas arquivos estáticos, usando o comando: `next export`. Vamos mudar o script de build para contemplar também o `export`:
+
+```json
+"scripts": {
+  "build": "next build && next export"
+}
+```
+
+Por padrão, ao exportar os estáticos, a referência dentro do HTML é para o path local. Para configurar uma CDN podemos utilizar a [configuração de `assetPrefix`](https://nextjs.org/docs/api-reference/next.config.js/cdn-support-with-asset-prefix) no arquivo `next.config.ts`:
+
+```tsx
+const isProd = process.env.NODE_ENV === 'production'
+
+module.exports = {
+  // Use the CDN in production and localhost for development.
+  assetPrefix: isProd ? 'https://cdn.mydomain.com' : undefined,
+}
+```
+
+## Conta no Azure DevOps
+
+Entre ou faça o cadastro no Azure DevOps, crie uma nova organização e um novo projeto seguindo as instruções normalmente.
+
+A Azure oferece gratuitamente um plano limitado, que inclui pipelines, para você testar e aprender mais sobre a plataforma. Porém, ao criar minha conta as pipelines estavam bloqueadas. Foi necessário solicitar o acesso em um formulário, veja detalhes [nesse release note](https://learn.microsoft.com/en-us/azure/devops/release-notes/2021/sprint-184-update#changes-to-azure-pipelines-free-grants).
+
+## Criar uma pipeline
+
+Com uma conta no Azure DevOps e a permissão de pipelines podemos criar nossa pipeline:
+
+1. Dentro da seção de pipeline, clique em "New pipeline”.
+2. Conecte na sua conta do Github ou outro serviço
+3. Selecione o repositório do seu projeto
+4. Escolha uma configuração inicial (nesse caso, Node.js com React)
+5. Clique em "Save and run”
+
+E… pronto! Temos a nossa primeira versão da pipeline. Será feito um commit do arquivo `azure-pipelines.yml` que deverá se parecer com isso:
+
+```yaml
+trigger:
+  - main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '16.x'
+    displayName: 'Install Node.js'
+
+  - script: |
+      yarn --frozen-lockfile
+      yarn build
+    displayName: 'yarn install and build'
+```
+
+**Obs:** fiz algumas mudanças para usar o `yarn` no lugar do `npm`.
+
+## Deploy na Auth0
+
+Vamos instalar e configurar a CLI de deploy da Auth0 no projeto com os seguintes passos:
+
+1. Instale o pacote `auth0-deploy-cli`.
+
+   ```bash
+   yarn add auth0-deploy-cli
+   ```
+
+2. Na raiz do projeto, crie um arquivo com o nome `tenant.yaml` e adicione a configuração da página de login:
+
+   ```yaml
+   pages:
+     - name: login
+       enabled: true
+       html: ./out/login.html
+   ```
+
+3. No arquivo `package.json`, crie um novo script para executar o deploy passando o YAML de configuração:
+
+   ```bash
+   "scripts": {
+     "deploy:auth0": "a0deploy import --input_file ./tenant.yaml"
+   }
+   ```
+
+Bom, provavelmente, se você tentar rodar o deploy receberá um erro 403 ou algo do tipo. O motivo: ainda não foi configurado nenhuma credencial da Auth0 .
+
+Por segurança, podemos adicionar essas credenciais direto no Azure DevOps. Dentro do seu projeto na Azure DevOps, vá em Pipelines > Library e então crie um novo grupo com as variáveis: `AUTH0_DOMAIN`, `AUTH0_CLIENT_ID` e `AUTH0_CLIENT_SECRET`.
+
+No YAML da pipeline, vamos importar o grupo de variáveis que acabamos de criar. Após, adicionar uma tarefa para rodar o script de deploy do `package.json` passando as ENVs.
+
+```yaml
+variables:
+  - group: auth0-credentials
+
+steps:
+  ...
+
+  - script: |
+      yarn deploy:auth0
+    displayName: 'Auth0 deploy login HTML'
+    env:
+      AUTH0_DOMAIN: $(AUTH0_DOMAIN)
+      AUTH0_CLIENT_ID: $(AUTH0_CLIENT_ID)
+      AUTH0_CLIENT_SECRET: $(AUTH0_CLIENT_SECRET)
+```
+
+## Upload de estáticos na Amazon S3
+
+### Requisitos
+
+Antes de adicionar essa tarefa na pipelines, você vai precisar:
+
+1. Instalar a extensão "AWS Toolkit for Azure DevOps"
+2. Conectar sua conta AWS no projeto do Azure DevOps
+
+[Em qualquer dúvida, você pode consultar a documentação da AWS.](https://docs.aws.amazon.com/vsts/latest/userguide/getting-started.html)
+
+### Tarefa na pipeline
+
+Vamos subir em um bucket no S3 todos arquivos, exceto os HTML. Para isso podemos pegar a pasta `_next` e todos os arquivos dentro. A tarefa no Azure Pipeline deve ficar:
+
+```yaml
+- task: S3Upload@1
+  inputs:
+    awsCredentials: 'YOUR_AWS_CONNECTION'
+    regionName: 'us-east-1'
+    bucketName: 'auth0-custom-login-bucket'
+    sourceFolder: '$(Build.SourcesDirectory)/out'
+    globExpressions: '_next/**'
+```
+
+- **awsCredentials:** o nome da conexão feita com a AWS;
+- **bucketName:** nome do seu bucket;
+- **sourceFolder:** o caminho onde estará os arquivos para fazer upload;
+- **globExpressions:** filtrar os arquivos para o upload.
+
+## Conclusão
+
+Gosto de seguir a filosofia “gastar um pouco de tempo agora (presente) para ganhar (ou poupar) mais tempo no futuro”. Fazer um processo como esse de forma manual ~~além de chato~~ se tornaria MUITO oneroso. A automação nos ajuda justamente nisso.
+
+[O código completo está hospedado no meu Github 😃.](https://github.com/mauriciomutte/pipeline-playground/tree/main/auth0-custom-login-deploy)
