@@ -1,4 +1,5 @@
 import { Inter, Fira_Code } from '@next/font/google'
+import { Analytics } from '@vercel/analytics/react'
 
 import '../styles/global.css'
 import '../../public/static/css/prism.css'
@@ -23,6 +24,7 @@ export default function MyApp({ Component, pageProps }) {
       </style>
       <Layout>
         <Component {...pageProps} />
+        <Analytics />
       </Layout>
     </>
   )
