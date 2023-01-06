@@ -24,8 +24,8 @@ export default function MyApp({ Component, pageProps }) {
       </style>
       <Layout>
         <Component {...pageProps} />
-        <Analytics />
       </Layout>
+      <Analytics />
     </>
   )
 }
