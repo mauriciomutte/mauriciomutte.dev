@@ -8,10 +8,8 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.header__container}>
-        <Link href="/">
-          <a className={styles.header__logo}>
-            Maurício <span className={styles.header__logoBold}>Mutte</span>
-          </a>
+        <Link href="/" className={styles.header__logo}>
+          Maurício <span className={styles.header__logoBold}>Mutte</span>
         </Link>
 
         <nav>
@@ -21,8 +19,8 @@ const Header = () => {
 
               return (
                 <li key={page}>
-                  <Link href={pagePath}>
-                    <a className={styles.nav__link}>{page}</a>
+                  <Link href={pagePath} className={styles.nav__link}>
+                    {page}
                   </Link>
                 </li>
               )
