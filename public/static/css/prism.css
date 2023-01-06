@@ -13,8 +13,6 @@
   --red: #ff9580;
   --yellow: #ffff80;
 
-  --code: 'Fira Code', monospace;
-
   /* Transparency */
 
   /** 30% of transparency **/
@@ -202,7 +200,7 @@ pre[class*='language-'] {
 pre,
 code,
 pre code span {
-  font-family: var(--code);
+  font-family: var(--fira-code-font);
 }
 
 /* Code blocks */

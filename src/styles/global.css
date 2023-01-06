@@ -5,7 +5,6 @@
   --white-2: #c6c6c6;
   --orange-darker: #ff9f1b;
 
-  --bodyFont: 'Inter', sans-serif;
   --borderRadius: 4px;
   --gradientDegree: 95deg;
   --duration: 0.2s;
@@ -15,7 +14,7 @@
 * {
   box-sizing: border-box;
   color: var(--white);
-  font-family: var(--bodyFont);
+  font-family: var(--inter-font);
 }
 
 html,
@@ -58,28 +57,4 @@ div#__next {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   -webkit-box-decoration-break: clone;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('/static/font/Inter-Regular.woff2') format('woff2'),
-    url('/static/font/Inter-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('/static/font/Inter-Bold.woff2') format('woff2'),
-    url('/static/font/Inter-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Fira Code';
-  src: url('/static/font/FiraCode-Regular.woff2') format('woff2'),
-    url('/static/font/FiraCode-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
 }
