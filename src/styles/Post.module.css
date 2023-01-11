@@ -80,11 +80,16 @@
   margin: 30px 0 0;
 }
 
-.post__content ul {
+.post__content ul,
+.post__content ol {
   margin: 0;
 }
 
-.post__content ul li {
+.post__content li::marker {
+  color: var(--white);
+}
+
+.post__content li {
   color: var(--textColor);
   margin: 0 0 10px;
 }
