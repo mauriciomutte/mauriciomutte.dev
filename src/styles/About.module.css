@@ -21,6 +21,11 @@
   line-height: 26px;
 }
 
+.section__about__image img {
+  box-shadow: 0 0 38px 0 #fff2;
+  border-radius: 50%;
+}
+
 @media (min-width: 768px) {
   .section__about {
     flex-direction: row;
