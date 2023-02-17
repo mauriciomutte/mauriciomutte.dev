@@ -154,4 +154,4 @@ Vamos subir em um bucket no S3 todos arquivos, exceto os HTML. Para isso podemos
 
 Gosto de seguir a filosofia “gastar um pouco de tempo agora (presente) para ganhar (ou poupar) mais tempo no futuro”. Fazer um processo como esse de forma manual ~~além de chato~~ se tornaria MUITO oneroso. A automação nos ajuda justamente nisso.
 
-[O código completo está hospedado no meu Github 😃.](https://github.com/mauriciomutte/pipeline-playground/tree/main/auth0-custom-login-deploy)
+[O código completo está hospedado no meu Github 😃.](https://github.com/mauriciomutte/auth0-custom-login-deploy)
