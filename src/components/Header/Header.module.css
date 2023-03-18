@@ -1,9 +1,9 @@
 .header {
   color: var(--white);
-  background-color: rgba(17, 17, 17, 0.65);
-  backdrop-filter: blur(12px);
+  background-color: rgb(22 24 29 / 0.9);
+  backdrop-filter: blur(16px);
   flex-direction: row;
-  height: 52px;
+  height: 58px;
   padding: 0 16px;
   position: fixed;
   width: 100%;
@@ -14,6 +14,7 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
+  height: 100%;
   margin: 0 auto;
   max-width: 1024px;
 }
