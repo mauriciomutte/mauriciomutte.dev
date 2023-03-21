@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import styles from './Header.module.css'
 
-const pages = ['Blog', 'Sobre']
+const pages = ['Blog', 'About']
 
 const Header = () => {
   return (

@@ -22,7 +22,7 @@ function HomePage(props) {
 
       <h1 className={styles.home__title}>Maurício Mutte</h1>
       <p className={styles.home__description}>
-        Desenvolvedor Front-end na Juntos Somos Mais.
+        Frontend Software Engineer at Juntos Somos Mais
       </p>
     </div>
   )
@@ -32,7 +32,7 @@ export async function getStaticProps() {
   return {
     props: {
       title: 'Maurício Mutte',
-      description: 'Desenvolvedor Front-end na Juntos Somos Mais.',
+      description: 'Frontend Software Engineer',
     },
   }
 }

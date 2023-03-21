@@ -1,14 +1,14 @@
 import { format, parseISO } from 'date-fns'
-import { ptBR } from 'date-fns/locale'
+import { enUS } from 'date-fns/locale'
 
 import styles from './CareerItem.module.css'
 
 const CareerItem = ({ occupation, company, startDate, endDate }) => {
   const formatDate = (date) =>
-    format(parseISO(date), 'MMM yyyy', { locale: ptBR })
+    format(parseISO(date), 'MMM yyyy', { locale: enUS })
 
   const getPeriodDate = () => {
-    if (!endDate) return `${formatDate(startDate)} - presente`
+    if (!endDate) return `${formatDate(startDate)} - present`
 
     return `${formatDate(startDate)} - ${formatDate(endDate)}`
   }

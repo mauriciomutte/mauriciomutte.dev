@@ -21,7 +21,7 @@ function Blog(props) {
         />
       </Head>
 
-      <h1 className="gradient">Todas as publicações</h1>
+      <h1 className="gradient">Blog</h1>
       <div style={{ margin: '0 -24px' }}>
         {posts.map((post) => (
           <BlogItem
@@ -44,7 +44,7 @@ export async function getStaticProps() {
   return {
     props: {
       title: 'Blog | Maurício Mutte',
-      description: 'Publicações de Maurício Mutte',
+      description: 'Posts about programming, technology, and more.',
       posts,
     },
   }

@@ -34,34 +34,31 @@ function Sobre(props) {
         </div>
         <div>
           <h1 className={`${styles.section__about__title} gradient`}>
-            Que honra ter você por aqui,
+            It is a pleasure to have you here!
           </h1>
           <p>
-            Prazer, eu sou o Maurício Mutte, tenho 21 anos, nasci em Porto
-            Alegre/RS (aka Gaúcho). Hoje, atuo como desenvolvedor Front End na
-            Junto Somos Mais.
+            Allow me to introduce myself. I'm Maurício Mutte, a 21-year-old
+            Frontend Software Engineer from Brazil.
           </p>
           <p>
-            Sou fascinado por construir coisas novas e uso a programação como
-            ferramenta. Comecei a programar cedo (quando estava entrando no
-            Ensino Médio). Ao terminar essa fase, tive oportunidades para
-            aplicar meu conhecimento em projetos reais de grandes empresas.
+            My passion for building innovative solutions led me to utilize
+            programming as a tool to create new and exciting projects. I
+            discovered my passion for programming at a young age and have since
+            been able to apply my skills and knowledge to real projects for
+            large companies.
           </p>
           <p>
-            Sou bem comunicativo, adoro trabalhar em equipe e estou sempre
-            compartilhando coisas que aprendo. Por isso, criei esse blog: como
-            uma forma de aplicar o "Learn In Public" e ajudar pessoas.
-          </p>
-          <p>
-            Além de programar, gosto de contribuir em projetos open source,
-            ouvir músicas, ler livros, jogar vídeo game (CS:GO principalmente) e
-            assistir séries.
+            I love working in teams and sharing what I know with others. That's
+            why I created this blog to help people out and promote the "Learn In
+            Public" concept. When I'm not coding (or contributing to open-source
+            projects), I'm doing stuff like reading, listening to music, playing
+            video games (FPS games are my favorite), or binge-watching TV shows.
           </p>
         </div>
       </section>
 
       <section className={styles.section__career}>
-        <h1>Um pouco da minha carreira</h1>
+        <h1>A brief overview of my career</h1>
         {items.map((item) => (
           <CareerItem key={item.occupation} {...item} />
         ))}
@@ -73,8 +70,8 @@ function Sobre(props) {
 export async function getStaticProps() {
   return {
     props: {
-      title: 'Sobre | Maurício Mutte',
-      description: 'Um pouco mais sobre Maurício Mutte',
+      title: 'About | Maurício Mutte',
+      description: 'A little more about Maurício Mutte',
     },
   }
 }
