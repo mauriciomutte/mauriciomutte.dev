@@ -1,7 +1,7 @@
 .header {
   color: var(--white);
-  background-color: rgb(22 24 29 / 0.9);
-  backdrop-filter: blur(16px);
+  background-color: rgb(22 24 29 / 0.85);
+  backdrop-filter: blur(12px);
   flex-direction: row;
   height: 58px;
   padding: 0 16px;
