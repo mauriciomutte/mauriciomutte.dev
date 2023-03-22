@@ -12,21 +12,16 @@ const Header = () => {
           Maurício <span className={styles.header__logoBold}>Mutte</span>
         </Link>
 
-        <nav>
-          <ul className={styles.nav__ul}>
-            {pages.map((page) => {
-              const pagePath = page.toLowerCase()
-
-              return (
-                <li key={page}>
-                  <Link href={pagePath} className={styles.nav__link}>
-                    {page}
-                  </Link>
-                </li>
-              )
-            })}
-          </ul>
-        </nav>
+        <div>
+          {pages.map((page) => {
+            const pagePath = page.toLowerCase()
+            return (
+              <Link key={page} href={pagePath} className={styles.nav__link}>
+                {page}
+              </Link>
+            )
+          })}
+        </div>
       </div>
     </header>
   )

@@ -29,11 +29,6 @@
   font-weight: 700;
 }
 
-.nav__ul {
-  display: flex;
-  list-style: none;
-}
-
 .nav__link {
   font-size: 14px;
   padding: 16px;
