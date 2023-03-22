@@ -21,6 +21,10 @@
   line-height: 26px;
 }
 
+.section__about__image {
+  padding: 46px 0;
+}
+
 .section__about__image img {
   box-shadow: 0 0 38px 0 #fff2;
   border-radius: 50%;
