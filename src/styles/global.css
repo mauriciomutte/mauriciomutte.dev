@@ -18,8 +18,7 @@
 }
 
 html,
-body,
-div#__next {
+body {
   margin: 0;
   min-height: 100vh;
   padding: 0;
@@ -29,12 +28,12 @@ html {
   background-color: var(--bgColor);
 }
 
-div#__next {
+body {
   display: flex;
   flex-direction: column;
 }
 
-.main {
+main {
   padding: 64px 16px;
   display: flex;
   flex: 1;
