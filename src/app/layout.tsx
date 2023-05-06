@@ -2,6 +2,8 @@ import { Inter } from 'next/font/google'
 
 import { Footer } from '@/ui/footer'
 
+import '@/styles/global.css'
+
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
