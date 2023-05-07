@@ -5,10 +5,32 @@ import { allPosts } from '@/contentlayer/generated'
 import styles from '@/styles/Post.module.css'
 import { formatDate } from '@/lib/utils'
 import '@/styles/mdx.css'
+import { Metadata } from 'next'
 
 type PostPageProps = {
   params: {
     slug: string
+  }
+}
+
+async function getPostFromParams(params: PostPageProps['params']) {
+  const post = allPosts.find((post) => post._raw.flattenedPath === params.slug)
+
+  if (!post) return null
+
+  return post
+}
+
+export async function generateMetadata({
+  params,
+}: PostPageProps): Promise<Metadata> {
+  const post = await getPostFromParams(params)
+
+  if (!post) return {}
+
+  return {
+    title: post.title,
+    description: post.description,
   }
 }
 

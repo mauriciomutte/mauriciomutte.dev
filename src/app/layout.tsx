@@ -18,6 +18,13 @@ const fira_code = Fira_Code({
   display: 'swap',
 })
 
+export const metadata = {
+  title: {
+    default: 'Maurício Mutte',
+    template: '%s | Maurício Mutte',
+  },
+}
+
 export default function RootLayout({
   children,
 }: {

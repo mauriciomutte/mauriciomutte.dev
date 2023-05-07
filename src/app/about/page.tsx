@@ -5,6 +5,10 @@ import { CareerItem } from '@/ui/career-item'
 import items from '@/data/about'
 import styles from '@/styles/About.module.css'
 
+export const metadata = {
+  title: 'About',
+}
+
 export default function AboutPage() {
   return (
     <div>

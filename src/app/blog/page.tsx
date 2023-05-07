@@ -4,6 +4,10 @@ import { allPosts } from '@/contentlayer/generated'
 import { BlogItem } from '@/ui/blog-item'
 import { formatDate } from '@/lib/utils'
 
+export const metadata = {
+  title: 'Blog',
+}
+
 export default function BlogPage() {
   const posts = allPosts.sort((a, b) =>
     compareDesc(new Date(a.date), new Date(b.date))
