@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { allPosts } from '@/contentlayer/generated'
 import styles from '@/styles/Post.module.css'
 import { formatDate } from '@/lib/utils'
+import '@/styles/mdx.css'
 
 type PostPageProps = {
   params: {
@@ -31,7 +32,9 @@ export default function PostPage({ params }: PostPageProps) {
           <h1 className={`${styles.post__title} gradient`}>{post.title}</h1>
           <time className={styles.post__date}>{formatDate(post.date)}</time>
         </header>
-        <MDXContent />
+        <section className={styles.post__content}>
+          <MDXContent />
+        </section>
       </article>
     </div>
   )
