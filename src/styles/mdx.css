@@ -7,6 +7,7 @@ div[data-rehype-pretty-code-fragment] {
 div[data-rehype-pretty-code-fragment] pre {
   overflow-x: auto;
   font-size: 1rem;
+  font-family: var(--font-fira-code);
   line-height: 1.75rem;
 }
 
@@ -31,7 +32,6 @@ div[data-rehype-pretty-code-fragment] .line {
   padding-left: 1.5rem;
   padding-right: 0.75rem;
   border-left: 4px solid transparent;
-  word-spacing: 0.25rem;
 }
 
 div[data-rehype-pretty-code-fragment] .line span::selection {

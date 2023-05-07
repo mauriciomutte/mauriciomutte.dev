@@ -27,6 +27,7 @@ body {
 
 html {
   background-color: var(--bgColor);
+  font-family: var(--font-inter);
 }
 
 body {
