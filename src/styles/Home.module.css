@@ -1,6 +1,8 @@
 .home__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   min-height: 100%;
-  align-self: center;
 }
 
 .home__title {

@@ -30,14 +30,12 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr auto;
 }
 
 main {
   padding: 64px 16px;
-  display: flex;
-  flex: 1;
   margin: 0 auto;
   max-width: 800px;
   width: 100%;
