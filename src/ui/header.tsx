@@ -15,7 +15,11 @@ const Header = () => {
         <div>
           {pages.map((page) => {
             return (
-              <Link key={page} href="/" className={styles.nav__link}>
+              <Link
+                key={page}
+                href={`/${page.toLowerCase()}`}
+                className={styles.nav__link}
+              >
                 {page}
               </Link>
             )
