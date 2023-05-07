@@ -1,0 +1,59 @@
+div[data-rehype-pretty-code-fragment] {
+  overflow: hidden;
+  background-color: #0d1116;
+  border-radius: 1rem;
+}
+
+div[data-rehype-pretty-code-fragment] pre {
+  overflow-x: auto;
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+
+div[data-rehype-pretty-code-title] {
+  margin-bottom: 0.125rem;
+  border-radius: 0.375rem;
+  background-color: #02040a;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #6d7681;
+}
+
+div[data-rehype-pretty-code-fragment] code {
+  display: grid;
+}
+
+div[data-rehype-pretty-code-fragment] .line {
+  padding-left: 1.5rem;
+  padding-right: 0.75rem;
+  border-left: 4px solid transparent;
+  word-spacing: 0.25rem;
+}
+
+div[data-rehype-pretty-code-fragment] .line span::selection {
+  background-color: #fff2;
+}
+
+div[data-rehype-pretty-code-fragment] .line--highlighted {
+  border-left-color: #6d7681;
+  background-color: #171b22;
+}
+
+code[data-line-numbers] {
+  counter-reset: lineNumber;
+}
+
+code[data-line-numbers] .line::before {
+  counter-increment: lineNumber;
+  content: counter(lineNumber);
+  display: inline-block;
+  text-align: right;
+  margin-right: 1.5rem;
+  margin-left: -0.75rem;
+  width: 1rem;
+  color: #6d7681;
+}
