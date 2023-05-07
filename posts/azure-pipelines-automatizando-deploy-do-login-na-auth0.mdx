@@ -23,7 +23,7 @@ No Next.js tem a opção para gerar apenas arquivos estáticos, usando o comando
 
 Por padrão, ao exportar os estáticos, a referência dentro do HTML é para o path local. Para configurar uma CDN podemos utilizar a [configuração de `assetPrefix`](https://nextjs.org/docs/api-reference/next.config.js/cdn-support-with-asset-prefix) no arquivo `next.config.ts`:
 
-```tsx
+```tsx showLineNumbers title="next.config.ts"
 const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
@@ -50,7 +50,7 @@ Com uma conta no Azure DevOps e a permissão de pipelines podemos criar nossa pi
 
 E… pronto! Temos a nossa primeira versão da pipeline. Será feito um commit do arquivo `azure-pipelines.yml` que deverá se parecer com isso:
 
-```yaml
+```yaml showLineNumbers title="azure-pipelines.yml"
 trigger:
   - main
 
@@ -83,7 +83,7 @@ Vamos instalar e configurar a CLI de deploy da Auth0 no projeto com os seguintes
 
 2. Na raiz do projeto, crie um arquivo com o nome `tenant.yaml` e adicione a configuração da página de login:
 
-   ```yaml
+   ```yaml showLineNumbers title="tenant.yaml"
    pages:
      - name: login
        enabled: true
@@ -92,7 +92,7 @@ Vamos instalar e configurar a CLI de deploy da Auth0 no projeto com os seguintes
 
 3. No arquivo `package.json`, crie um novo script para executar o deploy passando o YAML de configuração:
 
-   ```bash
+   ```bash title="package.json"
    "scripts": {
      "deploy:auth0": "a0deploy import --input_file ./tenant.yaml"
    }
@@ -104,7 +104,7 @@ Por segurança, podemos adicionar essas credenciais direto no Azure DevOps. Dent
 
 No YAML da pipeline, vamos importar o grupo de variáveis que acabamos de criar. Após, adicionar uma tarefa para rodar o script de deploy do `package.json` passando as ENVs.
 
-```yaml
+```yaml title="azure-pipelines.yml"
 variables:
   - group: auth0-credentials
 
@@ -135,7 +135,7 @@ Antes de adicionar essa tarefa na pipelines, você vai precisar:
 
 Vamos subir em um bucket no S3 todos arquivos, exceto os HTML. Para isso podemos pegar a pasta `_next` e todos os arquivos dentro. A tarefa no Azure Pipeline deve ficar:
 
-```yaml
+```yaml title="azure-pipelines.yml"
 - task: S3Upload@1
   inputs:
     awsCredentials: 'YOUR_AWS_CONNECTION'
