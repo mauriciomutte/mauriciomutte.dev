@@ -1,7 +1,9 @@
+import { useMDXComponent } from 'next-contentlayer/hooks'
 import { notFound } from 'next/navigation'
 
 import { allPosts } from '@/contentlayer/generated'
 import styles from '@/styles/Post.module.css'
+import { formatDate } from '@/lib/utils'
 
 type PostPageProps = {
   params: {
@@ -9,39 +11,27 @@ type PostPageProps = {
   }
 }
 
-async function getPostFromParams({ slug }: PostPageProps['params']) {
-  const post = allPosts.find((post) => post._raw.flattenedPath === slug)
-
-  if (!post) return null
-
-  return post
-}
-
 export async function generateStaticParams() {
   return allPosts.map((post) => ({
-    slug: post.slug,
+    slug: post._raw.flattenedPath,
   }))
 }
 
-export default async function PostPage({
-  params,
-}: {
-  params: { slug: string }
-}) {
-  const post = await getPostFromParams(params)
+export default function PostPage({ params }: PostPageProps) {
+  const post = allPosts.find((post) => post._raw.flattenedPath === params.slug)
 
-  if (!post) return notFound()
+  if (!post) notFound()
+
+  const MDXContent = useMDXComponent(post.body.code)
 
   return (
     <div>
       <article className={styles.post__article}>
         <header className={styles.post__header}>
           <h1 className={`${styles.post__title} gradient`}>{post.title}</h1>
-          <time className={styles.post__date}>{post.date}</time>
+          <time className={styles.post__date}>{formatDate(post.date)}</time>
         </header>
-        <section className={styles.post__content}>
-          <div dangerouslySetInnerHTML={{ __html: post.body.html }} />
-        </section>
+        <MDXContent />
       </article>
     </div>
   )
