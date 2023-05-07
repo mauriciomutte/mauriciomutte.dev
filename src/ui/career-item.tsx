@@ -1,10 +1,22 @@
 import { format, parseISO } from 'date-fns'
 import { enUS } from 'date-fns/locale'
 
-import styles from './CareerItem.module.css'
+import styles from './career-item.module.css'
 
-const CareerItem = ({ occupation, company, startDate, endDate }) => {
-  const formatDate = (date) =>
+type CareerItemProps = {
+  occupation: string
+  company: string
+  startDate: string
+  endDate?: string
+}
+
+export const CareerItem = ({
+  occupation,
+  company,
+  startDate,
+  endDate,
+}: CareerItemProps) => {
+  const formatDate = (date: string) =>
     format(parseISO(date), 'MMM yyyy', { locale: enUS })
 
   const getPeriodDate = () => {
@@ -22,5 +34,3 @@ const CareerItem = ({ occupation, company, startDate, endDate }) => {
     </section>
   )
 }
-
-export default CareerItem

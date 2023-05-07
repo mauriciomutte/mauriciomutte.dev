@@ -1,28 +1,13 @@
-import Head from 'next/head'
+/* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 
-import CareerItem from '../components/CareerItem/CareerItem'
-import Main from '../layout/Main'
-import items from '../data/about'
-import styles from '../styles/About.module.css'
+import { CareerItem } from '@/ui/career-item'
+import items from '@/data/about'
+import styles from '@/styles/About.module.css'
 
-function Sobre(props) {
-  const { title, description } = props
-
+export default function AboutPage() {
   return (
     <div>
-      <Head>
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <meta property="og:url" content="https://mauriciomutte.dev/sobre/" />
-        <meta
-          content={`https://og-image.mauriciomutte.dev/image.png?title=${title}`}
-          property="og:image"
-        />
-      </Head>
-
       <section className={styles.section__about}>
         <div className={styles.section__about__image}>
           <Image
@@ -66,16 +51,3 @@ function Sobre(props) {
     </div>
   )
 }
-
-export async function getStaticProps() {
-  return {
-    props: {
-      title: 'About | Maurício Mutte',
-      description: 'A little more about Maurício Mutte',
-    },
-  }
-}
-
-Sobre.Layout = Main
-
-export default Sobre
