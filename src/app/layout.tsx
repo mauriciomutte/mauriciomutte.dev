@@ -24,6 +24,8 @@ const fira_code = Fira_Code({
 export const metadata = {
   title: {
     default: 'Maurício Mutte',
+    description:
+      'A Software Engineer with a passion for all things tech, particularly in the Frontend development space.',
     template: '%s | Maurício Mutte',
   },
 }
