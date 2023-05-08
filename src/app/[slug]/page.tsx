@@ -1,11 +1,11 @@
-import { useMDXComponent } from 'next-contentlayer/hooks'
+import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import { useMDXComponent } from 'next-contentlayer/hooks'
 
 import { allPosts } from '@/contentlayer/generated'
 import styles from '@/styles/Post.module.css'
 import { formatDate } from '@/lib/utils'
 import '@/styles/mdx.css'
-import { Metadata } from 'next'
 
 type PostPageProps = {
   params: {
