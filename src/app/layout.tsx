@@ -1,3 +1,5 @@
+import Head from 'next/head'
+import NextScript from 'next/script'
 import { Inter, Fira_Code } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react'
 
@@ -5,6 +7,7 @@ import { Footer } from '@/ui/footer'
 
 import '@/styles/global.css'
 import Header from '@/ui/header'
+import { GA_TRACKING_ID } from '@/lib/gtag'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -32,6 +35,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${fira_code.variable}`}>
+      <Head>
+        <NextScript
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+          strategy="afterInteractive"
+        />
+        <NextScript id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}');
+          `}
+        </NextScript>
+      </Head>
       <body>
         <Header />
         <main>{children}</main>
