@@ -1,3 +1,4 @@
+import { Metadata } from 'next'
 import Head from 'next/head'
 import NextScript from 'next/script'
 import { Inter, Fira_Code } from 'next/font/google'
@@ -21,13 +22,13 @@ const fira_code = Fira_Code({
   display: 'swap',
 })
 
-export const metadata = {
+export const metadata: Metadata = {
   title: {
     default: 'Maurício Mutte',
-    description:
-      'A Software Engineer with a passion for all things tech, particularly in the Frontend development space.',
     template: '%s | Maurício Mutte',
   },
+  description:
+    'A Software Engineer with a passion for all things tech, particularly in the Frontend development space.',
 }
 
 export default function RootLayout({
