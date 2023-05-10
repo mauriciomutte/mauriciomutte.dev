@@ -3,11 +3,11 @@
   --bgColor: #16181d;
   --white: #f4f4f4;
   --white-2: #c6c6c6;
-  --orange-darker: #ff9f1b;
-  --yellow: #ffff80;
+  --gradient-primary: rgb(0, 124, 240);
+  --gradient-secondary: rgb(0, 223, 216);
 
   --borderRadius: 4px;
-  --gradientDegree: 95deg;
+  --gradientDegree: 90deg;
   --duration: 0.2s;
   --duration-2x: 0.4s;
 }
@@ -47,8 +47,8 @@ main {
   background-clip: text;
   background-image: linear-gradient(
     var(--gradientDegree),
-    var(--yellow) 0%,
-    var(--orange-darker) 75%
+    var(--gradient-secondary) 0%,
+    var(--gradient-primary) 75%
   );
 
   -webkit-background-clip: text;
