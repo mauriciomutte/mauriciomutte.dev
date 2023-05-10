@@ -15,7 +15,7 @@ export default function BlogPage() {
 
   return (
     <div style={{ width: '100%' }}>
-      <h1 className="gradient">Blog</h1>
+      <h1 className="gradient">Latest Content</h1>
 
       <div style={{ margin: '0 -24px' }}>
         {posts.map((post) => (
