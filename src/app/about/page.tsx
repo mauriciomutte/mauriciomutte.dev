@@ -26,7 +26,7 @@ export default function AboutPage() {
             It is a pleasure to have you here!
           </h1>
           <p>
-            Allow me to introduce myself. I'm Maurício Mutte, a 21-year-old
+            Allow me to introduce myself. I'm Maurício Mutte, a 22-year-old
             Frontend Software Engineer from Brazil.
           </p>
           <p>
