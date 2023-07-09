@@ -8,16 +8,15 @@ export const metadata = {
   title: 'Blog',
 }
 
+const posts = allPosts.sort((a, b) =>
+  compareDesc(new Date(a.date), new Date(b.date))
+)
+
 export default function BlogPage() {
-  const posts = allPosts.sort((a, b) =>
-    compareDesc(new Date(a.date), new Date(b.date))
-  )
-
   return (
-    <div style={{ width: '100%' }}>
-      <h1 className="gradient">Latest Content</h1>
-
-      <div style={{ margin: '0 -24px' }}>
+    <div className="w-full">
+      <h1 className="text-3xl font-bold my-4 gradient">Latest Content</h1>
+      <div className="-mx-6">
         {posts.map((post) => (
           <BlogItem
             key={post.slug}

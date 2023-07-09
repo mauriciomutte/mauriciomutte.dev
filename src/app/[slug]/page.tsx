@@ -71,13 +71,16 @@ export default function PostPage({ params }: PostPageProps) {
   if (!post) notFound()
 
   const MDXContent = useMDXComponent(post.body.code)
+  const date = formatDate(post.date)
 
   return (
     <div>
-      <article className={styles.post__article}>
-        <header className={styles.post__header}>
-          <h1 className={`${styles.post__title} gradient`}>{post.title}</h1>
-          <time className={styles.post__date}>{formatDate(post.date)}</time>
+      <article className="w-full">
+        <header className="text-center my-12">
+          <h1 className="text-3xl font-bold mb-4 leading-10 gradient">
+            {post.title}
+          </h1>
+          <time className="text-sm text-zinc-400 font-bold">{date}</time>
         </header>
         <section className={styles.post__content}>
           <MDXContent />
