@@ -1,8 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --textColor: #a1a1a1;
   --bgColor: #16181d;
   --white: #f4f4f4;
-  --white-2: #c6c6c6;
+  --white-2: #b20707;
   --gradient-primary: rgb(0, 124, 240);
   --gradient-secondary: rgb(0, 223, 216);
 
