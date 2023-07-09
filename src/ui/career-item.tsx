@@ -1,8 +1,6 @@
 import { format, parseISO } from 'date-fns'
 import { enUS } from 'date-fns/locale'
 
-import styles from './career-item.module.css'
-
 type CareerItemProps = {
   occupation: string
   company: string
@@ -26,9 +24,9 @@ export const CareerItem = ({
   }
 
   return (
-    <section className={styles.career__section}>
-      <h2 className={styles.career__occupation}>{occupation}</h2>
-      <span className={styles.career__details}>
+    <section className="mb-8">
+      <h2 className="text-lg">{occupation}</h2>
+      <span className="text-zinc-400 text-sm">
         {company} • {getPeriodDate()}
       </span>
     </section>

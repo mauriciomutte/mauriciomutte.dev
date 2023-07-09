@@ -1,7 +1,5 @@
 import Image from 'next/image'
 
-import styles from './footer.module.css'
-
 const links = [
   {
     title: 'Github',
@@ -22,7 +20,7 @@ const links = [
 
 export const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className="flex justify-center py-5 mt-auto">
       {links.map(({ title, url, icon }) => (
         <a
           key={title}
@@ -30,10 +28,16 @@ export const Footer = () => {
           title={title}
           target="_blank"
           rel="noopener noreferrer"
-          className={styles.footer__link}
+          className="group flex items-center gap-1 -mr-4 mx-10 text-sm opacity-50 transition ease-in-out duration-200 hover:opacity-100"
         >
           <span>{title}</span>
-          <Image src={icon} alt={`${title} logo`} height="16" width="16" />
+          <Image
+            src={icon}
+            alt={`${title} logo`}
+            height="16"
+            width="16"
+            className="opacity-0 transition ease-in-out duration-300 group-hover:opacity-100"
+          />
         </a>
       ))}
     </footer>
