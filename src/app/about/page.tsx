@@ -20,7 +20,7 @@ export default function AboutPage() {
           className="rounded-[50%] mr-8 w-full"
         />
         <div className="">
-          <h1 className={'font-bold text-2xl my-4 gradient'}>
+          <h1 className="font-bold text-2xl my-4 gradient">
             It is a pleasure to have you here!
           </h1>
           <p className="text-zinc-400 text-base my-4">
