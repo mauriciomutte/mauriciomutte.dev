@@ -9,6 +9,8 @@ div[data-rehype-pretty-code-fragment] pre {
   font-size: 1rem;
   font-family: var(--font-fira-code);
   line-height: 1.75rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 div[data-rehype-pretty-code-title] {
