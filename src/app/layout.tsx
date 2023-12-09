@@ -1,5 +1,4 @@
 import { Metadata } from 'next'
-import Head from 'next/head'
 import NextScript from 'next/script'
 import { Inter, Fira_Code } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react'

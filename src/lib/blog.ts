@@ -1,10 +1,7 @@
 import fs from 'fs'
 import { join } from 'path'
-// import { remark } from 'remark'
 import { format } from 'date-fns'
 import { ptBR } from 'date-fns/locale'
-// import html from 'remark-html'
-// import prism from 'remark-prism'
 import matter from 'gray-matter'
 
 const postsDirectory = join(process.cwd(), 'posts')
@@ -37,12 +34,3 @@ export function getAllPosts() {
 
   return posts
 }
-
-// export async function convertMarkdownToHtml(markdown: any) {
-//   const result = await remark()
-//     .use(html, { sanitize: false })
-//     .use(prism)
-//     .process(markdown)
-
-//   return result.toString()
-// }
