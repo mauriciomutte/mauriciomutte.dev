@@ -1,0 +1,84 @@
+---
+date: '2024-03-29'
+title: 'Working in parallel branches with Git Worktree'
+description: 'An alternative to work with multiple branches avoiding the need to stash or commit your changes.'
+tags: ['git']
+---
+
+You're working on a new feature. Suddenly, you need to "change context" to quickly fix a bug, help a colleague, or work on another task in parallel in a new branch of the same project. But you have some changed files in your Git working directory, and you would be very upset if you lost all your work.
+
+You have some alternatives to handle this. You could create a new branch, such as `feat/new-feature-you-are-working`, create a random commit (`git commit -a -m "wip"`) to "save" your work, and then navigate to other branch where you need work.
+
+You could also use the `git stash` command to "hide" your changed files, navigate to where you need to work, and once you're done, use `git stash pop` to bring back your changed files.
+
+All these alternatives are valid and work well... But what if you don't want to commit your half-done work yet? Git has another specific command that can help you: **git worktree**. 🎉
+
+## What is Git Worktree?
+
+Git worktree is a feature that allows you have multiple copies of your repository at different branches, all at the same time.
+
+Looking back to our example of bugfix: with Git Worktree, you can just create a new worktree for the bugfix branch. This gives you a new folder with the bugfix branch checked out, while your original folder still has the feature branch. You can switch between them just by changing folders, no need to stash or commit anything.
+
+It's like having multiple clones of your project, but they're all connected to the same Git repository.
+
+## Git worktree in practice
+
+Ok, let's to action!
+
+To create a new worktree, you can execute the following command:
+
+```
+git worktree add <path> <branch>
+```
+
+For create a new branch for the new worktree you need to use `-b` flag.
+
+Personally, when creating a worktree, I prefer to place it outside of the current folder and append a **wt** suffix to it. This helps keep things organized.
+
+Let's create a new worktree for the bugfix example:
+
+```sh
+git worktree add ../myprojectwt/bugfix -b fix/bugfix
+```
+
+![The command applied in my terminal](/static/images/blog/git-worktree-working-in-parallel-branches-a.jpg)
+
+When you navigate through your folders, it will look like this:
+
+![The Finder view of new folders](/static/images/blog/git-worktree-working-in-parallel-branches-b.jpg)
+
+### Listing Worktrees
+
+You can list all worktrees with the command:
+
+```sh
+git worktree list
+```
+
+### Removing Worktrees
+
+Once your work is completed (and the bug was fixed), you can remove the worktree with the following command:
+
+```sh
+git worktree remove ../myprojectwt/bugfix
+```
+
+## Alias for Git Worktree
+
+To make it easier to work with Git Worktree, you can create some aliases in your `.bashrc` or `.zshrc` file:
+
+```sh
+alias gwt='git worktree'
+alias gwta='git worktree add'
+alias gwtls='git worktree list'
+alias gwtmv='git worktree move'
+alias gwtrm='git worktree remove'
+```
+
+TIP: I utilize the [Oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) Git plugin, which already has these aliases.
+
+## Conclusion
+
+Git Worktree is a powerful feature that can help you work with multiple branches simultaneously without the need to stash or commit your changes. It's a great tool to have in your Git toolbox and can help you be more productive, especially when you need to switch contexts quickly.
+
+I hope you enjoyed this tip! 🚀
