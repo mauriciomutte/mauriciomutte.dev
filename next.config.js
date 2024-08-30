@@ -6,7 +6,7 @@ const nextConfig = {
     typedRoutes: true,
   },
   images: {
-    domains: ['github.com'],
+    remotePatterns: [{ hostname: 'github.com' }],
   },
 }
 

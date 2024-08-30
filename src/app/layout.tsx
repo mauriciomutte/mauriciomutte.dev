@@ -1,3 +1,4 @@
+import React from 'react'
 import { Metadata } from 'next'
 import NextScript from 'next/script'
 import { Inter, Fira_Code } from 'next/font/google'
