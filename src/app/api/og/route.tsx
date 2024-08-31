@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import { ImageResponse } from '@vercel/og'
 
 export const runtime = 'edge'
@@ -83,7 +82,7 @@ export async function GET(req: Request) {
         ],
       }
     )
-  } catch (error) {
+  } catch {
     return new Response('Failed to fetch image', {
       status: 500,
     })
