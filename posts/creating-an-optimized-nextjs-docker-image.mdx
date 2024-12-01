@@ -107,7 +107,7 @@ export default nextConfig;
 
 The standalone mode creates a `/standalone` directory in the `.next` output, so we need to copy it into the Docker image:
 
-```Dockerfile
+```Dockerfile showLineNumbers title="Dockerfile"
 FROM node:22-alpine as base
 
 # Install dependencies
